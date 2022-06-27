@@ -1,0 +1,4008 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: POEditor.com\n"
+"Project-Id-Version: WP Cerber Security\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: cerber-settings.php:161
+msgid "Limit login attempts"
+msgstr "Begränsa inloggningsförsök"
+
+#: cerber-settings.php:167 cerber-settings.php:300
+msgid "minutes"
+msgstr "minuter"
+
+#: cerber-settings.php:262
+msgid "Site connection"
+msgstr "Webbplatsanslutning"
+
+#: cerber-settings.php:233
+msgid "Proactive security rules"
+msgstr "Proaktiva säkerhetsregler"
+
+#: cerber-settings.php:252
+msgid "Block subnet"
+msgstr "Blockera undernät"
+
+#: cerber-settings.php:247
+msgid "Request wp-login.php"
+msgstr "Begär wp-login.php"
+
+#: cerber-settings.php:248
+msgid "Immediately block IP after any request to wp-login.php"
+msgstr "Blockera omedelbart IP efter en förfrågan till wp-login.php"
+
+#: cerber-settings.php:213
+msgid "Custom login page"
+msgstr "Anpassad inloggningssida"
+
+#: cerber-settings.php:218
+msgid "Custom login URL"
+msgstr "Anpassad URL för inloggning"
+
+#: cerber-settings.php:284 admin/cerber-dashboard.php:2076
+msgid "Citadel mode"
+msgstr "Citadelläge"
+
+#: cerber-settings.php:294
+msgid "Threshold"
+msgstr "Gränsvärde"
+
+#: cerber-settings.php:299 admin/cerber-admin.php:88
+msgid "Duration"
+msgstr "Varaktighet"
+
+#: cerber-settings.php:305 admin/cerber-dashboard.php:5138
+msgid "Notifications"
+msgstr "Notiser"
+
+#: cerber-settings.php:307
+msgid "Send notification to admin email"
+msgstr "Skicka meddelande till admins e-post"
+
+#: admin/cerber-dashboard.php:5135 admin/cerber-tools.php:38
+#: admin/cerber-tools.php:49
+msgid "Access Lists"
+msgstr "Åtkomstlistor"
+
+#: cerber-load.php:5392 cerber-settings.php:317
+#: admin/cerber-dashboard.php:2117 admin/cerber-dashboard.php:5131
+#: admin/cerber-users.php:1112
+msgid "Activity"
+msgstr "Aktivitet"
+
+#: admin/cerber-dashboard.php:5133
+msgid "Lockouts"
+msgstr "Utlåsningar"
+
+#: cerber-load.php:5401
+msgid "IP"
+msgstr "IP"
+
+#: admin/cerber-dashboard.php:944 admin/cerber-dashboard.php:1329
+#: admin/cerber-dashboard.php:3909 admin/cerber-dashboard.php:4396
+msgid "Date"
+msgstr "Datum"
+
+#: admin/cerber-dashboard.php:947 admin/cerber-dashboard.php:1331
+#: admin/cerber-dashboard.php:4401
+msgid "Local User"
+msgstr "Lokal användare"
+
+#: cerber-load.php:5409
+msgid "Username used"
+msgstr "Användarnamn används"
+
+#: cerber-common.php:1510
+msgid "Logged in"
+msgstr "Inloggad"
+
+#: cerber-common.php:1511
+msgid "Logged out"
+msgstr "Utloggad"
+
+#: cerber-common.php:1512
+msgid "Login failed"
+msgstr "Inloggning misslyckades"
+
+#: cerber-common.php:1515 admin/cerber-dashboard.php:1088
+msgid "IP blocked"
+msgstr "IP blockerat"
+
+#: cerber-common.php:1519
+msgid "Citadel activated!"
+msgstr "Citadel aktiverat!"
+
+#: cerber-common.php:1581 admin/cerber-dashboard.php:1681
+msgid "Locked out"
+msgstr "Utlåst"
+
+#: cerber-common.php:1583
+msgid "IP blacklisted"
+msgstr "IP svartlistat"
+
+#: cerber-common.php:1532
+msgid "Password changed"
+msgstr "Lösenord ändrat"
+
+#: admin/cerber-dashboard.php:205 admin/cerber-dashboard.php:330
+msgid "Remove"
+msgstr "Ta bort"
+
+#: admin/cerber-dashboard.php:661
+msgid "Lockout for %s was removed"
+msgstr "Utlåsning för %s borttagen"
+
+#: admin/cerber-dashboard.php:276 admin/cerber-dashboard.php:1588
+#: admin/cerber-dashboard.php:1672 admin/cerber-dashboard.php:2074
+#: admin/cerber-tools.php:69
+msgid "White IP Access List"
+msgstr "Vita IP-åtkomstlistan"
+
+#: admin/cerber-dashboard.php:279 admin/cerber-dashboard.php:1591
+#: admin/cerber-dashboard.php:1675 admin/cerber-dashboard.php:2075
+#: admin/cerber-tools.php:70
+msgid "Black IP Access List"
+msgstr "Svarta IP-åtkomstlistan"
+
+#: admin/cerber-dashboard.php:336
+msgid "List is empty"
+msgstr "Listan är tom"
+
+#: cerber-load.php:4598
+msgid "Citadel mode is activated after %d failed login attempts in %d minutes."
+msgstr "Citadelläge är aktiverad efter %d misslyckades inloggningsförsök inom %d minuter."
+
+#: admin/cerber-dashboard.php:2845 admin/cerber-dashboard.php:3270
+msgid "View Activity"
+msgstr "Visa aktivitet"
+
+#: nexus/cerber-nexus.php:95 admin/cerber-dashboard.php:5204
+#: admin/cerber-dashboard.php:5265 admin/cerber-tools.php:37
+#: admin/cerber-tools.php:48
+msgid "Settings"
+msgstr "Inställningar"
+
+#: admin/cerber-dashboard.php:1945
+msgid "Last login"
+msgstr "Senaste inloggning"
+
+#: cerber-common.php:1858 nexus/cerber-slave-list.php:347
+#: admin/cerber-dashboard.php:477 admin/cerber-dashboard.php:2048
+#: admin/cerber-dashboard.php:2097
+msgid "Never"
+msgstr "Aldrig"
+
+#: admin/cerber-dashboard.php:5627 admin/cerber-tools.php:59
+#: admin/cerber-admin.php:739 admin/cerber-admin.php:906
+msgid "Are you sure?"
+msgstr "Är du säker?"
+
+#: cerber-settings.php:263 admin/cerber-dashboard.php:2482
+msgid "My site is behind a reverse proxy"
+msgstr "Min webbplats är bakom en omvänd proxy"
+
+#: cerber-settings.php:234
+msgid "Make your protection smarter!"
+msgstr "Gör ditt skydd smartare!"
+
+#: cerber-settings.php:131
+msgid "Please enable Permalinks to use this feature. Set Permalink Settings to something other than Default."
+msgstr "Aktivera permalänkar för att använda denna funktion. Ställ in inställningar för permalänkar till något annat än standard."
+
+#: admin/cerber-dashboard.php:5134
+msgid "Main Settings"
+msgstr "Huvudinställningar"
+
+#: admin/cerber-dashboard.php:5424
+msgid "Help"
+msgstr "Hjälp"
+
+#: admin/cerber-admin-settings.php:350
+msgid "Increase lockout duration to %s hours after %s lockouts in the last %s hours"
+msgstr "Öka utlåsningens varaktighet till %s timmar efter %s utlåsningar under de senaste %s timmarna"
+
+#: cerber-load.php:357 admin/cerber-users.php:463
+msgid "You are not allowed to log in. Ask your administrator for assistance."
+msgstr "Du har inte rätt att logga in. Fråga din administratör om hjälp."
+
+#: admin/cerber-dashboard.php:215 admin/cerber-users.php:923
+msgid "Expires"
+msgstr "Löper ut"
+
+#: admin/cerber-dashboard.php:243 admin/cerber-dashboard.php:2716
+msgid "No lockouts at the moment. The sky is clear."
+msgstr "Inga utlåsningar just nu. Kusten är klar."
+
+#: admin/cerber-dashboard.php:286
+msgid "Your IP"
+msgstr "Ditt IP"
+
+#: cerber-load.php:4599
+msgid "Last failed attempt was at %s from IP %s with user login: %s."
+msgstr "Senast misslyckat försök var %s från IP %s med användarinloggning: %s."
+
+#: cerber-load.php:5679
+msgid "Can't activate WP Cerber due to a database error."
+msgstr "Kan inte aktivera WP Cerber på grund av ett databasfel."
+
+#: admin/cerber-admin-settings.php:358
+msgid "Notify admin if the number of active lockouts above"
+msgstr "Meddela admin om antalet aktiva utlåsningar är över"
+
+#: cerber-settings.php:321 cerber-settings.php:327 cerber-settings.php:959
+#: cerber-settings.php:965 cerber-settings.php:1044 cerber-settings.php:1282
+msgid "days"
+msgstr "dagar"
+
+#: admin/cerber-dashboard.php:2014
+msgid "Cerber Quick View"
+msgstr "Cerber snabböversikt"
+
+#: cerber-settings.php:253
+msgid "Always block entire subnet Class C of intruders IP"
+msgstr "Blockera alltid hela undernätet Klass C av inkräktande IP"
+
+#: cerber-settings.php:311 admin/cerber-admin-settings.php:363
+msgid "Click to send test"
+msgstr "Klicka för att skicka test"
+
+#: admin/cerber-admin-settings.php:673 admin/cerber-admin-settings.php:674
+msgid "Attention! You have changed the login URL! The new login URL is"
+msgstr "Observera! Du har ändrat URL för inloggning! Den nya URL:en för inloggning är"
+
+#: admin/cerber-dashboard.php:1944
+msgid "Comments"
+msgstr "Kommentarer"
+
+#: cerber-load.php:4600 cerber-load.php:5433
+msgid "View activity in dashboard"
+msgstr "Visa aktivitet i adminpanel"
+
+#: cerber-load.php:4629
+msgid "Number of active lockouts"
+msgstr "Antal aktiva utlåsningar"
+
+#: cerber-load.php:4633
+msgid "View lockouts in dashboard"
+msgstr "Visa utlåsningar i adminpanelen"
+
+#: cerber-load.php:4727
+msgid "This message was sent by"
+msgstr "Detta meddelande skickades av"
+
+#: admin/cerber-dashboard.php:88 admin/cerber-dashboard.php:5316
+msgid "Tools"
+msgstr "Verktyg"
+
+#: admin/cerber-tools.php:34
+msgid "Export settings to the file"
+msgstr "Exportera inställningar till fil"
+
+#: admin/cerber-tools.php:35
+msgid "When you click the button below you will get a configuration file, which you can upload on another site."
+msgstr "När du klickar på knappen nedan får du en konfigurationsfil, som du kan ladda upp på en annan webbplats."
+
+#: admin/cerber-tools.php:36
+msgid "What do you want to export?"
+msgstr "Vad vill du exportera?"
+
+#: admin/cerber-tools.php:39
+msgid "Download file"
+msgstr "Ladda ner fil"
+
+#: admin/cerber-tools.php:43
+msgid "Import settings from the file"
+msgstr "Importera inställningar från fil"
+
+#: admin/cerber-tools.php:44
+msgid "When you click the button below, file will be uploaded and all existing settings will be overridden."
+msgstr "När du klickar på knappen nedan kommer filen att laddas upp och alla befintliga inställningar kommer att åsidosättas"
+
+#: admin/cerber-tools.php:45
+msgid "Select file to import."
+msgstr "Välj fil att importera."
+
+#: admin/cerber-tools.php:48
+msgid "What do you want to import?"
+msgstr "Vad vill du importera?"
+
+#: admin/cerber-tools.php:50 admin/cerber-admin.php:257
+msgid "Upload file"
+msgstr "Ladda upp fil"
+
+#: admin/cerber-tools.php:189
+msgid "No file was uploaded or file is corrupted"
+msgstr "Ingen fil har laddats upp eller filen är skadad"
+
+#: admin/cerber-tools.php:236
+msgid "Settings has imported successfully from"
+msgstr "Inställningar har importerats utan problem från"
+
+#: admin/cerber-tools.php:243
+msgid "Error while parsing file"
+msgstr "Fel uppstod vid analyseringen av fil"
+
+#: admin/cerber-dashboard.php:213 admin/cerber-dashboard.php:1327
+msgid "Hostname"
+msgstr "Värdnamn"
+
+#: admin/cerber-dashboard.php:599
+msgid "unknown"
+msgstr "okänt"
+
+#: admin/cerber-dashboard.php:2053 admin/cerber-dashboard.php:2083
+msgid "active"
+msgstr "aktivt"
+
+#: admin/cerber-dashboard.php:2053
+msgid "deactivate"
+msgstr "inaktivera"
+
+#: admin/cerber-dashboard.php:2057
+msgid "not active"
+msgstr "Inte aktiv"
+
+#: admin/cerber-dashboard.php:2060 admin/cerber-dashboard.php:2078
+msgid "disabled"
+msgstr "inaktiverad"
+
+#: admin/cerber-dashboard.php:2066
+msgid "failed attempts"
+msgstr "misslyckade försök"
+
+#: admin/cerber-dashboard.php:2066 admin/cerber-dashboard.php:2067
+msgid "in 24 hours"
+msgstr "om 24 timmar"
+
+#: admin/cerber-dashboard.php:2066 admin/cerber-dashboard.php:2067
+msgid "view all"
+msgstr "visa alla"
+
+#: admin/cerber-dashboard.php:2067
+msgid "lockouts"
+msgstr "Utlåsningar"
+
+#: admin/cerber-dashboard.php:2069
+msgid "Lockouts at the moment"
+msgstr "Utlåsningar just nu"
+
+#: admin/cerber-dashboard.php:2070
+msgid "Last lockout"
+msgstr "Senaste utlåsning"
+
+#: admin/cerber-dashboard.php:2074 admin/cerber-dashboard.php:2075
+#: admin/cerber-dashboard.php:3031
+msgid "entry"
+msgid_plural "entries"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/cerber-tools.php:57
+msgid "Load default settings"
+msgstr "Ladda standardinställningar"
+
+#: cerber-settings.php:763
+msgid "New version is available"
+msgstr "Ny version är tillgänglig"
+
+#: cerber-load.php:4572
+msgid "WP Cerber notify"
+msgstr "WP Cerber meddelar"
+
+#: cerber-load.php:4596
+msgid "Citadel mode is activated"
+msgstr "Citadelläge är aktiverat"
+
+#: cerber-load.php:4672
+msgid "New Custom login URL"
+msgstr "Ny anpassad URL för inloggning"
+
+#: cerber-settings.php:346
+msgid "Use file"
+msgstr "Använd fil"
+
+#: cerber-settings.php:347
+msgid "Write failed login attempts to the file"
+msgstr "Skriv misslyckade inloggningsförsök till fil"
+
+#: admin/cerber-dashboard.php:2844
+msgid "Deactivate"
+msgstr "Inaktivera"
+
+#: cerber-load.php:4631 admin/cerber-dashboard.php:216
+msgid "Reason"
+msgstr "Anledning"
+
+#: admin/cerber-dashboard.php:1739
+msgid "Add IP to the Black List"
+msgstr "Lägg till IP i svartlistan"
+
+#: cerber-common.php:1681
+msgid "Attempt to access"
+msgstr "Försök att komma åt"
+
+#: cerber-common.php:1680
+msgid "Limit on login attempts is reached"
+msgstr "Gränsen för inloggningsförsök är nådd"
+
+#: cerber-load.php:4630
+msgid "Last lockout was added: %s for IP %s"
+msgstr "Senaste utlåsningen lades till: %s för IP %s"
+
+#: admin/cerber-dashboard.php:5136
+msgid "Hardening"
+msgstr "Förstärk"
+
+#: admin/cerber-dashboard.php:1711
+msgid "Abuse email:"
+msgstr "E-post för missbruk:"
+
+#: cerber-settings.php:750 cerber-settings.php:797 cerber-settings.php:1098
+msgid "Email Address"
+msgstr "E-postadress"
+
+#: cerber-settings.php:395
+msgid "Hardening WordPress"
+msgstr "Förstärk WordPress"
+
+#: cerber-settings.php:399 cerber-settings.php:446
+msgid "Stop user enumeration"
+msgstr "Stoppa uppräkning av användare"
+
+#: cerber-settings.php:429
+msgid "Disable XML-RPC"
+msgstr "Inaktivera XML-RPC"
+
+#: cerber-settings.php:430
+msgid "Block access to the XML-RPC server (including Pingbacks and Trackbacks)"
+msgstr "Blockera åtkomst till XML-RPC-servern (inklusive pingbacks och trackbacks)"
+
+#: cerber-settings.php:434
+msgid "Disable feeds"
+msgstr "Inaktivera flöden"
+
+#: cerber-settings.php:435
+msgid "Block access to the RSS, Atom and RDF feeds"
+msgstr "Blockera åtkomst till RSS, Atom och RDF-flöden"
+
+#: cerber-settings.php:451
+msgid "Disable REST API"
+msgstr "Inaktivera REST API"
+
+#: cerber-load.php:4661 cerber-load.php:5722
+msgid "WP Cerber is now active and has started protecting your site"
+msgstr "WP Cerber är nu aktiv och har börjat skydda din webbplats"
+
+#: admin/cerber-dashboard.php:217 admin/cerber-users.php:926
+#: admin/cerber-admin.php:775 admin/cerber-admin.php:930
+msgid "Action"
+msgstr "Åtgärd"
+
+#: admin/cerber-dashboard.php:5473
+msgid "Incorrect IP address or IP range"
+msgstr "Felaktig IP-adress eller IP-intervall"
+
+#: admin/cerber-dashboard.php:2860
+msgid "Settings saved"
+msgstr "Inställningar sparade"
+
+#: admin/cerber-dashboard.php:1717
+msgid "Network:"
+msgstr "Nätverk:"
+
+#: admin/cerber-dashboard.php:1733
+msgid "Add network to the Black List"
+msgstr "Lägg till nätverk i svartlistan"
+
+#: admin/cerber-dashboard.php:2843
+msgid "Attention! Citadel mode is now active. Nobody is able to log in."
+msgstr "Observera! Citadelläget är nu aktivt. Ingen kan logga in."
+
+#: cerber-whois.php:235 cerber-whois.php:266 cerber-common.php:1705
+#: nexus/cerber-slave-list.php:333 admin/cerber-dashboard.php:458
+#: admin/cerber-dashboard.php:4062 admin/cerber-dashboard.php:4633
+msgid "Unknown"
+msgstr "Okänt"
+
+#: cerber-load.php:662 cerber-load.php:674 cerber-load.php:681
+#: cerber-load.php:1020 cerber-load.php:1842 cerber-load.php:2006
+#: cerber-load.php:2185 cerber-common.php:380 cerber-common.php:479
+#: cerber-common.php:484 cerber-common.php:490 cerber-common.php:494
+#: nexus/cerber-nexus-slave.php:204 nexus/cerber-nexus-slave.php:215
+#: admin/cerber-admin-settings.php:645 admin/cerber-admin-settings.php:665
+#: admin/cerber-admin-settings.php:772 admin/cerber-admin.php:876
+msgid "ERROR:"
+msgstr "FEL:"
+
+#: cerber-load.php:691
+msgid "Human verification failed. Please click the square box in the reCAPTCHA block below."
+msgstr "Mänsklig verifikation misslyckades. Klicka på rutan i reCAPTCHA-blocket nedan."
+
+#: cerber-load.php:1820
+msgid "Username is not allowed. Please choose another one."
+msgstr "Användarnamn är inte tillåtet. Välj ett annat."
+
+#: cerber-load.php:4624
+msgid "unspecified"
+msgstr "ospecificerat"
+
+#: cerber-load.php:4627
+msgid "Number of lockouts is increasing"
+msgstr "Antal utlåsningar är stigande"
+
+#: cerber-load.php:4632
+msgid "View activity for this IP"
+msgstr "Visa aktivitet för detta IP"
+
+#: cerber-load.php:4636 cerber-load.php:4638
+msgid "A new version of WP Cerber is available to install"
+msgstr "En ny version av WP Cerber är tillgänglig att installeras"
+
+#: cerber-load.php:4637
+msgid "Hi!"
+msgstr "Hej!"
+
+#: cerber-load.php:4640 cerber-load.php:4651 nexus/cerber-slave-list.php:44
+msgid "Website"
+msgstr "Webbplats"
+
+#: cerber-load.php:4643 cerber-load.php:4644
+msgid "The WP Cerber security plugin has been deactivated"
+msgstr "Säkerhetstillägget WP Cerber har blivit avaktiverat"
+
+#: cerber-load.php:4646
+msgid "Not logged in"
+msgstr "Inte inloggad"
+
+#: cerber-load.php:4652
+msgid "By user"
+msgstr "Efter användare"
+
+#: cerber-load.php:4653
+msgid "From IP address"
+msgstr "Från IP-adress"
+
+#: cerber-load.php:4656
+msgid "From country"
+msgstr "Från land"
+
+#: cerber-load.php:4660
+msgid "The WP Cerber security plugin is now active"
+msgstr "Säkerhetstillägget WP Cerber är nu aktivt"
+
+#: cerber-load.php:5735
+msgid "Import settings"
+msgstr "Importera inställningar"
+
+#: cerber-settings.php:758
+msgid "Notification limit"
+msgstr "Gräns för notiser"
+
+#: cerber-settings.php:660
+msgid "Prohibited usernames"
+msgstr "Förbjudna användarnamn"
+
+#: cerber-settings.php:661
+msgid "Usernames from this list are not allowed to log in or register. Any IP address, have tried to use any of these usernames, will be immediately blocked. Use comma to separate logins."
+msgstr "Användarnamn från denna lista får inte logga in eller registrera sig. Alla IP-adresser, som försökt använda någon av dessa användarnamn, kommer omedelbart att blockeras. Använd komma för att separera inloggningar."
+
+#: cerber-settings.php:1288
+msgid "reCAPTCHA settings"
+msgstr "reCaptcha-inställningar"
+
+#: cerber-settings.php:1293
+msgid "Site key"
+msgstr "Webbplatsnyckel"
+
+#: cerber-settings.php:1297
+msgid "Secret key"
+msgstr "Hemlig nyckel"
+
+#: cerber-settings.php:1307
+msgid "Enable reCAPTCHA for WordPress registration form"
+msgstr "Aktivera reCAPTCHA för WordPress registreringsformulär"
+
+#: cerber-settings.php:1316
+msgid "Lost password form"
+msgstr "Formulär för glömt lösenord"
+
+#: cerber-settings.php:1326
+msgid "Login form"
+msgstr "Inloggningsformulär"
+
+#: cerber-settings.php:1327
+msgid "Enable reCAPTCHA for WordPress login form"
+msgstr "Aktivera reCAPTCHA för WordPress inloggningsformulär"
+
+#: cerber-settings.php:1289
+msgid "Before you can start using reCAPTCHA, you have to obtain Site key and Secret key on the Google website"
+msgstr "Innan du kan börja använda reCAPTCHA måste du skaffa webbplatsnyckel och hemlig nyckel på Googles webbplats"
+
+#: cerber-lab.php:894 admin/cerber-admin-settings.php:101
+#: admin/cerber-admin-settings.php:257
+msgid "Know more"
+msgstr "Lär dig mer"
+
+#: cerber-common.php:1507
+msgid "User created"
+msgstr "Användare skapad"
+
+#: cerber-common.php:1508
+msgid "User registered"
+msgstr "Användare registrerad"
+
+#: cerber-common.php:1536
+msgid "reCAPTCHA verification failed"
+msgstr "reCAPTCHA-verifiering misslyckades"
+
+#: cerber-common.php:1537
+msgid "reCAPTCHA settings are incorrect"
+msgstr "reCAPTCHA-inställningarna är felaktiga"
+
+#: cerber-common.php:1540 cerber-common.php:1682
+msgid "Attempt to access prohibited URL"
+msgstr "Försök att få tillgång till förbjuden URL"
+
+#: cerber-common.php:1542 cerber-common.php:1684
+msgid "Attempt to log in with prohibited username"
+msgstr "Försök att logga in med förbjudna användarnamn"
+
+#: cerber-settings.php:332
+msgid "Cerber Lab connection"
+msgstr "Cerber Lab-anslutning"
+
+#: cerber-settings.php:333
+msgid "Send malicious IP addresses to the Cerber Lab"
+msgstr "Skicka skadliga IP-adresser till Cerber Lab"
+
+#: cerber-settings.php:338
+msgid "Cerber Lab protocol"
+msgstr "Cerber Lab-protokoll"
+
+#: cerber-settings.php:1223 cerber-settings.php:1306
+msgid "Registration form"
+msgstr "Registreringsformulär"
+
+#: cerber-settings.php:1312
+msgid "Enable reCAPTCHA for WooCommerce registration form"
+msgstr "Aktivera reCAPTCHA för WooCommerce registreringsformulär"
+
+#: cerber-settings.php:1317
+msgid "Enable reCAPTCHA for WordPress lost password form"
+msgstr "Aktivera reCAPTCHA för WordPress på formuläret för förlorat lösenord"
+
+#: cerber-settings.php:1322
+msgid "Enable reCAPTCHA for WooCommerce lost password form"
+msgstr "Aktivera reCAPTCHA för WooCommerce på formuläret för förlorat lösenord"
+
+#: cerber-settings.php:1332
+msgid "Enable reCAPTCHA for WooCommerce login form"
+msgstr "Aktivera reCAPTCHA för WooCommerce inloggningsformulär"
+
+#: cerber-common.php:1538
+msgid "Request to the Google reCAPTCHA service failed"
+msgstr "Begäran om Google reCAPTCHA-tjänsten misslyckades"
+
+#: admin/cerber-dashboard.php:1057 admin/cerber-dashboard.php:1068
+#: admin/cerber-dashboard.php:1081 admin/cerber-dashboard.php:2719
+#: admin/cerber-dashboard.php:4429
+msgid "View all"
+msgstr "Visa alla"
+
+#: admin/cerber-dashboard.php:2727
+msgid "Recently locked out IP addresses"
+msgstr "Nyligen utlåsta IP-adresser"
+
+#: cerber-lab.php:892
+msgid "OK, nail them all"
+msgstr "OK, sätt fast dem alla"
+
+#: cerber-lab.php:893
+msgid "NO, maybe later"
+msgstr "Nej, kanske senare"
+
+#: admin/cerber-dashboard.php:60 admin/cerber-dashboard.php:2116
+#: admin/cerber-dashboard.php:3053 admin/cerber-dashboard.php:5130
+msgid "Dashboard"
+msgstr "Adminpanel"
+
+#: cerber-lab.php:890
+msgid "Want to make WP Cerber even more powerful?"
+msgstr "Vill du göra WP Cerber ännu mer kraftfull?"
+
+#: cerber-lab.php:891
+msgid "Allow WP Cerber to send locked out malicious IP addresses to Cerber Lab. This helps the plugin team to develop new algorithms for WP Cerber that will defend WordPress against new threats and botnets that are appearing  everyday. You can disable the sending in the plugin settings at any time."
+msgstr "Tillåt WP Cerber att skicka utlåsta skadliga IP-adresser till Cerber Lab. Detta hjälper teamet för tillägget att utveckla nya algoritmer för WP Cerber som kommer att försvara WordPress mot nya hot och botnets som dyker upp varje dag. Du kan när som helst inaktivera sändningen i inställningarna för tillägget."
+
+#: admin/cerber-dashboard.php:3908
+msgid "IP address"
+msgstr "IP-adress"
+
+#: admin/cerber-dashboard.php:948
+msgid "User login"
+msgstr "Användarinloggning"
+
+#: admin/cerber-dashboard.php:949 admin/cerber-dashboard.php:3914
+msgid "User ID"
+msgstr "Användar-ID"
+
+#: admin/cerber-dashboard.php:1361 admin/cerber-dashboard.php:4455
+msgid "Export"
+msgstr "Exportera"
+
+#: admin/cerber-dashboard.php:1386
+msgid "Search for IP or username"
+msgstr "Sök efter IP eller användarnamn"
+
+#: admin/cerber-dashboard.php:1397
+msgid "Filter"
+msgstr "Filter"
+
+#: admin/cerber-dashboard.php:60
+msgid "Cerber Dashboard"
+msgstr "Cerber adminpanel"
+
+#: admin/cerber-dashboard.php:88
+msgid "Cerber tools"
+msgstr "Cerber verktyg"
+
+#: admin/cerber-tools.php:320
+msgid "Unsubscribe"
+msgstr "Avsluta prenumeration"
+
+#: cerber-load.php:4676 cerber-load.php:4677
+msgid "A new activity has been recorded"
+msgstr "En ny aktivitet har registrerats"
+
+#: cerber-load.php:5405 admin/cerber-users.php:920
+msgid "User"
+msgstr "Användare"
+
+#: cerber-load.php:5413
+msgid "Search string"
+msgstr "Söksträng"
+
+#: cerber-settings.php:361
+msgid "Date format"
+msgstr "Datumformat"
+
+#: cerber-settings.php:362
+msgid "if empty, the default format %s will be used"
+msgstr "om det är tomt, kommer standardformatet %s att användas"
+
+#: cerber-settings.php:769
+msgid "Push notifications"
+msgstr "Pushmeddelanden"
+
+#: cerber-settings.php:741
+msgid "Email notifications"
+msgstr "E-postmeddelanden"
+
+#: cerber-settings.php:751 cerber-settings.php:799 cerber-settings.php:913
+#: cerber-settings.php:1100
+msgid "Use comma to specify multiple values"
+msgstr "Använd komma för att ange flera värden"
+
+#: cerber-settings.php:118
+msgid "All connected devices"
+msgstr "Alla anslutna enheter"
+
+#: cerber-settings.php:121
+msgid "No devices found"
+msgstr "Hittade inga enheter"
+
+#: cerber-settings.php:125
+msgid "Not available"
+msgstr "Inte tillgänglig"
+
+#: cerber-common.php:1533
+msgid "Password reset requested"
+msgstr "Lösenordsåterställning begärd"
+
+#: cerber-common.php:1685
+msgid "Limit on failed reCAPTCHA verifications is reached"
+msgstr "Gräns för om misslyckade reCAPTCHA-verifieringar uppnås"
+
+#: cerber-settings.php:175
+msgid "Apply limit login rules to IP addresses in the White IP Access List"
+msgstr "Tillämpa gränser för inloggningsregler till IP-adresser i den vita IP-åtkomstlistan"
+
+#: cerber-settings.php:274
+msgid "Display 404 page"
+msgstr "Visa 404-sida"
+
+#: cerber-settings.php:1301
+msgid "Invisible reCAPTCHA"
+msgstr "Osynlig reCAPTCHA"
+
+#: cerber-settings.php:1302
+msgid "Enable invisible reCAPTCHA"
+msgstr "Aktivera osynlig reCAPTCHA"
+
+#: cerber-settings.php:1302
+msgid "(do not enable it unless you get and enter the Site and Secret keys for the invisible version)"
+msgstr "(aktivera det inte om du inte skaffar och anger webbplatsen och hemliga nycklar för den osynliga versionen)"
+
+#: cerber-settings.php:1337
+msgid "Enable reCAPTCHA for WordPress comment form"
+msgstr "Aktivera reCAPTCHA för WordPress-kommentarformulär"
+
+#: cerber-settings.php:1346
+msgid "Limit attempts"
+msgstr "Begränsa försök"
+
+#: cerber-settings.php:1347
+msgid "Lock out IP address for %s minutes after %s failed attempts within %s minutes"
+msgstr "Lås ut IP-adress i %s minuter efter %s misslyckade försök inom %s minuter"
+
+#: cerber-settings.php:285
+msgid "In the Citadel mode nobody is able to log in except IPs from the White IP Access List. Active user sessions will not be affected."
+msgstr "I Citadel-läget kan ingen logga in utom IP-adresser från den vita IP-åtkomstlistan. Aktiva användarsessioner påverkas inte."
+
+#: admin/cerber-dashboard.php:945 admin/cerber-dashboard.php:1330
+msgid "Event"
+msgstr "Händelse"
+
+#: cerber-common.php:321
+msgid "Spam comments denied"
+msgstr "Skräppostkommentarer nekades"
+
+#: cerber-common.php:323
+msgid "Malicious IP addresses detected"
+msgstr "Skadliga IP-adresser upptäcktes"
+
+#: cerber-common.php:324
+msgid "Lockouts occurred"
+msgstr "Utlåsningar uppstod"
+
+#: cerber-load.php:1798 cerber-load.php:1805 cerber-load.php:1810
+#: cerber-load.php:1831 cerber-load.php:1837
+msgid "You are not allowed to register."
+msgstr "Du har inte behörighet att registrera."
+
+#: cerber-common.php:1520
+msgid "Spam comment denied"
+msgstr "Skräppostkommentar nekad"
+
+#: cerber-common.php:1545
+msgid "Attempt to log in denied"
+msgstr "Försök att logga in nekad"
+
+#: cerber-common.php:1546
+msgid "Attempt to register denied"
+msgstr "Försök att registrera nekad"
+
+#: cerber-common.php:318
+msgid "Malicious activities mitigated"
+msgstr "Skadliga aktiviteter mildrades"
+
+#: cerber-settings.php:1228
+msgid "Comment form"
+msgstr "Kommentarsformulär"
+
+#: cerber-settings.php:1229
+msgid "Protect comment form with bot detection engine"
+msgstr "Skydda kommentarformulär med botdetekteringsmotor"
+
+#: cerber-settings.php:1224
+msgid "Protect registration form with bot detection engine"
+msgstr "Skydda registreringsformulär med botdetekteringsmotor"
+
+#: admin/cerber-dashboard.php:5320
+msgid "Diagnostic"
+msgstr "Diagnostik"
+
+#: admin/cerber-dashboard.php:5323
+msgid "License"
+msgstr "Licens"
+
+#: cerber-load.php:2185
+msgid "Sorry, human verification failed."
+msgstr "Tyvärr, mänsklig verifiering misslyckades."
+
+#: cerber-common.php:1686
+msgid "Bot activity is detected"
+msgstr "Botaktivitet är upptäckt"
+
+#: cerber-settings.php:1270
+msgid "Comment processing"
+msgstr "Kommentarbehandling"
+
+#: cerber-settings.php:1274
+msgid "If a spam comment detected"
+msgstr "Om en skräppostkommentar upptäcks"
+
+#: cerber-settings.php:1279
+msgid "Trash spam comments"
+msgstr "Släng skräppostkommentarer"
+
+#: cerber-settings.php:1281
+msgid "Move spam comments to trash after"
+msgstr "Flytta skräppostkommentarer till papperskorgen efter"
+
+#: cerber-common.php:1521
+msgid "Spam form submission denied"
+msgstr "Skräppost nekades att skickas in via formulär"
+
+#: cerber-settings.php:1239
+msgid "Other forms"
+msgstr "Andra formulär"
+
+#: cerber-settings.php:1240
+msgid "Protect all forms on the website with bot detection engine"
+msgstr "Skydda alla formulär på webbplatsen med botdetekteringsmotor"
+
+#: cerber-settings.php:1250
+msgid "Safe mode"
+msgstr "Säkert läge"
+
+#: cerber-settings.php:1251
+msgid "Use less restrictive policies (allow AJAX)"
+msgstr "Använd mindre restriktiva policyer (tillåt AJAX)"
+
+#: admin/cerber-dashboard.php:214 admin/cerber-dashboard.php:1328
+msgid "Country"
+msgstr "Land"
+
+#: admin/cerber-dashboard.php:67
+msgid "Cerber Security Rules"
+msgstr "Cerber säkerhetsregler"
+
+#: admin/cerber-dashboard.php:67 admin/cerber-dashboard.php:5247
+msgid "Security Rules"
+msgstr "Säkerhetsregler"
+
+#: admin/cerber-dashboard.php:1946
+msgid "Failed login attempts"
+msgstr "Misslyckade inloggningsförsök"
+
+#: admin/cerber-dashboard.php:1870 admin/cerber-dashboard.php:1947
+msgid "Registered"
+msgstr "Registrerad"
+
+#: admin/cerber-dashboard.php:1992 admin/cerber-users.php:52
+#: admin/cerber-users.php:1079
+msgid "You"
+msgstr "Du"
+
+#: cerber-common.php:322
+msgid "Spam form submissions denied"
+msgstr "Inskickning av skräppostformulär nekad"
+
+#: cerber-load.php:4663 cerber-load.php:5726
+msgid "Getting Started Guide"
+msgstr "Komma igång guiden"
+
+#: admin/cerber-dashboard.php:5249
+msgid "Countries"
+msgstr "Länder"
+
+#: admin/cerber-dashboard.php:3637
+msgid "Permitted for one country"
+msgid_plural "Permitted for %d countries"
+msgstr[0] "Tillåtet för ett land"
+msgstr[1] "Tillåtet för %d länder"
+
+#: admin/cerber-dashboard.php:3648
+msgid "No rule"
+msgstr "Ingen regel"
+
+#: admin/cerber-dashboard.php:3809
+msgid "Security rules have been updated"
+msgstr "Säkerhetsregler har uppdaterats"
+
+#. URI of the plugin
+#: 
+msgid "https://wpcerber.com"
+msgstr "https://wpcerber.com"
+
+#: cerber-common.php:1522
+msgid "Form submission denied"
+msgstr "Formulärinlämning nekad"
+
+#: cerber-common.php:1523
+msgid "Comment denied"
+msgstr "Kommentar nekad"
+
+#: cerber-common.php:1551
+msgid "Request to REST API denied"
+msgstr "Begäran till REST API nekad"
+
+#: cerber-common.php:1579
+msgid "Bot detected"
+msgstr "Bot upptäckt"
+
+#: cerber-common.php:1580
+msgid "Citadel mode is active"
+msgstr "Citadelläget är aktivt"
+
+#: cerber-common.php:1584
+msgid "Malicious activity detected"
+msgstr "Skadlig aktivitet upptäckt"
+
+#: cerber-common.php:1585
+msgid "Blocked by country rule"
+msgstr "Blockerad av landsregeln"
+
+#: cerber-common.php:1586
+msgid "Limit reached"
+msgstr "Gräns nådd"
+
+#: cerber-common.php:1587
+msgid "Multiple suspicious activities"
+msgstr "Flera misstänkta aktiviteter"
+
+#: cerber-common.php:1687
+msgid "Multiple suspicious activities were detected"
+msgstr "Flera misstänkta aktiviteter upptäcktes"
+
+#: cerber-settings.php:471
+msgid "Specify REST API namespaces to be allowed if REST API is disabled. One string per line."
+msgstr "Ange REST API-namnområden för att tillåtas om REST API är inaktiverat. En sträng per rad."
+
+#: cerber-settings.php:576
+msgid "Registration limit"
+msgstr "Registreringsgräns"
+
+#: cerber-settings.php:686
+msgid "Sort users in dashboard"
+msgstr "Sortera användare i adminpanelen"
+
+#: cerber-settings.php:687
+msgid "by date of registration"
+msgstr "efter registreringsdatum"
+
+#: cerber-settings.php:1260
+msgid "Query whitelist"
+msgstr ""
+
+#: admin/cerber-dashboard.php:3617
+msgid "Start typing here to find a country"
+msgstr "Börja skriva här för att hitta ett land"
+
+#: admin/cerber-dashboard.php:3732
+msgid "Click on a country name to add it to the list of selected countries"
+msgstr "Klicka på ett landsnamn för att lägga till det i listan över valda länder"
+
+#: admin/cerber-dashboard.php:3764
+msgid "Submit forms"
+msgstr "Skicka formulär"
+
+#: admin/cerber-dashboard.php:3765
+msgid "Post comments"
+msgstr "Publicera kommentarer"
+
+#: admin/cerber-dashboard.php:3763
+msgid "Register on the website"
+msgstr "Registrera på webbplatsen"
+
+#: admin/cerber-dashboard.php:3766
+msgid "Use XML-RPC"
+msgstr "Använd XML-RPC"
+
+#: admin/cerber-dashboard.php:3767
+msgid "Use REST API"
+msgstr "Använd REST API"
+
+#: cerber-settings.php:1276
+msgid "Deny it completely"
+msgstr "Förneka det fullständigt"
+
+#: cerber-settings.php:1276
+msgid "Mark it as spam"
+msgstr "Markera det som skräppost"
+
+#: admin/cerber-dashboard.php:3054
+msgid "Main settings"
+msgstr "Huvudinställningar"
+
+#: cerber-settings.php:784
+msgid "Weekly reports"
+msgstr "Veckovisa rapporter"
+
+#: admin/cerber-admin-settings.php:675 admin/cerber-admin-settings.php:676
+msgid "If you use a caching plugin, you have to add your new login URL to the list of pages not to cache."
+msgstr "Om du använder ett cachetillägg måste du lägga till din nya URL för inloggning till listan över sidor som inte ska caches."
+
+#: cerber-load.php:4682
+msgid "Weekly report"
+msgstr "Veckorapport"
+
+#: cerber-load.php:4685 cerber-load.php:4693
+msgid "To change reporting settings visit"
+msgstr "För att ändra rapporteringsinställningar besök"
+
+#: cerber-load.php:4719
+msgid "Your login page:"
+msgstr "Din inloggningssida:"
+
+#: cerber-load.php:4724
+msgid "Your license is valid until"
+msgstr "Din licens är giltig till"
+
+#: cerber-load.php:4830
+msgid "Activity details"
+msgstr "Aktivitetsdetaljer"
+
+#: admin/cerber-admin-settings.php:568
+msgid "Click to send now"
+msgstr "Klicka för att skicka nu"
+
+#: admin/cerber-dashboard.php:669
+msgid "Email has been sent to"
+msgstr "E-post har skickats till"
+
+#: admin/cerber-dashboard.php:672
+msgid "Unable to send email to"
+msgstr "Det går inte att skicka e-post till"
+
+#: admin/cerber-dashboard.php:3640
+msgid "Not permitted for one country"
+msgid_plural "Not permitted for %d countries"
+msgstr[0] "Inte tillåtet för ett land"
+msgstr[1] "Inte tillåtet för %d länder"
+
+#: admin/cerber-dashboard.php:3736
+msgctxt "to is a marker of infinitive, e.g. \"to use it\""
+msgid "Selected countries are permitted to %s, other countries are not permitted to"
+msgstr "Valda länder är tillåtna att %s, andra länder är inte tillåtna att"
+
+#: admin/cerber-dashboard.php:3739
+msgctxt "to is a marker of infinitive, e.g. \"to use it\""
+msgid "Selected countries are not permitted to %s, other countries are permitted to"
+msgstr "Valda länder är inte tillåtna att %s, andra länder har tillåtelse att"
+
+#: cerber-load.php:4818
+msgid "Weekly Report"
+msgstr "Veckorapport"
+
+#: cerber-settings.php:277
+msgid "Use 404 template from the active theme"
+msgstr "Använd 404-mall från det aktiva temat"
+
+#: cerber-settings.php:278
+msgid "Display simple 404 page"
+msgstr "Visa enkel 404-sida"
+
+#: cerber-settings.php:1261
+msgid "Enter a part of query string or query path to exclude a request from inspection by the engine. One item per line."
+msgstr "Ange en del av frågesträngen eller sökvägen för att exkludera en begäran från inspektion av sökmotor. Ett objekt per rad."
+
+#: cerber-settings.php:788
+msgid "Enable reporting"
+msgstr "Aktivera rapportering"
+
+#: cerber-load.php:4748
+msgid "Your last sign-in was %s from %s"
+msgstr "Din senaste inloggning var %s från %s"
+
+#: admin/cerber-dashboard.php:344
+msgid "Optional comment for this entry"
+msgstr "Valfri kommentar för detta inlägg"
+
+#: admin/cerber-dashboard.php:366
+msgid "You cannot add your IP address or network"
+msgstr "Du kan inte lägga till din IP-adress eller ditt nätverk"
+
+#: cerber-settings.php:592 cerber-settings.php:661
+msgid "To specify a REGEX pattern wrap a pattern in two forward slashes."
+msgstr "För specifiera ett REGEX-mönster, omslut ett mönster i två snedstreck."
+
+#: admin/cerber-dashboard.php:62
+msgid "Cerber Traffic Inspector"
+msgstr "Cerber trafikkontroll"
+
+#: admin/cerber-dashboard.php:62 admin/cerber-dashboard.php:2079
+#: admin/cerber-dashboard.php:5201
+msgid "Traffic Inspector"
+msgstr "Trafikinspektion"
+
+#: admin/cerber-dashboard.php:2118 admin/cerber-users.php:1113
+msgid "Traffic"
+msgstr "Trafik"
+
+#: admin/cerber-dashboard.php:4397
+msgid "Request"
+msgstr "Förfrågan"
+
+#: admin/cerber-dashboard.php:4399 admin/cerber-users.php:925
+msgid "Host Info"
+msgstr "Server information"
+
+#: admin/cerber-dashboard.php:4400
+msgid "User Agent"
+msgstr "Användaragent"
+
+#: admin/cerber-dashboard.php:4434
+msgid "Form submissions"
+msgstr "Formulärinlämningar"
+
+#: admin/cerber-dashboard.php:4435
+msgid "Page Not Found"
+msgstr "Sidan hittades inte"
+
+#: admin/cerber-dashboard.php:4442
+msgid "Longer than"
+msgstr "Längre än"
+
+#: admin/cerber-dashboard.php:4461
+msgid "Refresh"
+msgstr "Uppdatera"
+
+#: cerber-common.php:225 admin/cerber-dashboard.php:1374
+msgid "Check for requests"
+msgstr "Kontrollera efter förfrågningar"
+
+#: admin/cerber-dashboard.php:4496
+msgid "Not specified"
+msgstr "Inte specificerad"
+
+#: cerber-settings.php:865
+msgid "Logging mode"
+msgstr "Loggningsläge"
+
+#: cerber-settings.php:868
+msgid "Logging disabled"
+msgstr "Loggning inaktiverad"
+
+#: cerber-settings.php:870
+msgid "Smart"
+msgstr "Smart"
+
+#: cerber-settings.php:871
+msgid "All traffic"
+msgstr "All trafik"
+
+#: cerber-settings.php:911
+msgid "Mask these form fields"
+msgstr "Maskera dessa formulärfält"
+
+#: cerber-settings.php:952
+msgid "milliseconds"
+msgstr "millisekunder"
+
+#: cerber-settings.php:814
+msgid "Enable traffic inspection"
+msgstr "Aktivera trafikinspektion"
+
+#: cerber-settings.php:906
+msgid "Save request fields"
+msgstr "Spara förfrågningsfält"
+
+#: cerber-settings.php:951
+msgid "Page generation time threshold"
+msgstr "Tidsgräns för sidgenerering"
+
+#: admin/cerber-dashboard.php:4422
+msgid "No requests have been logged."
+msgstr "Inga förfrågningar har loggats."
+
+#: admin/cerber-dashboard.php:2078
+msgid "enabled"
+msgstr "aktiverad"
+
+#: admin/cerber-dashboard.php:2083
+msgid "no connection"
+msgstr "Ingen anslutning"
+
+#: admin/cerber-dashboard.php:1898
+msgid "Last seen"
+msgstr "Senast sedd"
+
+#: cerber-load.php:4456
+msgid "We're sorry, you are not allowed to proceed"
+msgstr "Du har inte behörighet att fortsätta"
+
+#: cerber-settings.php:828
+msgid "Request whitelist"
+msgstr "Begär vitlista"
+
+#: cerber-settings.php:832
+msgid "Enter a request URI to exclude the request from inspection. One item per line."
+msgstr "Ange en URI-begäran för att utesluta begäran från inspektion. Ett objekt per rad."
+
+#: cerber-settings.php:919
+msgid "Save request headers"
+msgstr ""
+
+#: cerber-settings.php:941
+msgid "Save $_SERVER"
+msgstr "Spara $_SERVER"
+
+#: cerber-settings.php:931
+msgid "Save request cookies"
+msgstr ""
+
+#: cerber-settings.php:414
+msgid "Protect admin scripts"
+msgstr "Skydda adminskript"
+
+#: cerber-settings.php:415
+msgid "Block unauthorized access to load-scripts.php and load-styles.php"
+msgstr "Blockera obehörig åtkomst till load-scripts.php och load-styles.php"
+
+#: cerber-common.php:3028
+msgid "Unable to create the directory"
+msgstr "Det går inte att skapa katalogen"
+
+#: cerber-common.php:3033
+msgid "Destination folder access denied"
+msgstr "Åtkomst till destinationsmapp nekad"
+
+#: cerber-common.php:3036
+msgid "File not found"
+msgstr "Filen hittades inte"
+
+#: cerber-common.php:3039
+msgid "Unable to copy the file"
+msgstr "Det går inte att kopiera filen"
+
+#: cerber-common.php:3045
+msgid "Unable to delete the file"
+msgstr "Det går inte att ta bort filen."
+
+#: cerber-settings.php:145
+msgid "Load security engine"
+msgstr "Ladda säkerhetsmotor"
+
+#: cerber-settings.php:148
+msgid "Legacy mode"
+msgstr "Bakåtkompatibelt läge"
+
+#: cerber-settings.php:149
+msgid "Standard mode"
+msgstr "Standardläge"
+
+#: admin/cerber-admin-settings.php:646
+msgid "Plugin initialization mode has not been changed"
+msgstr "Tilläggets initialiseringsläge har inte ändrats"
+
+#: cerber-common.php:1549
+msgid "File upload denied"
+msgstr "Filuppladdning nekad"
+
+#: cerber-settings.php:832 cerber-settings.php:894
+msgid "To specify a REGEX pattern, enclose a whole line in two braces."
+msgstr "För att ange ett REGEX-mönster, omslut en hel rad i två klammerparenteser."
+
+#: cerber-settings.php:134
+msgid "Be careful about enabling these options."
+msgstr "Var försiktig med att aktivera dessa alternativ."
+
+#: cerber-settings.php:134
+msgid "If you forget your Custom login URL, you will be unable to log in."
+msgstr "Om du glömmer din anpassade URL för inloggning kommer du inte att kunna logga in."
+
+#: admin/cerber-dashboard.php:73 admin/cerber-dashboard.php:5262
+msgid "Site Integrity"
+msgstr "Webbplatsintegritet"
+
+#: cerber-scanner.php:1717 cerber-settings.php:675 cerber-settings.php:817
+#: cerber-settings.php:847 cerber-settings.php:981 cerber-settings.php:990
+#: cerber-settings.php:1409 admin/cerber-dashboard.php:2103
+#: admin/cerber-dashboard.php:2105 admin/cerber-users.php:20
+#: admin/cerber-users.php:474 admin/cerber-users.php:488
+msgid "Disabled"
+msgstr "Inaktiverad"
+
+#: cerber-scanner.php:1032 admin/cerber-dashboard.php:2104
+msgid "Quick Scan"
+msgstr "Snabb skanning"
+
+#: cerber-scanner.php:1032 admin/cerber-dashboard.php:2106
+msgid "Full Scan"
+msgstr "Fullständig skanning"
+
+#: cerber-common.php:1588
+msgid "Denied"
+msgstr "Nekad"
+
+#: cerber-settings.php:174 cerber-settings.php:602 cerber-settings.php:629
+#: cerber-settings.php:823
+msgid "Use White IP Access List"
+msgstr "Använd vit IP-åtkomstlista"
+
+#: cerber-settings.php:237
+msgid "Disable dashboard redirection"
+msgstr "Inaktivera omdirigering av adminpanel"
+
+#: cerber-settings.php:238
+msgid "Disable automatic redirection to the login page when /wp-admin/ is requested by an unauthorized request"
+msgstr "Inaktivera automatisk omdirigering till inloggningssidan när /wp-admin/ begärs av en obehörig förfrågan"
+
+#: cerber-settings.php:973
+msgid "Scanner settings"
+msgstr "Skanningsinställningar"
+
+#: cerber-settings.php:1013
+msgid "Custom signatures"
+msgstr "Anpassade signaturer"
+
+#: cerber-settings.php:1017
+msgid "Specify custom PHP code signatures. One item per line. To specify a REGEX pattern, enclose a whole line in two braces."
+msgstr "Specifiera anpassade PHP-kodsignaturer. Ett objekt per rad. För att ange ett REGEX-mönster, omslut en hel rad i två klammerparenteser."
+
+#: cerber-settings.php:1004
+msgid "Unwanted file extensions"
+msgstr "Oönskade filtillägg"
+
+#: cerber-settings.php:1010
+msgid "Specify file extensions to search for. Full scan only. Use comma to separate items."
+msgstr "Specifiera filtillägg att söka efter. Endast fullständig skanning. Använd komma för att separera objekt."
+
+#: cerber-settings.php:1020
+msgid "Directories to exclude"
+msgstr "Kataloger att exkludera"
+
+#: cerber-settings.php:1042
+msgid "Delete quarantined files after"
+msgstr "Ta bort filer i karantän efter"
+
+#: cerber-settings.php:1055
+msgid "Launch Quick Scan"
+msgstr "Starta snabbskanning"
+
+#: cerber-scanner.php:1718
+msgid "Every hour"
+msgstr "Varje timme"
+
+#: cerber-scanner.php:1719
+msgid "Every 3 hours"
+msgstr "Var 3:e timme"
+
+#: cerber-scanner.php:1720
+msgid "Every 6 hours"
+msgstr "Var 6:e timme"
+
+#: cerber-settings.php:1060
+msgid "Launch Full Scan"
+msgstr "Starta fullständig skanning"
+
+#: cerber-settings.php:1075 cerber-settings.php:1121
+msgid "Low severity"
+msgstr "Låg allvarlighet"
+
+#: cerber-settings.php:1076 cerber-settings.php:1122
+msgid "Medium severity"
+msgstr "Medel allvarlighet"
+
+#: cerber-settings.php:1077 cerber-settings.php:1123
+msgid "High severity"
+msgstr "Hög allvarlighet"
+
+#: cerber-settings.php:1072
+msgid "Report an issue if any of the following is true"
+msgstr "Rapportera ett problem om något av följande är sant"
+
+#: cerber-settings.php:1081
+msgid "Send email report"
+msgstr "Skicka e-postrapport"
+
+#: cerber-settings.php:1084
+msgid "After every scan"
+msgstr "Efter varje skanning"
+
+#: cerber-settings.php:1085
+msgid "If any changes in scan results occurred"
+msgstr "Om några ändringar i skanningsresultat uppstod"
+
+#: cerber-settings.php:1090
+msgid "Include file sizes"
+msgstr "Inkludera filstorlekar"
+
+#: cerber-settings.php:1094
+msgid "Include scan errors"
+msgstr "Inkludera skanningsfel"
+
+#: admin/cerber-dashboard.php:5264
+msgid "Security Scanner"
+msgstr "Säkerhetsskanning"
+
+#: admin/cerber-dashboard.php:5266
+msgid "Scheduling"
+msgstr "Schemaläggning"
+
+#: admin/cerber-admin.php:173
+msgid "Currently a scheduled scan in progress. Please wait until it is finished."
+msgstr "För närvarande pågår en schemalagd skanning. Vänta tills det är klart."
+
+#: admin/cerber-admin.php:177
+msgid "Previous scan started %s has not been completed. Continue scanning?"
+msgstr "Föregående skanning startad %s har inte slutförts. Fortsätt skanning?"
+
+#: admin/cerber-admin.php:72
+msgid "It seems this website has never been scanned. To start scanning click the button below."
+msgstr "Det verkar som om denna webbplats aldrig har skannats. För att börja skanna, klicka på knappen nedan."
+
+#: admin/cerber-admin.php:186
+msgid "Start Quick Scan"
+msgstr "Starta snabb skanning"
+
+#: admin/cerber-admin.php:187
+msgid "Start Full Scan"
+msgstr "Starta fullständig skanning"
+
+#: admin/cerber-admin.php:188
+msgid "Stop Scanning"
+msgstr "Sluta skanna"
+
+#: admin/cerber-admin.php:189
+msgid "Continue Scanning"
+msgstr "Fortsätter skanning"
+
+#: admin/cerber-admin.php:227
+msgid "Delete"
+msgstr "Ta bort"
+
+#: cerber-scanner.php:1614
+msgid "Verified"
+msgstr "Verifierad"
+
+#: cerber-scanner.php:1621
+msgid "Integrity data not found"
+msgstr "Integritetsdata hittades inte"
+
+#: cerber-scanner.php:1622
+msgid "Unable to check the integrity of the plugin due to a network error"
+msgstr "Kan inte kontrollera tilläggets integritet på grund av ett nätverksfel"
+
+#: cerber-scanner.php:1623
+msgid "Unable to check the integrity of WordPress files due to a network error"
+msgstr "Kan inte kontrollera integriteten för WordPress-filer på grund av ett nätverksfel"
+
+#: cerber-scanner.php:1624
+msgid "Unable to check the integrity of the theme due to a network error"
+msgstr "Kan inte kontrollera integriteten för tema på grund av ett nätverksfel"
+
+#: cerber-scanner.php:1629
+msgid "Unable to process file"
+msgstr "Kan inte bearbeta fil"
+
+#: cerber-scanner.php:1630 cerber-scanner.php:4603
+msgid "Unable to open file"
+msgstr "Kan inte öppna fil"
+
+#: cerber-scanner.php:1632 cerber-scanner.php:1674
+msgid "Checksum mismatch"
+msgstr "Kontrollsumma matchar inte"
+
+#: cerber-scanner.php:1635
+msgid "Suspicious code found"
+msgstr "Misstänkt kod hittad"
+
+#: cerber-scanner.php:1637
+msgid "Unattended suspicious file"
+msgstr "Obevakad misstänkt fil"
+
+#: cerber-scanner.php:1638
+msgid "Executable code found"
+msgstr "Körbar kod hittad"
+
+#: cerber-scanner.php:1643
+msgid "Unwanted file extension"
+msgstr "Oönskade filtillägg"
+
+#: cerber-scanner.php:1645
+msgid "Content has been modified"
+msgstr "Innehållet har blivit ändrat"
+
+#: cerber-scanner.php:1646
+msgid "New file"
+msgstr "Ny fil"
+
+#: cerber-scanner.php:2456
+msgid "Custom signature found"
+msgstr "Anpassad signatur hittad"
+
+#: cerber-scanner.php:3695
+msgid "Parsing the list of files"
+msgstr "Analysera listan över filer"
+
+#: cerber-scanner.php:3696
+msgid "Checking for new and modified files"
+msgstr "Söker efter nya och ändrade filer"
+
+#: cerber-scanner.php:3697
+msgid "Verifying the integrity of WordPress"
+msgstr "Verifierar integriteten av WordPress"
+
+#: cerber-scanner.php:3699
+msgid "Verifying the integrity of the plugins"
+msgstr "Verifierar integriteten av tilläggen"
+
+#: cerber-scanner.php:3701
+msgid "Verifying the integrity of the themes"
+msgstr "Verifierar integriteten av teman"
+
+#: cerber-scanner.php:3703
+msgid "Searching for malicious code"
+msgstr "Söker efter skadlig kod"
+
+#: cerber-scanner.php:3704
+msgid "Finalizing the scan"
+msgstr "Slutför skanningen"
+
+#: admin/cerber-admin.php:108
+msgid "Files to scan"
+msgstr "Filer att skanna"
+
+#: admin/cerber-admin.php:115
+msgid "Critical issues"
+msgstr "Kritiska problem"
+
+#: cerber-scanner.php:4767 admin/cerber-admin.php:115
+msgid "Issues total"
+msgstr "Problem totalt"
+
+#: admin/cerber-admin.php:361
+msgid "File access error. Possibly scan results are outdated. Please run Quick or Full Scan."
+msgstr "Filåtkomstfel. Möjliga skanningsresultat är föråldrade. Kör snabb eller full skanning."
+
+#: cerber-scanner.php:4902
+msgid "To view full report visit"
+msgstr "För att visa fullständigt rapport besök"
+
+#: cerber-load.php:4690
+msgid "Scanner Report"
+msgstr "Skanningsrapport"
+
+#: cerber-settings.php:978
+msgid "Monitor new files"
+msgstr "Övervaka nya filer"
+
+#: cerber-settings.php:987
+msgid "Monitor modified files"
+msgstr "Övervaka ändrade filer"
+
+#: cerber-settings.php:1086
+msgid "If new issues found"
+msgstr "Om nya problem hittas"
+
+#: admin/cerber-admin-settings.php:944
+msgid "The schedule has been updated"
+msgstr "Schemat har uppdaterats"
+
+#: cerber-scanner.php:1641 cerber-scanner.php:1682 cerber-scanner.php:2611
+msgid "Suspicious directives found"
+msgstr "Suspekta direktiv hittades"
+
+#: cerber-scanner.php:2609
+msgid "Suspicious code instruction found"
+msgstr "Misstänkt kodinstruktion hittades"
+
+#: cerber-scanner.php:2610
+msgid "Suspicious code signatures found"
+msgstr "Misstänkta kodsignaturer hittades"
+
+#: cerber-scanner.php:2613
+msgid "To solve this issue you have to reinstall %s or update it to the latest version."
+msgstr "För att lösa problemet måste du installera om %s eller uppdatera den till den senaste versionen."
+
+#: cerber-scanner.php:2614
+msgid "Please upload a reference ZIP archive"
+msgstr "Ladda upp ett referens-ZIP-arkiv"
+
+#: cerber-scanner.php:2615
+msgid "Resolve issue"
+msgstr "Lös problemet"
+
+#: admin/cerber-admin.php:251
+msgid "We have not found any integrity data to verify"
+msgstr "Vi har inte hittat några integritetsdata att verifiera"
+
+#: admin/cerber-admin.php:253
+msgid "You have to upload a ZIP archive from which you've installed it. This enables the security scanner to verify the integrity of the code and detect malware."
+msgstr "Du måste ladda upp ett ZIP-arkiv från där du har installerat det. Detta gör det möjligt för säkerhetsskannern att verifiera kodens integritet och upptäcka skadlig kod."
+
+#: cerber-scanner.php:4739
+msgid "Full Scan Report"
+msgstr "Fullständig skanningsrapport"
+
+#: cerber-scanner.php:4739
+msgid "Quick Scan Report"
+msgstr "Snabbskanningsrapport"
+
+#: cerber-scanner.php:4752
+msgid "Files scanned"
+msgstr "Filerna skannas"
+
+#: admin/cerber-dashboard.php:326 admin/cerber-dashboard.php:1661
+#: admin/cerber-dashboard.php:1718 admin/cerber-dashboard.php:1849
+msgid "Check for activities"
+msgstr "Kontrollera efter aktiviteter"
+
+#: admin/cerber-dashboard.php:1880
+msgid "Activated"
+msgstr "Aktiverad"
+
+#: cerber-common.php:1560
+msgid "Malicious request denied"
+msgstr "Skadlig begäran nekad"
+
+#: cerber-common.php:1568
+msgid "User activated"
+msgstr ""
+
+#: cerber-common.php:1590
+msgid "Suspicious number of fields"
+msgstr "Misstänkt antal fält"
+
+#: cerber-common.php:1591
+msgid "Suspicious number of nested values"
+msgstr ""
+
+#: cerber-common.php:1592 cerber-common.php:1689
+msgid "Malicious code detected"
+msgstr "Skadlig kod upptäckt"
+
+#: cerber-common.php:1690
+msgid "Attempt to upload a file with malicious code"
+msgstr "Försök att ladda upp en fil med skadlig kod"
+
+#: cerber-common.php:1973
+msgid "Bytes"
+msgstr "Bytes"
+
+#: cerber-scanner.php:1620 cerber-scanner.php:1681
+msgid "Vulnerability found"
+msgstr "Sårbarhet hittad"
+
+#: cerber-scanner.php:1625
+msgid "Unable to check the integrity due to a DB error"
+msgstr "Det går inte att kontrollera integriteten på grund av ett DB-fel"
+
+#: cerber-settings.php:1050
+msgid "Automated recurring scan schedule"
+msgstr "Automatiserat återkommande scanningsschema"
+
+#: cerber-settings.php:1067
+msgid "Scan results reporting"
+msgstr "Resultatrapportering av skanning"
+
+#: admin/cerber-dashboard.php:1078
+msgid "Suspicious activity"
+msgstr "Misstänkt aktivitet"
+
+#: admin/cerber-dashboard.php:4431
+msgid "Errors"
+msgstr "Fel"
+
+#. Description of the plugin
+#: 
+msgid "Defends WordPress against hacker attacks, spam, trojans, and viruses. Malware scanner and integrity checker. Hardening WordPress with a set of comprehensive security algorithms. Spam protection with a sophisticated bot detection engine and reCAPTCHA. Tracks user and intruder activity with powerful email, mobile and desktop notifications."
+msgstr ""
+
+#: cerber-load.php:363
+msgid "You have exceeded the number of allowed login attempts. Please try again in %d minutes."
+msgstr "Du har överskridit antalet tillåtna inloggningsförsök. Försök igen om %d minuter."
+
+#: cerber-common.php:1853
+msgctxt "preposition of a period of time like: in 6 hours"
+msgid "in %s"
+msgstr "om %s"
+
+#: admin/cerber-admin-settings.php:549
+msgctxt "preposition of time like: at 11:00"
+msgid "at"
+msgstr "kl."
+
+#: admin/cerber-dashboard.php:5269
+msgid "Quarantine"
+msgstr "Karantän"
+
+#: admin/cerber-admin.php:80
+msgid "Started"
+msgstr "Startade"
+
+#: admin/cerber-admin.php:84
+msgid "Finished"
+msgstr "Slutförda"
+
+#: admin/cerber-admin.php:92
+msgid "Performance"
+msgstr "Prestanda"
+
+#: nexus/cerber-slave-list.php:340
+msgid "Vulnerabilities"
+msgstr "Sårbarheter"
+
+#: cerber-scanner.php:1678
+msgid "New files"
+msgstr "Nya filer"
+
+#: cerber-scanner.php:1677
+msgid "Changed files"
+msgstr "Ändrade filer"
+
+#: cerber-scanner.php:1676
+msgid "Unwanted extensions"
+msgstr "Oönskade utökningar"
+
+#: cerber-scanner.php:1675
+msgid "Unattended files"
+msgstr "Obevakade filer"
+
+#: admin/cerber-admin.php:108 admin/cerber-admin.php:770
+msgid "Scanned"
+msgstr "Skannade"
+
+#: admin/cerber-admin.php:714
+msgid "There are no files in the quarantine at the moment."
+msgstr "Det finns inga filer i karantän för tillfället."
+
+#: admin/cerber-admin.php:752
+msgid "Restore"
+msgstr "Återställ"
+
+#: admin/cerber-admin.php:749
+msgid "Delete permanently"
+msgstr "Ta bort permanent"
+
+#: admin/cerber-admin.php:772
+msgid "Automatic deletion"
+msgstr "Automatisk borttagning"
+
+#: admin/cerber-admin.php:773 admin/cerber-admin.php:928
+#: admin/cerber-admin.php:1393
+msgid "Size"
+msgstr "Storlek"
+
+#: admin/cerber-admin.php:774 admin/cerber-admin.php:929
+msgid "File"
+msgstr "Fil"
+
+#: admin/cerber-admin.php:847
+msgid "The file has been deleted permanently."
+msgstr "Filen har tagits bort permanent."
+
+#: admin/cerber-admin.php:862
+msgid "The file has been restored to its original location."
+msgstr "Filen har återställts till sin ursprungliga plats."
+
+#: admin/cerber-dashboard.php:2119
+msgid "Integrity"
+msgstr "Integritet"
+
+#: cerber-common.php:1548
+msgid "Attempt to upload malicious file denied"
+msgstr "Försök att ladda upp skadlig fil nekad"
+
+#: cerber-load.php:7758
+msgid "Awesome!"
+msgstr "Grymt bra!"
+
+#: cerber-settings.php:1109
+msgid "Automatic cleanup of malware and suspicious files"
+msgstr "Automatisk upprensing av skadlig kod och misstänkta filer"
+
+#: cerber-settings.php:1210
+msgid "Files in the sessions directory"
+msgstr "Filer i sessions-katalogen"
+
+#: cerber-settings.php:1190
+msgid "Files in these directories"
+msgstr "Filer i dessa kataloger"
+
+#: cerber-settings.php:1194
+msgid "Use absolute paths. One item per line."
+msgstr "Använd absoluta sökvägar. Ett objekt per rad."
+
+#: cerber-settings.php:1197
+msgid "Files with these extensions"
+msgstr "Filer med dessa tillägg"
+
+#: cerber-settings.php:1203
+msgid "Use comma to separate items."
+msgstr "Använd komma för att separera objekt."
+
+#: admin/cerber-dashboard.php:5267
+msgid "Cleaning up"
+msgstr "Uppstädning"
+
+#: cerber-scanner.php:1636
+msgid "Malicious code found"
+msgstr "Skadlig kod hittad"
+
+#: cerber-scanner.php:2606
+msgid "This file contains executable code and may contain obfuscated malware. If this file is a part of a theme or a plugin, it must be located in the theme or the plugin folder. No exception, no excuses."
+msgstr "Denna fil innehåller körbar kod och kan innehålla förvrängd skadlig kod. Om denna fil är en del av ett tema eller ett tillägg måste det vara beläget i mappen för temat eller tillägget. Inget undantag, inga ursäkter."
+
+#: cerber-scanner.php:2607
+msgid "The scanner recognizes this file as \"ownerless\" or \"not bundled\" because it does not belong to any known part of the website and should not be here."
+msgstr "Skannern känner igen denna fil som ”ägarlös” eller ”inte bunden” eftersom den inte hör till någon känd del av webbplatsen och borde inte vara här."
+
+#: cerber-scanner.php:2608
+msgid "It may remain after upgrading to a newer version of %s. It also may be a piece of obfuscated malware. In a rare case it might be a part of a custom-made (bespoke) plugin or theme."
+msgstr ""
+
+#: cerber-scanner.php:2612
+msgid "The contents of the file have been changed and do not match what exists in the official WordPress repository or a reference file you have uploaded earlier. The file may have been altered by malware, infected by a virus or has been tampered with."
+msgstr "Innehållet i filen har ändrats och matchar inte det som finns i det officiella WordPress-arkivet eller en referensfil som du har laddat upp tidigare. Filen kan ha förändrats av skadlig kod, infekterad av virus eller har manipulerats."
+
+#: cerber-scanner.php:4826
+msgid "Deleted"
+msgstr "Borttaget"
+
+#: cerber-scanner.php:4886
+msgid "Automatically moved to quarantine"
+msgstr "Automatiskt flyttad till karantän"
+
+#: cerber-common.php:1593
+msgid "Suspicious SQL code detected"
+msgstr "Misstänkt SQL-kod upptäckt"
+
+#: admin/cerber-dashboard.php:2100
+msgctxt "Example: Last malware scan: 23 Jan 2018"
+msgid "Last malware scan"
+msgstr "Senaste skanningen efter skadlig kod"
+
+#: admin/cerber-dashboard.php:5203
+msgid "Live Traffic"
+msgstr "Live-trafik"
+
+#: cerber-settings.php:419
+msgid "Disable PHP in uploads"
+msgstr "Inaktivera PHP i uppladdningar"
+
+#: cerber-settings.php:424
+msgid "Disable PHP error displaying"
+msgstr "Inaktivera visning av PHP-fel"
+
+#: admin/cerber-dashboard.php:5268
+msgid "Ignore List"
+msgstr "Ignoreringslista"
+
+#: admin/cerber-admin.php:230
+msgid "Ignore"
+msgstr "Ignorera"
+
+#. For translators
+#: admin/cerber-admin.php:886
+msgid "Apply"
+msgstr "Tillämpa"
+
+#: admin/cerber-admin.php:926
+msgid "Added"
+msgstr "Tillagd"
+
+#: admin/cerber-admin.php:887 admin/cerber-admin.php:914
+msgid "Remove from the list"
+msgstr "Ta bort från listan"
+
+#: admin/cerber-admin.php:888
+msgid "User Insights"
+msgstr "Användarinsikt"
+
+#: admin/cerber-admin.php:889
+msgid "Traffic Insights"
+msgstr "Trafikinsikt"
+
+#: admin/cerber-admin.php:890
+msgid "Activity Insights"
+msgstr "Aktivitetsinsikt"
+
+#: admin/cerber-dashboard.php:3200
+msgid "Are you sure you want to delete selected files?"
+msgstr "Är du säker på att du vill ta bort valda filer?"
+
+#: admin/cerber-dashboard.php:3201
+msgid "These files have been moved to the quarantine"
+msgstr "Dessa filer har flyttats till karantänen"
+
+#: admin/cerber-dashboard.php:3204
+msgid "Do you want to add selected files to the ignore list?"
+msgstr "Vill du lägga till valda filer på ignoreringslistan?"
+
+#: admin/cerber-dashboard.php:3205
+msgid "These files have been added to the ignore list"
+msgstr "Dessa filer har lagts till i ignoreringslistan"
+
+#: admin/cerber-dashboard.php:3207
+msgid "Some errors occurred"
+msgstr "Några fel uppstod"
+
+#: admin/cerber-dashboard.php:3208
+msgid "All files have been processed"
+msgstr "Alla filer har bearbetats"
+
+#: admin/cerber-dashboard.php:5613
+msgid "Know more about all advantages at"
+msgstr "Läs mer om alla fördelar på"
+
+#: cerber-common.php:1594
+msgid "Suspicious JavaScript code detected"
+msgstr "Misstänkt JavaScript-kod upptäckt"
+
+#: admin/cerber-admin-settings.php:947
+msgid "Unable to update the schedule"
+msgstr "Kan inte uppdatera schemat"
+
+#: admin/cerber-admin.php:785
+msgid "All scans"
+msgstr "Alla skanningar"
+
+#: admin/cerber-admin.php:892
+msgid "The list is empty."
+msgstr "Listan är tom."
+
+#: admin/cerber-admin.php:731
+msgid "No files match the specified filter."
+msgstr "Inga filer matchar det specifierade filtret"
+
+#: admin/cerber-admin.php:731
+msgid "Click here to see the full list of files"
+msgstr "Klicka här för att se hela listan med filer"
+
+#: admin/cerber-dashboard.php:946
+msgid "Additional Details"
+msgstr "Ytterligare detaljer"
+
+#: admin/cerber-dashboard.php:3915
+msgid "Page generation time"
+msgstr "Tid för generering av sidan"
+
+#: admin/cerber-dashboard.php:5648
+msgid "Log In"
+msgstr "Logga in"
+
+#: admin/cerber-dashboard.php:5649
+msgid "Log Out"
+msgstr "Logga ut"
+
+#: admin/cerber-dashboard.php:5650
+msgid "Register"
+msgstr "Registrera"
+
+#: admin/cerber-dashboard.php:5653
+msgid "WooCommerce Log In"
+msgstr "WooCommerce-inloggning"
+
+#: admin/cerber-dashboard.php:5654
+msgid "WooCommerce Log Out"
+msgstr "WooCommerce-utloggning"
+
+#: cerber-common.php:1582
+msgid "IP address is locked out"
+msgstr "IP-adress är utelåst"
+
+#: cerber-common.php:1693
+msgid "Multiple suspicious requests"
+msgstr "Flera misstänkta förfrågningar"
+
+#: cerber-settings.php:809
+msgid "Traffic Inspection"
+msgstr "Trafikinspektion"
+
+#: cerber-settings.php:818 cerber-settings.php:848
+msgid "Maximum compatibility"
+msgstr "Maximal kompatibilitet"
+
+#: cerber-settings.php:819 cerber-settings.php:849
+msgid "Maximum security"
+msgstr "Maximal säkerhet"
+
+#: cerber-settings.php:839
+msgid "Erroneous Request Shielding"
+msgstr ""
+
+#: cerber-settings.php:844
+msgid "Enable error shielding"
+msgstr ""
+
+#: cerber-settings.php:946
+msgid "Save software errors"
+msgstr "Spara programfel"
+
+#: cerber-scanner.php:3690
+msgid "Preparing for the scan"
+msgstr "Förbereder för skanningen"
+
+#: cerber-common.php:1595
+msgid "Blocked by administrator"
+msgstr "Blockerad av administratör"
+
+#: cerber-load.php:367
+msgid "You are not allowed to log in"
+msgstr "Du saknar behörighet att logga in"
+
+#: admin/cerber-users.php:39
+msgid "Block User"
+msgstr "Blockera användare"
+
+#: admin/cerber-users.php:43 admin/cerber-users.php:49
+msgid "User is not permitted to log into the website"
+msgstr "Användare har inte tillåtelse att logga in på webbplatsen"
+
+#: cerber-settings.php:636 admin/cerber-users.php:68
+msgid "User Message"
+msgstr "Användarmeddelande"
+
+#: admin/cerber-users.php:70
+msgid "An optional message for this user"
+msgstr "Ett valfritt meddelande för denna användare"
+
+#: admin/cerber-users.php:181
+msgid "Blocked Users"
+msgstr "Blockerade användare"
+
+#: cerber-settings.php:400
+msgid "Block access to user pages like /?author=n"
+msgstr "Blockera åtkomst till användarsidor som /?Author=n"
+
+#: cerber-settings.php:441
+msgid "Access to WordPress REST API"
+msgstr "Åtkomst till WordPress REST API"
+
+#: cerber-settings.php:452
+msgid "Block access to WordPress REST API except any of the following"
+msgstr "Blockera åtkomst till WordPress REST API utom något av följande"
+
+#: cerber-settings.php:462
+msgid "Allow REST API for these roles"
+msgstr "Tillåt REST API för dessa roller"
+
+#: cerber-settings.php:467
+msgid "Allow these namespaces"
+msgstr "Tillåt dessa namnrymder"
+
+#: cerber-settings.php:137
+msgid "These restrictions do not apply to IP addresses in the White IP Access List"
+msgstr "Dessa begränsningar tillämpas inte på IP-adresser i den vita IP-åtkomstlistan"
+
+#: admin/cerber-admin-settings.php:509
+msgid "Select one or more roles"
+msgstr "Välj en eller flera roller"
+
+#: admin/cerber-dashboard.php:1385 admin/cerber-users.php:968
+msgid "Filter by registered user"
+msgstr "Filtrera efter registrerad användare"
+
+#: cerber-settings.php:623
+msgid "Authorized users only"
+msgstr "Endast auktoriserade användare"
+
+#: cerber-settings.php:624
+msgid "Only registered and logged in website users have access to the website"
+msgstr "Endast registrerade och inloggade användare har åtkomst till webbplatsen"
+
+#: cerber-settings.php:640 cerber-settings.php:1682
+msgid "Only registered and logged in users are allowed to view this website"
+msgstr "Endast registrerade och inloggade användare har tillåtelse visa denna webbplats"
+
+#: cerber-settings.php:645
+msgid "Redirect to URL"
+msgstr "Omdirigera till URL"
+
+#: admin/cerber-dashboard.php:5322
+msgid "Changelog"
+msgstr "Ändringslogg"
+
+#: admin/cerber-dashboard.php:738
+msgid "Default settings have been loaded"
+msgstr "Standardinställningarna har laddats"
+
+#: admin/cerber-dashboard.php:3624
+msgid "Save all rules"
+msgstr "Spara alla regler"
+
+#: cerber-common.php:1571
+msgid "Invalid master credentials"
+msgstr "Ogiltiga master-uppgifter"
+
+#: cerber-settings.php:1354
+msgid "Master settings"
+msgstr "Master-inställningar"
+
+#: cerber-settings.php:1362
+msgid "Return to the website list"
+msgstr "Tillbaka till webbplatslistan"
+
+#: cerber-settings.php:1366
+msgid "Show \"Switched to\" notification"
+msgstr "Visa ”Bytt till”-notis"
+
+#: cerber-settings.php:1370
+msgid "Add @ site to the page title"
+msgstr ""
+
+#: cerber-settings.php:1037 cerber-settings.php:1387 cerber-settings.php:1415
+msgid "Enable diagnostic logging"
+msgstr "Aktivera diagnostisk loggning"
+
+#: cerber-settings.php:1398
+msgid "Limit access by IP address"
+msgstr "Begränsa åtkomst med IP-adress"
+
+#: cerber-settings.php:1404
+msgid "Access to this website"
+msgstr "Åtkomst till denna webbplats"
+
+#: cerber-settings.php:1407
+msgid "Full access mode"
+msgstr "Fullt åtkomstläge"
+
+#: cerber-settings.php:1408
+msgid "Read-only mode"
+msgstr "Endast läsläge"
+
+#: cerber-settings.php:1429
+msgid "The full access mode requires the PRO version of WP Cerber"
+msgstr "Fullt åtkomstläge kräver PRO-versionen av WP Cerber"
+
+#: nexus/cerber-slave-list.php:47
+msgid "WordPress"
+msgstr "WordPress"
+
+#: nexus/cerber-slave-list.php:51
+msgid "Malware Scan"
+msgstr "Skanna efter skadlig kod"
+
+#: nexus/cerber-nexus-master.php:141 nexus/cerber-slave-list.php:56
+msgid "Notes"
+msgstr "Noteringar"
+
+#: nexus/cerber-slave-list.php:161
+msgid "Add a slave website"
+msgstr "Lägg till en slav-webbplats"
+
+#: nexus/cerber-slave-list.php:247 admin/cerber-users.php:1034
+msgid "Search results for:"
+msgstr "Sökresultat för:"
+
+#: nexus/cerber-slave-list.php:282
+msgid "Edit"
+msgstr "Redigera"
+
+#: nexus/cerber-slave-list.php:288
+msgid "Switch to"
+msgstr "Byt till"
+
+#: nexus/cerber-slave-list.php:420
+msgid "No websites configured."
+msgstr "Inga webbplatser konfigurerade."
+
+#: nexus/cerber-slave-list.php:420
+msgid "Add a new one"
+msgstr "Lägg till en ny"
+
+#: nexus/cerber-nexus-master.php:104
+msgid "Website Properties"
+msgstr "Webbplatsegenskaper"
+
+#: nexus/cerber-nexus-master.php:114
+msgid "Website URL"
+msgstr "URL till webbplats"
+
+#: nexus/cerber-nexus-master.php:119
+msgid "Display as"
+msgstr "Visa som"
+
+#: nexus/cerber-nexus-master.php:149
+msgid "Website Owner"
+msgstr "Webbplatsägare"
+
+#: nexus/cerber-nexus-master.php:165
+msgid "Phone"
+msgstr "Telefon"
+
+#: nexus/cerber-nexus-master.php:173
+msgid "Address"
+msgstr "Adress"
+
+#: nexus/cerber-nexus-master.php:316
+msgid "The website you are trying to add is already in the list"
+msgstr "Den webbplats du försöker lägga till finns redan i listan"
+
+#: nexus/cerber-nexus-master.php:325
+msgid "The website has been added successfully"
+msgstr "Webbplatsen har lagts till utan problem"
+
+#: nexus/cerber-nexus-master.php:326
+msgid "Click to edit"
+msgstr "Klicka för att redigera"
+
+#: nexus/cerber-nexus-master.php:327
+msgid "Switch to the Dashboard"
+msgstr "Byt till adminpanelen"
+
+#: nexus/cerber-nexus-master.php:330
+msgid "Keep in mind: You have added the website that does not support SSL encryption. This may lead to data leakage."
+msgstr "Tänk på: Du har lagt till webbplatsen som inte stöder SSL-kryptering. Detta kan leda till dataläckage."
+
+#: nexus/cerber-nexus-master.php:449
+msgid "Website has been deleted"
+msgid_plural "%s websites have been deleted"
+msgstr[0] "Webbplats har tagits bort"
+msgstr[1] "%s  webbplatser har tagits bort"
+
+#: nexus/cerber-nexus-master.php:1042
+msgid "You have switched to %s"
+msgstr "Du har bytt till %s"
+
+#: nexus/cerber-nexus-master.php:1052
+msgid "You have switched back to the master website"
+msgstr "Du har bytt tillbaka till master-webbplatsen"
+
+#: nexus/cerber-nexus-master.php:1268
+msgid "You are here:"
+msgstr "Du är här:"
+
+#: nexus/cerber-nexus-master.php:1271 nexus/cerber-nexus.php:94
+#: nexus/cerber-nexus.php:104
+msgid "My Websites"
+msgstr "Mina webbplatser"
+
+#: nexus/cerber-nexus.php:66
+msgid "Enable slave mode"
+msgstr "Aktivera slavläge"
+
+#: nexus/cerber-nexus.php:67
+msgid "This website can be managed from a master website"
+msgstr "Denna webbplats kan hanteras från en master-webbplats"
+
+#: nexus/cerber-nexus.php:70
+msgid "Enable master mode"
+msgstr "Aktivera master-läge"
+
+#: nexus/cerber-nexus.php:71
+msgid "Configure this website as a master to manage other website"
+msgstr "Konfigurera denna webbplats som en master för att hantera annan webbplats"
+
+#: nexus/cerber-nexus.php:76
+msgid "To proceed, please select the mode for this website"
+msgstr "För att fortsätta, välj läge för den här webbplatsen"
+
+#: nexus/cerber-nexus.php:100 nexus/cerber-nexus.php:104
+msgid "Slave Settings"
+msgstr "Slavinställningar"
+
+#: nexus/cerber-nexus.php:146
+msgid "Secret Access Token"
+msgstr "Hemlig åtkomsttoken"
+
+#: nexus/cerber-nexus.php:148
+msgid "The token is unique to this website. Keep it secret. Install the token on a master website to grant access to this website."
+msgstr "Token är unik för denna webbplats. Håll den hemligt. Installera token på en master-webbplats för att ge åtkomst till denna webbplats."
+
+#: nexus/cerber-nexus.php:150
+msgid "Are you sure? This permanently invalidates the token."
+msgstr "Är du säker? Detta innebär att man permanent ogiltiggör token."
+
+#: nexus/cerber-nexus.php:151
+msgid "Disable slave mode"
+msgstr "Inaktivera slavläge"
+
+#: nexus/cerber-nexus.php:266
+msgid "This website is set as master."
+msgstr "Denna webbplats är inställd som master."
+
+#: nexus/cerber-nexus.php:267
+msgid "Add slave websites by using access tokens."
+msgstr "Lägg till slav-webbplatser genom att använda åtkomsttoken."
+
+#: nexus/cerber-nexus.php:270
+msgid "This website is set as slave."
+msgstr "Denna webbplats är inställd som slav."
+
+#: nexus/cerber-nexus.php:271
+msgid "Install the access token on the master website."
+msgstr "Installera åtkomsttoken på master-webbplatsen."
+
+#. translators: Time difference between two dates, in seconds (sec=second). 1: Number of seconds
+#: cerber-common.php:1846
+msgid "%s sec"
+msgid_plural "%s secs"
+msgstr[0] "%s sekund"
+msgstr[1] "%s sekunder"
+
+#: cerber-settings.php:792
+msgid "Send reports on"
+msgstr "Skicka rapporter på"
+
+#: nexus/cerber-slave-list.php:50
+msgid "Updates"
+msgstr "Uppdateringar"
+
+#: nexus/cerber-nexus-master.php:127 nexus/cerber-slave-list.php:54
+msgid "Group"
+msgstr "Grupp"
+
+#: nexus/cerber-slave-list.php:117
+msgid "Upgrade WP Cerber"
+msgstr "Uppgradera WP Cerber"
+
+#: nexus/cerber-slave-list.php:118
+msgid "Upgrade all active plugins"
+msgstr "Uppgradera alla aktiva tillägg"
+
+#: nexus/cerber-slave-list.php:119
+msgid "Delete website"
+msgstr "Ta bort webbplats"
+
+#: nexus/cerber-slave-list.php:135
+msgid "All groups"
+msgstr "Alla grupper"
+
+#: nexus/cerber-nexus-master.php:1352
+msgid "Are you sure you want to delete selected websites?"
+msgstr "Är du säker på att du vill ta bort valda webbplatser?"
+
+#: admin/cerber-users.php:221
+msgid "Block"
+msgstr "Blockera"
+
+#: nexus/cerber-nexus-master.php:96
+msgid "Select an existing group or enter a new one to add it"
+msgstr "Välj en befintlig grupp eller ange en ny för att lägga till den"
+
+#: nexus/cerber-nexus-master.php:169
+msgid "Company"
+msgstr "Företag"
+
+#: nexus/cerber-nexus-master.php:694
+msgid "Invalid response from the slave website"
+msgstr "Ogiltigt svar från slav-webbplatsen"
+
+#: cerber-common.php:1541 cerber-common.php:1683
+msgid "Attempt to log in with non-existing username"
+msgstr "Försök att logga in med icke-existerande användarnamn"
+
+#: cerber-load.php:4844
+msgid "Attempts to log in with non-existing usernames"
+msgstr "Försök att logga in med icke-existerande användarnamn"
+
+#: cerber-settings.php:1374
+msgid "Use master language"
+msgstr "Använd master-språk"
+
+#: cerber-settings.php:242
+msgid "Non-existing users"
+msgstr "Icke-existerande användare"
+
+#: cerber-settings.php:243
+msgid "Immediately block IP when attempting to log in with a non-existing username"
+msgstr "Blockera omedelbart IP vid försök att logga in med ett icke-existerande användarnamn"
+
+#: nexus/cerber-slave-list.php:55
+msgid "Owner"
+msgstr "Ägare"
+
+#: nexus/cerber-slave-list.php:420
+msgid "Disable master mode"
+msgstr "Inaktivera master-läge"
+
+#: nexus/cerber-nexus.php:151
+msgid "To revoke the token and disable remote management, click here:"
+msgstr "För att återkalla token och inaktivera fjärrhantering, klicka här:"
+
+#: cerber-settings.php:420
+msgid "Block execution of PHP scripts in the WordPress media folder"
+msgstr "Blockera exekvering av PHP-skript i WordPress media-mapp"
+
+#: nexus/cerber-nexus-master.php:1418 nexus/cerber-nexus-master.php:1426
+msgid "Active plugins and updates on"
+msgstr "Aktiva tillägg och uppdateringar på"
+
+#: nexus/cerber-nexus-master.php:1396
+msgid "A newer version is available"
+msgstr "En nyare version är tillgänglig"
+
+#: admin/cerber-dashboard.php:1072
+msgid "New users"
+msgstr "Nya användare"
+
+#: admin/cerber-dashboard.php:1091
+msgid "My activity"
+msgstr "Min aktivitet"
+
+#: admin/cerber-dashboard.php:2939
+msgid "Create Alert"
+msgstr "Skapa varning"
+
+#: admin/cerber-dashboard.php:2943
+msgid "Delete Alert"
+msgstr "Ta bort varning"
+
+#: admin/cerber-dashboard.php:2976
+msgid "The alert has been created"
+msgstr "Varningen har skapats"
+
+#: admin/cerber-dashboard.php:2980
+msgid "The alert has been deleted"
+msgstr "Varningen har tagits bort"
+
+#: admin/cerber-dashboard.php:4448
+msgid "Advanced Search"
+msgstr "Avancerad sökning"
+
+#. Author of the plugin
+#: 
+msgid "Cerber Tech Inc."
+msgstr "Cerber Tech Inc."
+
+#: cerber-load.php:5434
+msgid "To delete the alert, click here"
+msgstr "För att ta bort varningen, klicka här"
+
+#: cerber-settings.php:221
+msgid "Custom login URL may contain Latin alphanumeric characters, dashes and underscores only"
+msgstr "Anpassad URL för inloggning kan endast innehålla latinska alfanumeriska tecken, bindestreck och understreck"
+
+#: cerber-settings.php:259
+msgid "Site-specific settings"
+msgstr "Webbplatsspecifika inställningar"
+
+#: cerber-settings.php:267
+msgid "Prefix for plugin cookies"
+msgstr ""
+
+#: cerber-settings.php:268
+msgid "Prefix may contain only Latin alphanumeric characters and underscores"
+msgstr "Prefix får bara innehålla latinska alfanumeriska tecken och understreck"
+
+#: cerber-settings.php:746
+msgid "Lockout notifications"
+msgstr "Aviseringar för utlåsning"
+
+#: cerber-settings.php:774
+msgid "Pushbullet access token"
+msgstr "Pushbullet åtkomst-token"
+
+#: cerber-settings.php:777
+msgid "Pushbullet device"
+msgstr "Pushbullet-enhet"
+
+#: cerber-settings.php:1114
+msgid "Delete unattended files"
+msgstr ""
+
+#: cerber-settings.php:1173
+msgid "Automatic recovery of modified and infected files"
+msgstr "Automatisk återskapning av modifierade och infekterade filer"
+
+#: cerber-settings.php:1176
+msgid "Recover WordPress files"
+msgstr "Återskapa WordPress-filer"
+
+#: cerber-scanner.php:1649
+msgid "File deleted"
+msgstr "Fil borttagen"
+
+#: cerber-scanner.php:1650
+msgid "File recovered"
+msgstr "Fil återskapad"
+
+#: cerber-scanner.php:3698
+msgid "Recovering WordPress files"
+msgstr "Återskapar WordPress-filer"
+
+#: cerber-scanner.php:3700
+msgid "Recovering plugins files"
+msgstr "Återskapar tilläggs-filer"
+
+#: cerber-scanner.php:4830
+msgid "Recovered"
+msgstr "Återskapad"
+
+#: cerber-scanner.php:4887
+msgid "Automatically deleted"
+msgstr "Automatiskt borttagen"
+
+#: cerber-scanner.php:4890
+msgid "Automatically recovered"
+msgstr "Automatiskt återskapad"
+
+#: admin/cerber-dashboard.php:70
+msgid "Cerber User Security"
+msgstr "Cerber användarsäkerhet"
+
+#: admin/cerber-dashboard.php:70 admin/cerber-dashboard.php:5227
+msgid "User Policies"
+msgstr "Användarpolicyer"
+
+#: admin/cerber-dashboard.php:2122
+msgid "A new version is available"
+msgstr "En ny version är tillgänglig"
+
+#: admin/cerber-dashboard.php:5230
+msgid "Global"
+msgstr "Global"
+
+#: cerber-common.php:1596
+msgid "Site policy enforcement"
+msgstr ""
+
+#: cerber-common.php:1597
+msgid "2FA code verified"
+msgstr "2FA-kod verifierad"
+
+#: cerber-common.php:1598
+msgid "Initiated by the user"
+msgstr "Initierad av användaren"
+
+#: cerber-common.php:2079
+msgid "A new version of %s is available. Please install it."
+msgstr "En ny version av %s är tillgänglig. Vänligen installera den."
+
+#: cerber-load.php:1826
+msgid "Email address is not permitted."
+msgstr "E-postadress är inte tillåten."
+
+#: cerber-load.php:1826
+msgid "Please choose another one."
+msgstr "Välj en annan."
+
+#: admin/cerber-users.php:10 admin/cerber-users.php:481
+msgid "Two-Factor Authentication"
+msgstr "Tvåfaktorautentisering"
+
+#: admin/cerber-users.php:18
+msgid "Determined by user role policies"
+msgstr ""
+
+#: admin/cerber-users.php:19 admin/cerber-users.php:489
+msgid "Always enabled"
+msgstr "Alltid aktiverad"
+
+#: admin/cerber-users.php:86
+msgid "2FA PIN Code"
+msgstr "2FA PIN-kod"
+
+#: admin/cerber-users.php:296
+msgid "Save All Changes"
+msgstr "Spara alla ändringar"
+
+#: admin/cerber-users.php:409
+msgid "Block access to WordPress Dashboard"
+msgstr "Blockera åtkomst till WordPress-adminpanel"
+
+#: admin/cerber-users.php:414
+msgid "Hide Toolbar when viewing site"
+msgstr "Dölj verktygsfält när du tittar på webbplats"
+
+#: admin/cerber-users.php:420
+msgid "Redirection rules"
+msgstr "Omdirigeringsregler"
+
+#: admin/cerber-users.php:424
+msgid "Redirect user after login"
+msgstr "Omdirigera användare efter inloggning"
+
+#: admin/cerber-users.php:429
+msgid "Redirect user after logout"
+msgstr "Omdirigera användare efter utloggning"
+
+#: cerber-settings.php:679 admin/cerber-users.php:440
+msgid "User session expiration time"
+msgstr "Användarsessionens utlöpningstid"
+
+#: admin/cerber-users.php:485
+msgid "Two-factor authentication"
+msgstr "Tvåfaktorsautentisering"
+
+#: admin/cerber-users.php:490
+msgid "Advanced mode"
+msgstr "Avancerat läge"
+
+#: admin/cerber-users.php:494
+msgid "Enforce two-factor authentication if any of the following conditions is true"
+msgstr "Tvinga tvåfaktorsautentisering om något av följande villkor är sant"
+
+#: admin/cerber-users.php:500
+msgid "Login from a different country"
+msgstr "Inloggning från ett annat land"
+
+#: admin/cerber-users.php:506
+msgid "Login from a different network Class C"
+msgstr "Inloggning från från ett annat nätverk klass C"
+
+#: admin/cerber-users.php:512
+msgid "Login from a different IP address"
+msgstr "Inloggning från en annan IP-adress"
+
+#: admin/cerber-users.php:530
+msgid "Enforce two-factor authentication with fixed intervals"
+msgstr "Tvinga tvåfaktorsautentisering med fasta intervaller"
+
+#: admin/cerber-users.php:536
+msgid "Regular time intervals (days)"
+msgstr "Vanliga tidsintervaller (dagar)"
+
+#: admin/cerber-users.php:543
+msgid "Fixed number of logins"
+msgstr "Fast antal inloggningar"
+
+#: admin/cerber-users.php:545
+msgid "number of logins"
+msgstr "antal inloggningar"
+
+#: admin/cerber-users.php:589
+msgid "Policies have been updated"
+msgstr "Policies har uppdaterats"
+
+#: cerber-settings.php:582
+msgid "Restrict email addresses"
+msgstr "Begränsa e-postadresser"
+
+#: cerber-settings.php:585
+msgid "No restrictions"
+msgstr "Inga begränsningar"
+
+#: cerber-settings.php:586
+msgid "Deny all email addresses that match the following"
+msgstr "Neka alla e-postadresser som matchar följande"
+
+#: cerber-settings.php:587
+msgid "Permit only email addresses that match the following"
+msgstr "Tillåt endast e-postadresser som matchar följande"
+
+#: cerber-settings.php:592
+msgid "Specify email addresses, wildcards or REGEX patterns. Use comma to separate items."
+msgstr "Ange e-postadresser, jokertecken eller REGEX-mönster. Använd komma för att separera objekt."
+
+#: cerber-settings.php:1187
+msgid "These files will never be deleted during automatic cleanup."
+msgstr "Dessa filer kommer aldrig att tas bort under automatisk upprensning."
+
+#: cerber-2fa.php:365
+msgid "This verification PIN code is expired. We have just sent a new one to your email."
+msgstr "Denna PIN-kod för verifiering har löpt ut. Vi skickade just en ny till din e-post."
+
+#: cerber-2fa.php:368
+msgid "You have entered an incorrect verification PIN code"
+msgstr "Du har angett en felaktig PIN-kod för verifiering"
+
+#: cerber-2fa.php:415 cerber-2fa.php:503
+msgid "Please verify that it’s you"
+msgstr "Vänligen verifiera att det är du"
+
+#: cerber-2fa.php:525
+msgid "Here are the details of the sign-in attempt"
+msgstr "Här är detaljerna för inloggningsförsöket"
+
+#: cerber-2fa.php:579
+msgid "expires"
+msgstr "löper ut"
+
+#: cerber-2fa.php:655
+msgid "only digits are allowed"
+msgstr "endast siffror är tillåtna"
+
+#: cerber-2fa.php:658
+msgid "We've sent a verification PIN code to your email"
+msgstr "Vi skickade en PIN-kod för verifiering till din e-post"
+
+#: cerber-2fa.php:659
+msgid "Enter the code from the email in the field below."
+msgstr "Ange koden från e-posten i fältet nedan."
+
+#: cerber-2fa.php:661
+msgid "Try again"
+msgstr "Försök igen"
+
+#: cerber-2fa.php:662
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: cerber-2fa.php:663
+msgid "or"
+msgstr "eller"
+
+#: cerber-2fa.php:669
+msgid "Verify it's you"
+msgstr "Verifiera att det är du"
+
+#: cerber-2fa.php:674
+msgid "Verify"
+msgstr "Verifiera"
+
+#: admin/cerber-users.php:101
+msgid "Two-Factor Authentication Email"
+msgstr "E-post för tvåfaktorsautentisering"
+
+#: admin/cerber-dashboard.php:3567
+msgid "Role-based rules are configured"
+msgstr "Rollbaserade regler är konfigurerade"
+
+#: admin/cerber-users.php:58
+msgctxt "e.g. blocked by John at 11:00"
+msgid "blocked by %s at %s"
+msgstr "blockerad av %s kl. %s"
+
+#: cerber-2fa.php:508
+msgid "The code is valid for %s minutes."
+msgstr "Koden är giltig i %s minuter."
+
+#: admin/cerber-dashboard.php:373
+msgid "IP address %s has been added to White IP Access List"
+msgstr "IP-adress %s har lagts till i vit IP-åtkomstlista"
+
+#: admin/cerber-dashboard.php:370
+msgid "IP address %s has been added to Black IP Access List"
+msgstr "IP-adress %s har lagts till i svart IP-åtkomstlista"
+
+#: admin/cerber-dashboard.php:212 admin/cerber-dashboard.php:943
+#: admin/cerber-dashboard.php:1326 admin/cerber-dashboard.php:4398
+#: admin/cerber-users.php:924
+msgid "IP Address"
+msgstr "IP-adress"
+
+#: admin/cerber-dashboard.php:950 admin/cerber-dashboard.php:1332
+msgid "Username"
+msgstr "Användarnamn"
+
+#: admin/cerber-dashboard.php:3649
+msgid "Any country is permitted"
+msgstr "Vilket land som helst är tillåtet"
+
+#: admin/cerber-dashboard.php:3272 admin/cerber-dashboard.php:5132
+msgid "Sessions"
+msgstr "Sessioner"
+
+#: cerber-load.php:1583
+msgid "Session has been terminated"
+msgid_plural "%s sessions have been terminated"
+msgstr[0] "Sessionen har avslutats"
+msgstr[1] "%s sessioner har avslutats"
+
+#: admin/cerber-users.php:922
+msgid "Created"
+msgstr "Skapad"
+
+#: admin/cerber-users.php:943
+msgid "Terminate session"
+msgstr "Avsluta sessionen"
+
+#: admin/cerber-users.php:944
+msgid "Block user"
+msgstr "Blockera användare"
+
+#: admin/cerber-users.php:1076
+msgid "Profile"
+msgstr "Profil"
+
+#: admin/cerber-users.php:1089
+msgid "All Logins"
+msgstr "Alla inloggningar"
+
+#: admin/cerber-users.php:1090
+msgid "User Activity"
+msgstr "Användaraktivitet"
+
+#: admin/cerber-users.php:1136
+msgid "Terminate"
+msgstr "Avsluta"
+
+#: admin/cerber-dashboard.php:2072
+msgid "user"
+msgid_plural "users"
+msgstr[0] "användare"
+msgstr[1] "användare"
+
+#: cerber-settings.php:447
+msgid "Block access to users' data via REST API"
+msgstr "Blockera åtkomst till användarnas data via REST API"
+
+#: cerber-scanner.php:1648
+msgid "Unable to delete"
+msgstr "Kan inte ta bort"
+
+#: admin/cerber-dashboard.php:66
+msgid "Cerber Data Shield Policies"
+msgstr ""
+
+#: admin/cerber-dashboard.php:66
+msgid "Data Shield"
+msgstr ""
+
+#: admin/cerber-dashboard.php:5217
+msgid "Data Shield Policies"
+msgstr ""
+
+#: admin/cerber-dashboard.php:5219
+msgid "Accounts & Roles"
+msgstr "Konton och roller"
+
+#: admin/cerber-dashboard.php:5220
+msgid "Site Settings"
+msgstr "Webbplatsinställningar"
+
+#: cerber-common.php:1554
+msgid "User creation denied"
+msgstr "Användarskapande nekad"
+
+#: cerber-common.php:1556
+msgid "Role update denied"
+msgstr "Rolluppdatering nekad"
+
+#: cerber-common.php:1557
+msgid "Setting update denied"
+msgstr "Inställningsuppdatering nekad"
+
+#: cerber-common.php:1603
+msgid "Permission denied"
+msgstr "Behörighet nekad"
+
+#: cerber-common.php:1605
+msgid "Invalid user"
+msgstr "Ogiltig användare"
+
+#: cerber-common.php:1606
+msgid "Incorrect password"
+msgstr "Felaktigt lösenord"
+
+#: cerber-settings.php:479
+msgid "Protect user accounts"
+msgstr "Skydda användarkonton"
+
+#: cerber-settings.php:484
+msgid "Restrict user account creation and user management with the following policies"
+msgstr "Begränsa skapandet av användarkonton och användarhantering med följande policyer"
+
+#: cerber-settings.php:490
+msgid "User registrations are limited to these roles"
+msgstr "Användarregistreringar är begränsade till dessa roller"
+
+#: cerber-settings.php:496
+msgid "Users with these roles are permitted to create new accounts"
+msgstr "Användare med dessa roller tillåts att skapa nya konton"
+
+#: cerber-settings.php:501
+msgid "Users with these roles are permitted to change sensitive user data"
+msgstr "Användare med dessa roller tillåts att ändra känslig användardata"
+
+#: cerber-settings.php:506 cerber-settings.php:534 cerber-settings.php:563
+msgid "Do not apply these policies to the IP addresses in the White IP Access List"
+msgstr "Tillämpa inte dessa policyer på IP-adresserna i den vita IP-åtkomstlistan"
+
+#: cerber-settings.php:514
+msgid "Protect user roles"
+msgstr "Skydda användarroller"
+
+#: cerber-settings.php:518
+msgid "Restrict roles and capabilities management with the following policies"
+msgstr "Begränsa roller och behörighetshantering med följande policyer"
+
+#: cerber-settings.php:524
+msgid "Users with these roles are permitted to add new roles"
+msgstr "Användare med dessa roller tillåts att lägga till nya roller"
+
+#: cerber-settings.php:529
+msgid "Users with these roles are permitted to change role capabilities"
+msgstr "Användare med dessa roller tillåts att ändra rollbehörigheter"
+
+#: cerber-settings.php:542
+msgid "Protect site settings"
+msgstr "Skydda webbplatsinställningar"
+
+#: cerber-settings.php:546
+msgid "Restrict updating site settings with the following policies"
+msgstr "Begränsa uppdateringen av webbplatsinställningarna med följande policyer"
+
+#: cerber-settings.php:552
+msgid "Users with these roles are permitted to change protected settings"
+msgstr "Användare med dessa roller tillåts att ändra skyddade inställningar"
+
+#: cerber-settings.php:557
+msgid "Protected settings"
+msgstr "Skyddade inställningar"
+
+#: cerber-settings.php:630
+msgid "Do not apply these policy to the IP addresses in the White IP Access List"
+msgstr "Tillämpa inte denna policy på IP-adresserna i den vita IP-åtkomstlistan"
+
+#: nexus/cerber-slave-list.php:52
+msgid "Server"
+msgstr "Server"
+
+#: nexus/cerber-slave-list.php:53
+msgid "Server Country"
+msgstr "Serverland"
+
+#: nexus/cerber-slave-list.php:145
+msgid "All servers"
+msgstr "Alla servrar"
+
+#: nexus/cerber-slave-list.php:152
+msgid "All countries"
+msgstr "Alla länder"
+
+#: nexus/cerber-nexus-master.php:67
+msgid "Show homepage in the Website column"
+msgstr ""
+
+#: nexus/cerber-nexus-master.php:69
+msgid "Hide server IP address"
+msgstr "Dölj serverns IP-adress"
+
+#: admin/cerber-dashboard.php:342
+msgid "IP address, range, wildcard, or CIDR"
+msgstr "IP-adress, intervall, jokertecken eller CIDR"
+
+#: admin/cerber-dashboard.php:343
+msgid "Add Entry"
+msgstr ""
+
+#: admin/cerber-dashboard.php:5477
+msgid "The IP address you are trying to add is already in the list"
+msgstr "IP-adressen som du försöker lägga till finns redan i listan"
+
+#: cerber-common.php:1516
+msgid "IP subnet blocked"
+msgstr "IP-undernät blockerat"
+
+#: cerber-common.php:1555
+msgid "User row update denied"
+msgstr "Uppdatering av användarrad nekad"
+
+#: cerber-common.php:1558
+msgid "User metadata update denied"
+msgstr ""
+
+#: cerber-settings.php:1500
+msgid "Any activity"
+msgstr ""
+
+#: admin/cerber-tools.php:228
+msgid "A database error occurred while importing access list entries"
+msgstr ""
+
+#: cerber-settings.php:288
+msgid "Enable authentication log monitoring"
+msgstr ""
+
+#: cerber-settings.php:320 cerber-settings.php:958
+msgid "Keep log records of not logged in visitors for"
+msgstr ""
+
+#: cerber-settings.php:326 cerber-settings.php:964
+msgid "Keep log records of logged in users for"
+msgstr ""
+
+#: admin/cerber-users.php:75
+msgid "Admin Note"
+msgstr ""
+
+#: cerber-settings.php:695
+msgid "Personal Data"
+msgstr "Personlig data"
+
+#: cerber-settings.php:701
+msgid "Enable data erase"
+msgstr "Aktivera dataradering"
+
+#: cerber-settings.php:708
+msgid "Terminate user sessions"
+msgstr "Avsluta användarsessioner"
+
+#: cerber-settings.php:709
+msgid "Delete user sessions data when user data is erased"
+msgstr "Ta bort användarsessionsdata när användardata raderas"
+
+#: cerber-settings.php:715
+msgid "Enable data export"
+msgstr "Aktivera dataexport"
+
+#: cerber-settings.php:722
+msgid "Include activity log events"
+msgstr "Inkludera aktivitetslogghändelser"
+
+#: cerber-settings.php:728
+msgid "Include traffic log entries"
+msgstr ""
+
+#: cerber-settings.php:731
+msgid "Request URL"
+msgstr ""
+
+#: cerber-settings.php:732
+msgid "Form fields data"
+msgstr ""
+
+#: cerber-settings.php:733
+msgid "Cookies"
+msgstr "Cookies"
+
+#: admin/cerber-dashboard.php:77
+msgid "Cerber anti-spam settings"
+msgstr ""
+
+#: cerber-settings.php:1336 admin/cerber-dashboard.php:77
+msgid "Anti-spam"
+msgstr ""
+
+#: cerber-addons.php:289 admin/cerber-dashboard.php:85
+#: admin/cerber-dashboard.php:85
+msgid "Add-ons"
+msgstr "Utökningar"
+
+#: admin/cerber-dashboard.php:5181
+msgid "Anti-spam and bot detection settings"
+msgstr ""
+
+#: admin/cerber-dashboard.php:5183
+msgid "Anti-spam engine"
+msgstr ""
+
+#: cerber-common.php:1692
+msgid "Multiple erroneous requests"
+msgstr "Flera felaktiga förfrågningar"
+
+#: admin/cerber-admin-settings.php:338
+msgid "%s retries are allowed within %s minutes"
+msgstr "%s försök är tillåtna inom %s minuter"
+
+#: admin/cerber-admin-settings.php:344
+msgid "%s registrations are allowed within %s minutes from one IP address"
+msgstr "%s registreringar är tillåtna inom %s minuter från en IP-adress"
+
+#: admin/cerber-admin-settings.php:367
+msgid "Enable after %s failed login attempts in the last %s minutes"
+msgstr "Aktivera efter %s misslyckade inloggningsförsök under de senaste %s minuterna"
+
+#: cerber-settings.php:442
+msgid "Restrict or completely block access to the WordPress REST API according to your needs"
+msgstr "Begränsa eller blockera åtkomst fullständigt till WordPress REST API enligt dina behov"
+
+#: cerber-settings.php:697
+msgid "These features help your organization to be in compliance with personal data protection laws"
+msgstr ""
+
+#: cerber-settings.php:755
+msgid "if empty, the website administrator email %s will be used"
+msgstr "om tom, kommer webbplatsadministratörens e-postadress %s att användas"
+
+#: cerber-settings.php:759
+msgid "notifications are allowed per hour (0 means unlimited)"
+msgstr "aviseringar är tillåtna per timme (0 betyder obegränsat)"
+
+#: cerber-settings.php:770
+msgid "Get notified instantly with mobile and desktop notifications"
+msgstr "Bli aviserad omedelbart med aviseringar på mobil och stationär dator"
+
+#: cerber-settings.php:785
+msgid "Weekly report is a summary of all activities and suspicious events occurred during the last seven days"
+msgstr "Veckorapport är en sammanfattning av alla aktiviteter och misstänkta händelser inträffade under de senaste sju dagarna"
+
+#: cerber-settings.php:798 cerber-settings.php:1099
+msgid "if empty, the email addresses from the notification settings will be used"
+msgstr "om tom, kommer e-postadresserna från aviseringsinställningarna att användas"
+
+#: cerber-settings.php:810
+msgid "Traffic Inspector is a context-aware web application firewall (WAF) that protects your website by recognizing and denying malicious HTTP requests"
+msgstr ""
+
+#: cerber-settings.php:841
+msgid "Block IP addresses that send excessive requests for non-existing pages or scan website for security breaches"
+msgstr ""
+
+#: cerber-settings.php:860
+msgid "Traffic Logging"
+msgstr "Trafikloggning"
+
+#: cerber-settings.php:861
+msgid "Enable optional traffic logging if you need to monitor suspicious and malicious activity or solve security issues"
+msgstr "Aktivera valfri trafikloggning om du behöver övervaka misstänksam och skadlig aktivitet eller lösa säkerhetsproblem"
+
+#: cerber-settings.php:974
+msgid "The scanner monitors file changes, verifies the integrity of WordPress, plugins, and themes, and detects malware"
+msgstr "Skannern övervakar filändringar, verifierar integriteten i WordPress, tillägg och teman och upptäcker skadlig kod"
+
+#: cerber-settings.php:1024
+msgid "Specify directories to exclude from scanning. One directory per line."
+msgstr "Specificera kataloger att exkludera från skanning. En katalog per rad."
+
+#: cerber-settings.php:1051
+msgid "The scanner automatically scans the website, removes malware and sends email reports with the results of a scan"
+msgstr "Skannern skannar automatiskt webbplatsen, tar bort skadlig kod och skickar e-postrapporter med resultatet av en skanning"
+
+#: cerber-settings.php:1068
+msgid "Configure what issues to include in the email report and the condition for sending reports"
+msgstr "Konfigurera vilka problem som ska inkluderas i e-postrapporten och villkoret för att skicka rapporter"
+
+#: cerber-settings.php:1218
+msgid "Cerber anti-spam engine"
+msgstr ""
+
+#: cerber-settings.php:1219
+msgid "Spam protection for comment, registration and contact forms on a website"
+msgstr "Skräppostskydd för kommentarer, registrering och kontaktformulär på en webbplats"
+
+#: cerber-settings.php:1246
+msgid "Adjust anti-spam engine"
+msgstr ""
+
+#: cerber-settings.php:1247
+msgid "These settings enable you to fine-tune the behavior of anti-spam algorithms and avoid false positives"
+msgstr ""
+
+#: cerber-settings.php:1271
+msgid "How the plugin processes comments submitted through the standard comment form"
+msgstr "Hur tillägget bearbetar kommentarer som skickats in via standardformuläret för kommentarer"
+
+#: nexus/cerber-nexus-slave.php:436
+msgid "Settings updated"
+msgstr "Inställningar uppdaterade"
+
+#: admin/cerber-dashboard.php:1389
+msgid "Request ID"
+msgstr ""
+
+#: admin/cerber-dashboard.php:1390
+msgid "Search in URL"
+msgstr "Sök i URL"
+
+#: cerber-settings.php:982 cerber-settings.php:991
+msgid "Executable files"
+msgstr "Körbara filer"
+
+#: cerber-settings.php:983 cerber-settings.php:992
+msgid "All files"
+msgstr "Alla filer"
+
+#: admin/cerber-dashboard.php:1903
+msgid "Active sessions"
+msgstr "Aktiva sessioner"
+
+#: cerber-settings.php:680
+msgid "minutes (leave empty to use the default WordPress value)"
+msgstr "minuter (lämna tomt för att använda standardvärdet för WordPress)"
+
+#: admin/cerber-tools.php:72
+msgid "Load entries"
+msgstr ""
+
+#: admin/cerber-dashboard.php:1092 admin/cerber-dashboard.php:4439
+msgid "My IP"
+msgstr "Mitt IP"
+
+#: admin/cerber-dashboard.php:5270
+msgid "Analytics"
+msgstr ""
+
+#: admin/cerber-dashboard.php:5319
+msgid "Manage Settings"
+msgstr "Hantera inställningar"
+
+#: cerber-settings.php:1038 cerber-settings.php:1388 cerber-settings.php:1416
+#: admin/cerber-dashboard.php:5321
+msgid "Diagnostic Log"
+msgstr "Diagnoslogg"
+
+#: cerber-common.php:1509
+msgid "User deleted"
+msgstr "Användare borttagen"
+
+#: cerber-common.php:1601
+msgid "Email address is prohibited"
+msgstr "E-postadress är förbjuden"
+
+#: admin/cerber-admin.php:771
+msgid "Quarantined"
+msgstr ""
+
+#: admin/cerber-admin.php:927 admin/cerber-admin.php:1394
+msgid "Modified"
+msgstr "Ändrad"
+
+#: admin/cerber-admin.php:1003
+msgid "Files without extension"
+msgstr ""
+
+#: admin/cerber-admin.php:1004
+msgid "Back to list"
+msgstr "Tillbaka till listan"
+
+#: admin/cerber-admin.php:1064
+msgid "Brief summary"
+msgstr "Kort sammanfattning"
+
+#: admin/cerber-admin.php:1115
+msgid "Folder"
+msgstr "Mapp"
+
+#: admin/cerber-admin.php:1116
+msgid "Path"
+msgstr "Sökväg"
+
+#: admin/cerber-admin.php:1117 admin/cerber-admin.php:1211
+msgid "Files"
+msgstr "Filer"
+
+#: admin/cerber-admin.php:1118 admin/cerber-admin.php:1212
+msgid "Space Occupied"
+msgstr "Utrymme ockuperat"
+
+#: admin/cerber-admin.php:1182
+msgid "No extension"
+msgstr ""
+
+#: admin/cerber-admin.php:1207
+msgid "File extensions statistics"
+msgstr ""
+
+#: admin/cerber-admin.php:1210
+msgid "Extension"
+msgstr ""
+
+#: admin/cerber-admin.php:1213
+msgid "Smallest"
+msgstr "Minsta"
+
+#: admin/cerber-admin.php:1214
+msgid "Largest"
+msgstr "Största"
+
+#: admin/cerber-admin.php:1215
+msgid "Average Size"
+msgstr ""
+
+#: admin/cerber-admin.php:1216
+msgid "Oldest"
+msgstr "Äldsta"
+
+#: admin/cerber-admin.php:1217
+msgid "Newest"
+msgstr "Nyaste"
+
+#: admin/cerber-admin.php:1233
+msgid "Top 10 largest files"
+msgstr ""
+
+#: admin/cerber-admin.php:1392
+msgid "File Name"
+msgstr "Filnamn"
+
+#: cerber-settings.php:368
+msgid "Date format for CSV export"
+msgstr "Datumformat för CSV-export"
+
+#: cerber-settings.php:369
+msgid "Use ISO 8601 date format for CSV export files"
+msgstr "Använd ISO 8601-datumformat för CSV-exportfiler"
+
+#: cerber-settings.php:383
+msgid "My IP address"
+msgstr "Min IP-adress"
+
+#: cerber-settings.php:384
+msgid "Do not add my IP address to the White IP Access List upon plugin activation"
+msgstr "Lägg inte till min IP-adress i den vita IP-åtkomstlistan när tillägget aktiveras"
+
+#: admin/cerber-tools.php:52
+msgid "Load the default plugin settings"
+msgstr "Ladda standardinställningarna för tillägget"
+
+#: admin/cerber-tools.php:53
+msgid "When you click the button below, the default WP Cerber settings will be loaded. The Custom login URL and Access Lists will not be changed."
+msgstr "När du klickar på knappen nedan laddas standardinställningarna för WP Cerber. Den anpassade URL:en för inloggning och åtkomstlistorna kommer inte att ändras."
+
+#: admin/cerber-tools.php:54
+msgid "To get the most out of WP Cerber, follow these steps:"
+msgstr "Följ de här stegen för att få ut mesta möjliga av WP Cerber:"
+
+#: cerber-common.php:1616
+msgid "IP whitelisted"
+msgstr "IP vitlistad"
+
+#: admin/cerber-dashboard.php:4438
+msgid "My requests"
+msgstr ""
+
+#: admin/cerber-dashboard.php:3759
+msgid "Log into the website"
+msgstr "Logga in på webbplatsen"
+
+#. Name of the plugin
+#: 
+msgid "WP Cerber Security, Anti-spam & Malware Scan"
+msgstr "WP Cerber Security, Anti-spam & Malware Scan"
+
+#: cerber-common.php:1547 cerber-common.php:1688
+msgid "Probing for vulnerable code"
+msgstr "Sonderar efter sårbar kod"
+
+#: cerber-load.php:5708
+msgid "Your IP address %s has been added to the White IP Access List"
+msgstr "Din IP-adress %s har lagts till i den vita IP-åtkomstlistan"
+
+#: admin/cerber-users.php:971
+msgid "Search for IP address"
+msgstr "Sök efter IP-adress"
+
+#: cerber-settings.php:869
+msgid "Minimal"
+msgstr ""
+
+#: cerber-settings.php:885
+msgid "Do not log known crawlers"
+msgstr "Logga inte kända sökrobotar"
+
+#: cerber-settings.php:890
+msgid "Do not log these locations"
+msgstr "Logga inte dessa platser"
+
+#: cerber-settings.php:894
+msgid "Specify URL paths to exclude requests from logging. One item per line."
+msgstr ""
+
+#: cerber-settings.php:898
+msgid "Do not log these User-Agents"
+msgstr ""
+
+#: cerber-settings.php:902
+msgid "Specify User-Agents to exclude requests from logging. One item per line."
+msgstr ""
+
+#: admin/cerber-dashboard.php:4556
+msgid "Unknown Google's bot"
+msgstr ""
+
+#: cerber-common.php:1607
+msgid "IP address is not allowed"
+msgstr "IP-adress är inte tillåten"
+
+#: cerber-settings.php:603
+msgid "Only users from IP addresses in the White IP Access List may register on the website"
+msgstr "Endast användare från IP-adresser i den vita IP-åtkomstlistan får registrera sig på webbplatsen"
+
+#: cerber-settings.php:608
+msgid "User message"
+msgstr ""
+
+#: cerber-scanner.php:1627
+msgid "File is missing"
+msgstr "Fil saknas"
+
+#. Mandatory
+#: cerber-scanner.php:2622
+msgid "This file is missing. It's been deleted or it's not been installed."
+msgstr "Denna fil saknas. Den har tagits bort eller har inte installerats."
+
+#: cerber-scanner.php:3936
+msgid "Error: file %s cannot be used."
+msgstr "Fel: fil %s kan inte användas."
+
+#: cerber-scanner.php:3936
+msgid "Please upload another file."
+msgstr "Ladda upp en annan fil."
+
+#: cerber-settings.php:226
+msgid "Deferred rendering"
+msgstr ""
+
+#: cerber-settings.php:227
+msgid "Defer rendering the custom login page"
+msgstr ""
+
+#: cerber-load.php:383
+msgid "You have only one login attempt remaining."
+msgstr ""
+
+#: admin/cerber-users.php:446
+msgid "Number of allowed concurrent user sessions"
+msgstr "Antal tillåtna samtidiga användarsessioner"
+
+#: admin/cerber-users.php:451
+msgid "When the limit on concurrent user sessions is reached"
+msgstr "När gränsen för samtidiga användarsessioner har uppnåtts"
+
+#: admin/cerber-users.php:454
+msgid "Terminate the oldest user session on a new login"
+msgstr "Avsluta äldsta användarsessionen vid en ny inloggning"
+
+#: admin/cerber-users.php:455
+msgid "Deny further login attempts"
+msgstr "Neka ytterligare inloggningsförsök"
+
+#: admin/cerber-users.php:518
+msgid "Login from a different browser or device"
+msgstr "Inloggning från en annan webbläsare eller enhet"
+
+#: admin/cerber-users.php:524
+msgid "If the number of concurrent user sessions is greater"
+msgstr "Om antalet samtidiga användarsessioner är högre"
+
+#: admin/cerber-dashboard.php:5612
+msgid "These features are available in the professional version of WP Cerber."
+msgstr "Dessa funktioner är tillgänglig i den professionella versionen av WP Cerber."
+
+#: cerber-common.php:1534
+msgid "User session terminated"
+msgstr "Användarsessionen avslutad"
+
+#: cerber-common.php:1608
+msgid "Limit on concurrent user sessions"
+msgstr "Begränsa samtidiga användarsessioner"
+
+#: admin/cerber-users.php:77
+msgid "It is visible only to website administrators"
+msgstr "Det är endast synlig för webbplatsadministratörer"
+
+#: admin/cerber-admin.php:1499
+msgid "Authorized"
+msgstr "Auktoriserad"
+
+#: admin/cerber-admin.php:1500
+msgid "Authorization Failed"
+msgstr "Auktorisering misslyckades"
+
+#: admin/cerber-admin-settings.php:756
+msgid "Important note if you have a caching plugin in place"
+msgstr ""
+
+#: admin/cerber-admin-settings.php:757
+msgid "To avoid false positives and get better anti-spam performance, please clear the plugin cache."
+msgstr ""
+
+#: cerber-common.php:1564
+msgid "API request authorized"
+msgstr ""
+
+#: cerber-common.php:1565
+msgid "API request authorization failed"
+msgstr ""
+
+#: cerber-common.php:1552
+msgid "Request to XML-RPC API denied"
+msgstr ""
+
+#: cerber-common.php:1609
+msgid "Invalid cookies"
+msgstr ""
+
+#: cerber-settings.php:166
+msgid "Block IP address for"
+msgstr "Blockera IP-adress för"
+
+#: cerber-settings.php:170
+msgid "Mitigate aggressive attempts"
+msgstr "Mildra aggressiva försök"
+
+#: cerber-settings.php:425
+msgid "Do not show PHP errors on my website"
+msgstr "Visa inte PHP-fel på min webbplats"
+
+#: cerber-settings.php:875
+msgid "Log all REST API requests"
+msgstr "Logga alla REST API-förfrågningar"
+
+#: cerber-settings.php:880
+msgid "Log all XML-RPC requests"
+msgstr "Logga alla XML-RPC-förfrågningar"
+
+#: cerber-settings.php:1233
+msgid "Custom comment URL"
+msgstr ""
+
+#: cerber-settings.php:1234
+msgid "Use custom URL for the WordPress comment form"
+msgstr ""
+
+#: cerber-settings.php:456 cerber-settings.php:1255
+#: admin/cerber-dashboard.php:2072
+msgid "Logged-in users"
+msgstr "Inloggade användare"
+
+#: cerber-settings.php:353
+msgid "Personal Preferences"
+msgstr ""
+
+#: cerber-settings.php:457
+msgid "Allow access to REST API for logged-in users"
+msgstr "Tillåt åtkomst till REST API för inloggade användare"
+
+#: cerber-settings.php:572
+msgid "User registration"
+msgstr "Användarregistrering"
+
+#: cerber-settings.php:573
+msgid "Restrict new user registrations by the following conditions"
+msgstr "Begränsa nya användarregistreringar enligt följande villkor"
+
+#: cerber-settings.php:618
+msgid "Authorized Access"
+msgstr "Auktoriserad åtkomst"
+
+#: cerber-settings.php:619
+msgid "Grant access to the website to logged-in users only"
+msgstr "Bevilja åtkomst till webbplatsen endast för inloggade användare"
+
+#: cerber-settings.php:657 cerber-settings.php:1029
+msgid "Miscellaneous Settings"
+msgstr "Övriga inställningar"
+
+#: cerber-settings.php:670 admin/cerber-users.php:468
+msgid "Application Passwords"
+msgstr "Applikationslösenord"
+
+#: cerber-settings.php:673 admin/cerber-users.php:472
+msgid "Enabled, access to API using standard user passwords is allowed"
+msgstr ""
+
+#: cerber-settings.php:674 admin/cerber-users.php:473
+msgid "Enabled, no access to API using standard user passwords"
+msgstr ""
+
+#: cerber-settings.php:853
+msgid "Ignore logged-in users"
+msgstr "Ignorera inloggade användare"
+
+#: cerber-settings.php:1256
+msgid "Disable bot detection engine for logged-in users"
+msgstr ""
+
+#: cerber-settings.php:1342
+msgid "Disable reCAPTCHA for logged-in users"
+msgstr "Inaktivera reCAPTCHA för inloggade användare"
+
+#: admin/cerber-users.php:471
+msgid "Use global policies"
+msgstr "Använd globala policyer"
+
+#: cerber-load.php:386
+msgid "You have %d login attempt remaining."
+msgid_plural "You have %d login attempts remaining."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/cerber-users.php:461
+msgid "Display this message if an attempt to log in is denied because the limit on concurrent user sessions has been reached"
+msgstr "Visa detta meddelande om ett försök att logga in nekas eftersom gränsen för samtidiga användarsessioner har uppnåtts"
+
+#: admin/cerber-dashboard.php:5229
+msgid "Role-Based"
+msgstr "Rollbaserad"
+
+#: cerber-common.php:1563
+msgid "User application password created"
+msgstr ""
+
+#: cerber-settings.php:141
+msgid "Initialization Mode"
+msgstr ""
+
+#: cerber-settings.php:925
+msgid "Save response headers"
+msgstr ""
+
+#: cerber-settings.php:936
+msgid "Save response cookies"
+msgstr ""
+
+#: cerber-load.php:7736
+msgid "We need your support to keep moving forward"
+msgstr "Vi behöver ditt stöd för att fortsätta framåt"
+
+#: cerber-load.php:7738
+msgid "By sharing your unique opinion on WP Cerber, you help the engineers behind the plugin make greater progress and help other professionals find the right software. You can leave your review on one of the following websites. Feel free to use your native language. Thanks!"
+msgstr ""
+
+#: nexus/cerber-nexus-master.php:286
+msgid "Secret Access Token is invalid"
+msgstr "Hemlig åtkomsttoken är ogiltig"
+
+#: admin/cerber-dashboard.php:226
+msgid "Click the IP address to see its activity"
+msgstr "Klicka på IP-adressen för att se dess aktivitet"
+
+#: admin/cerber-dashboard.php:1073
+msgid "Login issues"
+msgstr ""
+
+#: admin/cerber-dashboard.php:1090 admin/cerber-dashboard.php:4433
+msgid "Non-authenticated"
+msgstr ""
+
+#: admin/cerber-dashboard.php:1367 admin/cerber-dashboard.php:1803
+#: admin/cerber-dashboard.php:2660 admin/cerber-admin.php:1334
+msgid "No activity has been logged yet."
+msgstr "Ingen aktivitet har loggats ännu."
+
+#: admin/cerber-dashboard.php:2676
+msgid "Users' Activity"
+msgstr ""
+
+#: admin/cerber-dashboard.php:2696
+msgid "Malicious Activity"
+msgstr "Skadlig aktivitet"
+
+#: admin/cerber-dashboard.php:4430
+msgid "Suspicious requests"
+msgstr "Misstänkta förfrågningar"
+
+#: admin/cerber-dashboard.php:1089 admin/cerber-dashboard.php:4432
+msgid "Users"
+msgstr "Användare"
+
+#: cerber-common.php:1611
+msgid "Forbidden URL"
+msgstr "Förbjuden URL"
+
+#: cerber-settings.php:142
+msgid "How WP Cerber loads its core and security mechanisms"
+msgstr ""
+
+#: cerber-settings.php:156
+msgid "Login Security"
+msgstr "Inloggningssäkerhet"
+
+#: cerber-settings.php:219
+msgid "A unique string that does not overlap with slugs of the existing pages or posts"
+msgstr ""
+
+#: cerber-settings.php:179
+msgid "Processing wp-login.php authentication requests"
+msgstr ""
+
+#: cerber-settings.php:183
+msgid "Default processing"
+msgstr "Standardbearbetning"
+
+#: cerber-settings.php:184
+msgid "Block access to wp-login.php"
+msgstr "Blockera åtkomst till wp-login.php"
+
+#: cerber-settings.php:378
+msgid "Shift admin menu"
+msgstr ""
+
+#: cerber-2fa.php:507
+msgid "You or someone else trying to log into the website. We have to verify that it's you. If this wasn't you, please immediately reset your password to safeguard your account."
+msgstr "Du eller någon annan försöker logga in på webbplatsen. Vi måste verifiera att det är du. Om det inte var du, återställ omedelbart ditt lösenord för att skydda ditt konto."
+
+#: cerber-2fa.php:663
+msgid "Did not receive the email?"
+msgstr ""
+
+#: cerber-2fa.php:508
+msgid "Please use the following verification PIN code to verify your identity."
+msgstr "Använd följande PIN-kod för verifiering för att verifiera din identitet."
+
+#: admin/cerber-admin-settings.php:690
+msgid "You have disabled the default login page. Ensure that you have configured an alternative login page. Otherwise, you will not be able to log in."
+msgstr "Du har inaktiverat standardsidan för inloggning. Se till att du har konfigurerat en alternativ inloggningssida. Annars kommer du inte att kunna logga in."
+
+#: cerber-settings.php:157
+msgid "Brute-force attack mitigation and user authentication settings"
+msgstr ""
+
+#: cerber-settings.php:189
+msgid "Disable the default login error message"
+msgstr ""
+
+#: cerber-settings.php:190
+msgid "Do not reveal non-existing usernames and emails in the failed login attempt message"
+msgstr ""
+
+#: cerber-settings.php:185
+msgid "Deny authentication through wp-login.php"
+msgstr "Neka autentisering via wp-login.php"
+
+#: cerber-common.php:1610
+msgid "Invalid cookies cleared"
+msgstr ""
+
+#: cerber-load.php:1728
+msgid "If we have found your account, we have sent the confirmation link to the email address on the account."
+msgstr "Om vi har hittat ditt konto har vi skickat bekräftelselänken till e-postadressen på kontot."
+
+#: cerber-load.php:5665
+msgid "WP Cerber requires PHP %s or higher. You are running %s."
+msgstr "WP Cerber kräver PHP %s eller högre. Du kör %s."
+
+#: cerber-load.php:5669
+msgid "WP Cerber requires WordPress %s or higher. You are running %s."
+msgstr "WP Cerber kräver WordPress %s eller högre. Du kör %s."
+
+#: cerber-common.php:449
+msgid "WP Cerber requires PHP %s or higher. You are running %s"
+msgstr "WP Cerber kräver PHP %s eller högre. Du kör %s"
+
+#: cerber-common.php:453
+msgid "WP Cerber requires WordPress %s or higher. You are running %s"
+msgstr "WP Cerber kräver WordPress %s eller högre. Du kör %s"
+
+#: cerber-settings.php:200
+msgid "Disable the default reset password error message"
+msgstr ""
+
+#: cerber-settings.php:201
+msgid "Do not reveal non-existing usernames and emails in the reset password error message"
+msgstr ""
+
+#: cerber-settings.php:404 cerber-settings.php:409
+msgid "Prevent username discovery"
+msgstr ""
+
+#: cerber-settings.php:405
+msgid "Prevent username discovery via oEmbed"
+msgstr ""
+
+#: cerber-settings.php:410
+msgid "Prevent username discovery via user XML sitemaps"
+msgstr ""
+
+#: admin/cerber-admin.php:1019
+msgid "No data for generating reports. Please run the Full Scan. After the scan is completed, the reports will be generated."
+msgstr ""
+
+#: cerber-settings.php:1038 cerber-settings.php:1388 cerber-settings.php:1416
+msgid "Once enabled, the log is available here: %s"
+msgstr ""
+
+#: cerber-scanner.php:2623
+msgid "The scanner identifies this file as missing based on the integrity data (checksums) provided by the developer of %s."
+msgstr ""
+
+#: cerber-settings.php:357
+msgid "Retrieve IP address WHOIS information when viewing the logs"
+msgstr ""
+
+#: cerber-settings.php:379
+msgid "Shift the WP Cerber admin menu to the top when navigating through WP Cerber admin pages"
+msgstr ""
+
+#: cerber-settings.php:356
+msgid "Show IP WHOIS data"
+msgstr ""
+
+#: cerber-settings.php:1139
+msgid "Analyze the uploads directory"
+msgstr "Analysera uppladdningskatalogen"
+
+#: cerber-settings.php:1140
+msgid "Analyze the WordPress uploads directory to detect injected files"
+msgstr ""
+
+#: cerber-settings.php:1033
+msgid "Change file and directory permissions if it is required to delete files"
+msgstr ""
+
+#: cerber-settings.php:1032
+msgid "Change filesystem permissions"
+msgstr ""
+
+#: cerber-settings.php:1118
+msgid "Delete files in the WordPress uploads directory"
+msgstr ""
+
+#: cerber-settings.php:1127
+msgid "Delete files with unwanted extensions"
+msgstr ""
+
+#: cerber-settings.php:1160
+msgid "Delete publicly accessible files with these extensions"
+msgstr ""
+
+#: cerber-scanner.php:3702
+msgid "Detecting injected files in the WordPress uploads directory"
+msgstr ""
+
+#: cerber-common.php:1612
+msgid "Executable file extension detected"
+msgstr ""
+
+#: cerber-common.php:1613
+msgid "Filename is prohibited"
+msgstr ""
+
+#: cerber-settings.php:1206
+msgid "Files in temporary directories"
+msgstr "Filer i temporära kataloger"
+
+#: cerber-settings.php:1186
+msgid "Global Exclusions"
+msgstr ""
+
+#: cerber-settings.php:1147
+msgid "Ignore files with these extensions"
+msgstr ""
+
+#: cerber-scanner.php:1642
+msgid "Injected file"
+msgstr ""
+
+#: cerber-scanner.php:1680
+msgid "Injected files"
+msgstr ""
+
+#: cerber-scanner.php:311
+msgid "KB/sec"
+msgstr "KB/sek"
+
+#: cerber-settings.php:1134
+msgid "Keep the WordPress uploads directory clean and secure. Detect injected files with public web access, report them, and remove malicious ones."
+msgstr ""
+
+#: cerber-scanner.php:1628
+msgid "Local hash not found"
+msgstr ""
+
+#: cerber-settings.php:1062
+msgid "once a day at"
+msgstr "en gång om dagen kl."
+
+#: cerber-settings.php:1158
+msgid "Prohibited extensions"
+msgstr ""
+
+#: cerber-settings.php:1180
+msgid "Recover plugins' files"
+msgstr ""
+
+#: cerber-settings.php:1000
+msgid "Scan the sessions directory"
+msgstr "Skanna sessionskatalogen"
+
+#: cerber-settings.php:996
+msgid "Scan web server's temporary directories"
+msgstr "Skanna webbserverns temporära kataloger"
+
+#: cerber-scanner.php:3693
+msgid "Scanning server's temporary directories for files"
+msgstr "Skannar serverns temporära kataloger för filer"
+
+#: cerber-scanner.php:3694
+msgid "Scanning the sessions directory for files"
+msgstr "Skannar sessionskatalogen efter filer"
+
+#: cerber-scanner.php:3692
+msgid "Scanning the temporary upload directory for files"
+msgstr "Skannar temporära uppladdningskatalogen för filer"
+
+#: cerber-scanner.php:3691
+msgid "Scanning website directories for files"
+msgstr "Skannar webbplatskataloger för filer"
+
+#: cerber-settings.php:1145
+msgid "Skip files with these extensions"
+msgstr ""
+
+#: cerber-settings.php:1110
+msgid "These policies are automatically enforced at the end of every scan based on its results. All affected files are moved to the quarantine."
+msgstr ""
+
+#: admin/cerber-dashboard.php:3209
+msgid "This scan report was generated by the previous version of WP Cerber. Please run a new scan to get consistent and accurate results."
+msgstr ""
+
+#: cerber-settings.php:1148 cerber-settings.php:1161
+msgid "Use comma to separate multiple extensions"
+msgstr ""
+
+#: cerber-settings.php:1133
+msgid "WordPress uploads analysis"
+msgstr ""
+
+#. This is a risk level.
+#: cerber-scanner.php:1607
+msgctxt "This is a risk level."
+msgid "High"
+msgstr "Hög"
+
+#. This is a risk level.
+#: cerber-scanner.php:1603
+msgctxt "This is a risk level."
+msgid "Low"
+msgstr "Låg"
+
+#. This is a risk level.
+#: cerber-scanner.php:1605
+msgctxt "This is a risk level."
+msgid "Medium"
+msgstr "Medium"
+
+#: cerber-load.php:4458
+msgid "If you believe you should be able to perform this request, please let us know."
+msgstr ""
+
+#: cerber-load.php:4457
+msgid "Your request looks suspiciously similar to automated requests from spam posting software or it has been denied by a security policy configured by the website administrator."
+msgstr ""
+

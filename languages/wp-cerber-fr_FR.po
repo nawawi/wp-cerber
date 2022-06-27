@@ -1,0 +1,4184 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: POEditor.com\n"
+"Project-Id-Version: WP Cerber Security\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: cerber-settings.php:161
+msgid "Limit login attempts"
+msgstr "Définir une limite aux tentatives de connexion"
+
+#: cerber-settings.php:167 cerber-settings.php:305
+msgid "minutes"
+msgstr "minutes"
+
+#: cerber-settings.php:267
+msgid "Site connection"
+msgstr "Connexion au site"
+
+#: cerber-settings.php:238
+msgid "Proactive security rules"
+msgstr "Règles de sécurité proactives"
+
+#: cerber-settings.php:257
+msgid "Block subnet"
+msgstr "Bloquer les sous-réseaux"
+
+#: cerber-settings.php:252
+msgid "Request wp-login.php"
+msgstr "Requête sur wp-login.php"
+
+#: cerber-settings.php:253
+msgid "Immediately block IP after any request to wp-login.php"
+msgstr "Bloquer immédiatement l’IP si elle tente d’accéder au fichier wp-login.php"
+
+#: cerber-settings.php:218
+msgid "Custom login page"
+msgstr "Page de connexion personnalisée"
+
+#: cerber-settings.php:223
+msgid "Custom login URL"
+msgstr "URL de connexion personnalisée"
+
+#: cerber-settings.php:289 admin/cerber-dashboard.php:2101
+msgid "Citadel mode"
+msgstr "Mode Citadelle"
+
+#: cerber-settings.php:299
+msgid "Threshold"
+msgstr "Seuil"
+
+#: cerber-settings.php:304 admin/cerber-admin.php:88
+msgid "Duration"
+msgstr "Durée"
+
+#: cerber-settings.php:310 admin/cerber-dashboard.php:5300
+msgid "Notifications"
+msgstr "Notifications"
+
+#: cerber-settings.php:312
+msgid "Send notification to admin email"
+msgstr "Envoyer des notifications à l’administrateur"
+
+#: admin/cerber-dashboard.php:5297 admin/cerber-tools.php:38
+#: admin/cerber-tools.php:49
+msgid "Access Lists"
+msgstr "Listes d’accès"
+
+#: cerber-load.php:5698 cerber-settings.php:322
+#: admin/cerber-dashboard.php:2142 admin/cerber-dashboard.php:5293
+#: admin/cerber-users.php:1115
+msgid "Activity"
+msgstr "Activité"
+
+#: admin/cerber-dashboard.php:5295
+msgid "Lockouts"
+msgstr "Blocages"
+
+#: cerber-load.php:5707
+msgid "IP"
+msgstr "IP"
+
+#: admin/cerber-dashboard.php:948 admin/cerber-dashboard.php:1330
+#: admin/cerber-dashboard.php:4060 admin/cerber-dashboard.php:4543
+msgid "Date"
+msgstr "Date"
+
+#: admin/cerber-dashboard.php:951 admin/cerber-dashboard.php:1332
+#: admin/cerber-dashboard.php:4548
+msgid "Local User"
+msgstr "Utilisateur local"
+
+#: cerber-load.php:5715
+msgid "Username used"
+msgstr "Identifiant utilisé"
+
+#: cerber-common.php:1668
+msgid "Logged in"
+msgstr "Connexion réussie"
+
+#: cerber-common.php:1669
+msgid "Logged out"
+msgstr "Déconnexion"
+
+#: cerber-common.php:1670
+msgid "Login failed"
+msgstr "Connexion échouée"
+
+#: cerber-common.php:1673 admin/cerber-dashboard.php:1092
+msgid "IP blocked"
+msgstr "IP bloquée"
+
+#: cerber-common.php:1677
+msgid "Citadel activated!"
+msgstr "Citadelle activée !"
+
+#: cerber-common.php:1754 admin/cerber-dashboard.php:1704
+msgid "Locked out"
+msgstr "Bloqué"
+
+#: cerber-common.php:1756
+msgid "IP blacklisted"
+msgstr "IP blacklistées"
+
+#: cerber-common.php:1690
+msgid "Password changed"
+msgstr "Changement de mot de passe"
+
+#: admin/cerber-dashboard.php:204 admin/cerber-dashboard.php:329
+msgid "Remove"
+msgstr "Supprimer"
+
+#: admin/cerber-dashboard.php:663
+msgid "Lockout for %s was removed"
+msgstr "Le blocage de %s a été levé"
+
+#: admin/cerber-dashboard.php:275 admin/cerber-dashboard.php:1611
+#: admin/cerber-dashboard.php:1695 admin/cerber-dashboard.php:2099
+#: admin/cerber-tools.php:69
+msgid "White IP Access List"
+msgstr "Liste d'accès IP blanche"
+
+#: admin/cerber-dashboard.php:278 admin/cerber-dashboard.php:1614
+#: admin/cerber-dashboard.php:1698 admin/cerber-dashboard.php:2100
+#: admin/cerber-tools.php:70
+msgid "Black IP Access List"
+msgstr "Liste d'accès IP noire"
+
+#: admin/cerber-dashboard.php:335
+msgid "List is empty"
+msgstr "La liste est vide"
+
+#: cerber-load.php:4825
+msgid "Citadel mode is activated after %d failed login attempts in %d minutes."
+msgstr "Le mode Citadelle est activé après %d tentatives de connexion échouées en %d minutes."
+
+#: admin/cerber-dashboard.php:2875 admin/cerber-dashboard.php:3403
+msgid "View Activity"
+msgstr "Voir l’activité"
+
+#: nexus/cerber-nexus.php:95 admin/cerber-dashboard.php:5366
+#: admin/cerber-dashboard.php:5427 admin/cerber-tools.php:37
+#: admin/cerber-tools.php:48
+msgid "Settings"
+msgstr "Réglages"
+
+#: admin/cerber-dashboard.php:1968
+msgid "Last login"
+msgstr "Dernière connexion"
+
+#: cerber-common.php:2083 nexus/cerber-slave-list.php:347
+#: admin/cerber-dashboard.php:476 admin/cerber-dashboard.php:2073
+#: admin/cerber-dashboard.php:2122
+msgid "Never"
+msgstr "Jamais"
+
+#: admin/cerber-dashboard.php:5784 admin/cerber-tools.php:59
+#: admin/cerber-admin.php:738 admin/cerber-admin.php:905
+msgid "Are you sure?"
+msgstr "Êtes-vous sûr ?"
+
+#: cerber-settings.php:268 admin/cerber-dashboard.php:2506
+msgid "My site is behind a reverse proxy"
+msgstr "Mon site se trouve derrière un reverse proxy"
+
+#: cerber-settings.php:239
+msgid "Make your protection smarter!"
+msgstr "Rendez votre protection plus intelligente !"
+
+#: cerber-settings.php:131
+msgid "Please enable Permalinks to use this feature. Set Permalink Settings to something other than Default."
+msgstr "Veuillez activer les Permaliens pour utiliser cette fonctionnalité. Le réglage des Permaliens ne doit pas être “par défaut”."
+
+#: admin/cerber-dashboard.php:5296
+msgid "Main Settings"
+msgstr "Réglages généraux"
+
+#: admin/cerber-dashboard.php:5581
+msgid "Help"
+msgstr "Aide"
+
+#: admin/cerber-admin-settings.php:352
+msgid "Increase lockout duration to %s hours after %s lockouts in the last %s hours"
+msgstr "Allonger la durée du blocage à %s heures après %s blocages dans les %s dernières heures"
+
+#: cerber-load.php:388 admin/cerber-users.php:463
+msgid "You are not allowed to log in. Ask your administrator for assistance."
+msgstr "Vous n’êtes pas autorisé à vous connecté. Contactez l’administrateur si vous avez besoin d’assistance."
+
+#: admin/cerber-dashboard.php:214 admin/cerber-users.php:926
+msgid "Expires"
+msgstr "Expire le"
+
+#: admin/cerber-dashboard.php:242 admin/cerber-dashboard.php:2741
+msgid "No lockouts at the moment. The sky is clear."
+msgstr "Il n'y a pas de blocage pour le moment. Tout est dégagé."
+
+#: admin/cerber-dashboard.php:285
+msgid "Your IP"
+msgstr "Votre IP"
+
+#: cerber-load.php:4826
+msgid "Last failed attempt was at %s from IP %s with user login: %s."
+msgstr "La dernière tentative échouée s'est produite à %s à partir de l'IP %s avec un utilisateur ayant comme identifiants : %s."
+
+#: cerber-load.php:5939
+msgid "Can't activate WP Cerber due to a database error."
+msgstr "Le WP Cerber ne peut pas être activé à cause d'une erreur dans la base de données."
+
+#: admin/cerber-admin-settings.php:360
+msgid "Notify admin if the number of active lockouts above"
+msgstr "Avertissez l'administrateur si le nombre de blocages actifs ci-dessus"
+
+#: cerber-settings.php:326 cerber-settings.php:332 cerber-settings.php:968
+#: cerber-settings.php:974 cerber-settings.php:1053 cerber-settings.php:1327
+msgid "days"
+msgstr "jours"
+
+#: admin/cerber-dashboard.php:2039
+msgid "Cerber Quick View"
+msgstr "Cerber aperçu"
+
+#: cerber-settings.php:258
+msgid "Always block entire subnet Class C of intruders IP"
+msgstr "Il faut toujours bloquer le sous-réseau complet de classe C des IP intruses"
+
+#: cerber-settings.php:316 admin/cerber-admin-settings.php:365
+msgid "Click to send test"
+msgstr "Cliquez pour tester"
+
+#: admin/cerber-admin-settings.php:695 admin/cerber-admin-settings.php:696
+msgid "Attention! You have changed the login URL! The new login URL is"
+msgstr "Attention ! Vous avez changé l'URL de connexion ! La nouvelle URL de connexion est"
+
+#: admin/cerber-dashboard.php:1967
+msgid "Comments"
+msgstr "Commentaires"
+
+#: cerber-load.php:4857
+msgid "Number of active lockouts"
+msgstr "Nombre de blocages actifs"
+
+#: cerber-load.php:4959
+msgid "This message was sent by"
+msgstr "Ce message a été envoyé par"
+
+#: admin/cerber-dashboard.php:88 admin/cerber-dashboard.php:5478
+msgid "Tools"
+msgstr "Outils"
+
+#: admin/cerber-tools.php:34
+msgid "Export settings to the file"
+msgstr "Exporter les préférences"
+
+#: admin/cerber-tools.php:35
+msgid "When you click the button below you will get a configuration file, which you can upload on another site."
+msgstr "Vous obtiendrez un fichier de configuration lorsque vous cliquerez sur le bouton ci-dessous. Vous pourrez ensuite utiliser ce fichier de configuration sur d’autre site."
+
+#: admin/cerber-tools.php:36
+msgid "What do you want to export?"
+msgstr "Que voulez-vous exporter ?"
+
+#: admin/cerber-tools.php:39
+msgid "Download file"
+msgstr "Télécharger le fichier"
+
+#: admin/cerber-tools.php:43
+msgid "Import settings from the file"
+msgstr "Importer les paramètres du fichier"
+
+#: admin/cerber-tools.php:44
+msgid "When you click the button below, file will be uploaded and all existing settings will be overridden."
+msgstr "Si vous cliquez sur le bouton ci-dessous, le fichier sera téléchargé et tous les paramètres existants seront remplacés."
+
+#: admin/cerber-tools.php:45
+msgid "Select file to import."
+msgstr "Sélectionnez un fichier."
+
+#: admin/cerber-tools.php:48
+msgid "What do you want to import?"
+msgstr "Que voulez-vous importer ?"
+
+#: admin/cerber-tools.php:50 admin/cerber-admin.php:257
+msgid "Upload file"
+msgstr "Télécharger le fichier"
+
+#: admin/cerber-tools.php:189
+msgid "No file was uploaded or file is corrupted"
+msgstr "Le fichier n’a pas été uploadé ou est corrompu"
+
+#: admin/cerber-tools.php:236
+msgid "Settings has imported successfully from"
+msgstr "Les paramètres ont été importées avec succès depuis"
+
+#: admin/cerber-tools.php:243
+msgid "Error while parsing file"
+msgstr "Une erreur s'est produite lors de l'analyse du fichier"
+
+#: admin/cerber-dashboard.php:212 admin/cerber-dashboard.php:1328
+msgid "Hostname"
+msgstr "Nom d'hôte"
+
+#: admin/cerber-dashboard.php:597
+msgid "unknown"
+msgstr "inconnu"
+
+#: admin/cerber-dashboard.php:2078 admin/cerber-dashboard.php:2108
+msgid "active"
+msgstr "actif"
+
+#: admin/cerber-dashboard.php:2078
+msgid "deactivate"
+msgstr "désactiver"
+
+#: admin/cerber-dashboard.php:2082
+msgid "not active"
+msgstr "inactif"
+
+#: admin/cerber-dashboard.php:2085 admin/cerber-dashboard.php:2103
+msgid "disabled"
+msgstr "désactivé"
+
+#: admin/cerber-dashboard.php:2091
+msgid "failed attempts"
+msgstr "tentatives non réussies"
+
+#: admin/cerber-dashboard.php:2091 admin/cerber-dashboard.php:2092
+msgid "in 24 hours"
+msgstr "en 24 heures"
+
+#: admin/cerber-dashboard.php:2091 admin/cerber-dashboard.php:2092
+msgid "view all"
+msgstr "voir tout"
+
+#: admin/cerber-dashboard.php:2092
+msgid "lockouts"
+msgstr "blocages"
+
+#: admin/cerber-dashboard.php:2094
+msgid "Lockouts at the moment"
+msgstr "Blocages en ce moment"
+
+#: admin/cerber-dashboard.php:2095
+msgid "Last lockout"
+msgstr "Dernier blocage"
+
+#: admin/cerber-dashboard.php:2099 admin/cerber-dashboard.php:2100
+#: admin/cerber-dashboard.php:3162
+msgid "entry"
+msgid_plural "entries"
+msgstr[0] "entrée"
+msgstr[1] "entrées"
+
+#: admin/cerber-tools.php:57
+msgid "Load default settings"
+msgstr "Télécharger les paramètres par défaut"
+
+#: cerber-settings.php:771
+msgid "New version is available"
+msgstr "Nouvelle version disponible"
+
+#: cerber-load.php:4799
+msgid "WP Cerber notify"
+msgstr "Aviser WP Cerber"
+
+#: cerber-load.php:4823
+msgid "Citadel mode is activated"
+msgstr "Le mode Citadelle est activé"
+
+#: cerber-load.php:4904
+msgid "New Custom login URL"
+msgstr "Nouvelle URL de connexion personnalisée"
+
+#: cerber-settings.php:351
+msgid "Use file"
+msgstr "Utiliser le fichier"
+
+#: cerber-settings.php:352
+msgid "Write failed login attempts to the file"
+msgstr "Ecrire les tentatives de connexion non réussies dans le fichier"
+
+#: admin/cerber-dashboard.php:2874
+msgid "Deactivate"
+msgstr "Désactiver"
+
+#: cerber-load.php:4861 admin/cerber-dashboard.php:215
+msgid "Reason"
+msgstr "Raison"
+
+#: admin/cerber-dashboard.php:1762
+msgid "Add IP to the Black List"
+msgstr "Ajouter l’IP à la liste noire"
+
+#: cerber-common.php:1906
+msgid "Attempt to access"
+msgstr "Tentative d’accès"
+
+#: cerber-common.php:1905
+msgid "Limit on login attempts is reached"
+msgstr "La limite définie pour les tentatives de connexion a été atteinte"
+
+#: cerber-load.php:4860
+msgid "Last lockout was added: %s for IP %s"
+msgstr "Le dernier blocage a été ajouté le %s pour l’IP %s"
+
+#: admin/cerber-dashboard.php:5298
+msgid "Hardening"
+msgstr "Renforcer"
+
+#: admin/cerber-dashboard.php:1734
+msgid "Abuse email:"
+msgstr "Courriels abusifs :"
+
+#: cerber-settings.php:758 cerber-settings.php:805 cerber-settings.php:1107
+msgid "Email Address"
+msgstr "Courriel"
+
+#: cerber-settings.php:400
+msgid "Hardening WordPress"
+msgstr "Renforcer le WordPress"
+
+#: cerber-settings.php:404 cerber-settings.php:451
+msgid "Stop user enumeration"
+msgstr "Empêcher l’énumération des utilisateurs"
+
+#: cerber-settings.php:434
+msgid "Disable XML-RPC"
+msgstr "Désactiver le XML-RPC"
+
+#: cerber-settings.php:435
+msgid "Block access to the XML-RPC server (including Pingbacks and Trackbacks)"
+msgstr "Bloquer l’accès au serveur XMlL-RPC (inclut les Pingbacks et Trackbacks)"
+
+#: cerber-settings.php:439
+msgid "Disable feeds"
+msgstr "Désactiver les flux"
+
+#: cerber-settings.php:440
+msgid "Block access to the RSS, Atom and RDF feeds"
+msgstr "Bloquer l’accès aux flux RSS, Atom et RDF"
+
+#: cerber-settings.php:456
+msgid "Disable REST API"
+msgstr "Désactiver REST API"
+
+#: cerber-load.php:4893 cerber-load.php:5981
+msgid "WP Cerber is now active and has started protecting your site"
+msgstr "WP Cerber est maintenant actif et protège votre site"
+
+#: admin/cerber-dashboard.php:216 admin/cerber-users.php:929
+#: admin/cerber-admin.php:774 admin/cerber-admin.php:929
+msgid "Action"
+msgstr "Action"
+
+#: admin/cerber-dashboard.php:5630
+msgid "Incorrect IP address or IP range"
+msgstr "IP ou plage d’IP incorrecte"
+
+#: admin/cerber-dashboard.php:2890
+msgid "Settings saved"
+msgstr "Paramètres sauvegardés"
+
+#: admin/cerber-dashboard.php:1740
+msgid "Network:"
+msgstr "Réseau :"
+
+#: admin/cerber-dashboard.php:1756
+msgid "Add network to the Black List"
+msgstr "Ajouter un réseau à la liste noire"
+
+#: admin/cerber-dashboard.php:2873
+msgid "Attention! Citadel mode is now active. Nobody is able to log in."
+msgstr "Attention ! Le mode Citadel est maintenant activé. Plus personne ne peut se connecter."
+
+#: cerber-whois.php:241 cerber-whois.php:272 cerber-common.php:1930
+#: nexus/cerber-slave-list.php:333 admin/cerber-dashboard.php:457
+#: admin/cerber-dashboard.php:4213 admin/cerber-dashboard.php:4816
+msgid "Unknown"
+msgstr "Inconnu"
+
+#: cerber-load.php:743 cerber-load.php:756 cerber-load.php:764
+#: cerber-load.php:1112 cerber-load.php:1973 cerber-load.php:2296
+#: cerber-load.php:3407 cerber-common.php:455 cerber-common.php:555
+#: cerber-common.php:560 cerber-common.php:566 cerber-common.php:570
+#: nexus/cerber-nexus-slave.php:203 nexus/cerber-nexus-slave.php:214
+#: admin/cerber-admin-settings.php:667 admin/cerber-admin-settings.php:687
+#: admin/cerber-admin-settings.php:794 admin/cerber-admin.php:875
+msgid "ERROR:"
+msgstr "ERREUR :"
+
+#: cerber-load.php:778
+msgid "Human verification failed. Please click the square box in the reCAPTCHA block below."
+msgstr "La vérification humaine a échoué. Veuillez cliquer sur la case carrée dans le bloc reCAPTCHA ci-dessous."
+
+#: cerber-load.php:1953
+msgid "Username is not allowed. Please choose another one."
+msgstr "Ce nom d’utilisateur n’est pas autorisé. Veuillez en choisir un autre."
+
+#: cerber-load.php:4852
+msgid "unspecified"
+msgstr "non spécifié"
+
+#: cerber-load.php:4855
+msgid "Number of lockouts is increasing"
+msgstr "Le nombre de blocage augmente"
+
+#: cerber-load.php:4864
+msgid "View activity for this IP"
+msgstr "Voir l’activité pour cette IP"
+
+#: cerber-load.php:4868 cerber-load.php:4870
+msgid "A new version of WP Cerber is available to install"
+msgstr "Il est possible d'installer une nouvelle version de WP Cerber"
+
+#: cerber-load.php:4869
+msgid "Hi!"
+msgstr "Salut !"
+
+#: cerber-load.php:4872 cerber-load.php:4883 nexus/cerber-slave-list.php:44
+msgid "Website"
+msgstr "Site web"
+
+#: cerber-load.php:4875 cerber-load.php:4876
+msgid "The WP Cerber security plugin has been deactivated"
+msgstr "Le plugin WP Cerber a été désactivé"
+
+#: cerber-load.php:4878
+msgid "Not logged in"
+msgstr "Non connecté"
+
+#: cerber-load.php:4884
+msgid "By user"
+msgstr "Par utilisateur"
+
+#: cerber-load.php:4885
+msgid "From IP address"
+msgstr "De l’adresse IP"
+
+#: cerber-load.php:4888
+msgid "From country"
+msgstr "Du pays"
+
+#: cerber-load.php:4892
+msgid "The WP Cerber security plugin is now active"
+msgstr "Le plugin WP Cerber est maintenant actif"
+
+#: cerber-load.php:5994
+msgid "Import settings"
+msgstr "Importer les paramètres"
+
+#: cerber-settings.php:766
+msgid "Notification limit"
+msgstr "Limite de notification"
+
+#: cerber-settings.php:668
+msgid "Prohibited usernames"
+msgstr "Noms d'utilisateur interdits"
+
+#: cerber-settings.php:669
+msgid "Usernames from this list are not allowed to log in or register. Any IP address, have tried to use any of these usernames, will be immediately blocked. Use comma to separate logins."
+msgstr "Les noms d'utilisateur de cette liste ne sont pas autorisés à se connecter ou à s'enregistrer. Toute adresse IP ayant tenté d'utiliser l'un de ces noms d'utilisateur sera immédiatement bloquée. Utilisez une virgule pour séparer les sessions de connexion."
+
+#: cerber-settings.php:1333
+msgid "reCAPTCHA settings"
+msgstr "les paramètres du reCAPTCHA"
+
+#: cerber-settings.php:1344
+msgid "Site key"
+msgstr "Clef du site"
+
+#: cerber-settings.php:1348
+msgid "Secret key"
+msgstr "Clef secrète"
+
+#: cerber-settings.php:1358
+msgid "Enable reCAPTCHA for WordPress registration form"
+msgstr "Activer reCAPTCHA pour le formulaire d’inscription WordPress"
+
+#: cerber-settings.php:1367
+msgid "Lost password form"
+msgstr "Formulaire de récupération de mot de passe"
+
+#: cerber-settings.php:1377
+msgid "Login form"
+msgstr "Formulaire de connexion"
+
+#: cerber-settings.php:1378
+msgid "Enable reCAPTCHA for WordPress login form"
+msgstr "Activer reCAPTCHA pour le formulaire de connexion WordPress"
+
+#: cerber-settings.php:1334
+msgid "Before you can start using reCAPTCHA, you have to obtain Site key and Secret key on the Google website"
+msgstr "Avant d’utiliser reCAPTCHA, il vous faut obtenir une Clef de Site et une Clef Secrète sur le site de Google"
+
+#: cerber-lab.php:897 admin/cerber-admin-settings.php:103
+#: admin/cerber-admin-settings.php:259
+msgid "Know more"
+msgstr "En savoir plus"
+
+#: cerber-common.php:1661
+msgid "User created"
+msgstr "Utilisateur créé"
+
+#: cerber-common.php:1664
+msgid "User registered"
+msgstr "Inscription utilisateur"
+
+#: cerber-common.php:1701 cerber-common.php:1803
+msgid "reCAPTCHA verification failed"
+msgstr "la vérification du reCAPTCHA a échoué"
+
+#: cerber-common.php:1702 cerber-common.php:1804
+msgid "reCAPTCHA settings are incorrect"
+msgstr "les paramètres du reCAPTCHA sont incorrects"
+
+#: cerber-common.php:1706 cerber-common.php:1907
+msgid "Attempt to access prohibited URL"
+msgstr "Tentative d’accès à une URL interdite"
+
+#: cerber-common.php:1708 cerber-common.php:1909
+msgid "Attempt to log in with prohibited username"
+msgstr "Tentative de connexion avec un identifiant interdit"
+
+#: cerber-settings.php:337
+msgid "Cerber Lab connection"
+msgstr "Connexion Cerber Lab"
+
+#: cerber-settings.php:338
+msgid "Send malicious IP addresses to the Cerber Lab"
+msgstr "Envoyer les adresses IP bloquées au Cerber Lab"
+
+#: cerber-settings.php:343
+msgid "Cerber Lab protocol"
+msgstr "Protocole Cerber Lab"
+
+#: cerber-settings.php:1238 cerber-settings.php:1357
+msgid "Registration form"
+msgstr "Formulaire d’inscription"
+
+#: cerber-settings.php:1363
+msgid "Enable reCAPTCHA for WooCommerce registration form"
+msgstr "Activer reCAPTCHA pour le formulaire d’inscription WooCommerce"
+
+#: cerber-settings.php:1368
+msgid "Enable reCAPTCHA for WordPress lost password form"
+msgstr "Activer reCAPTCHA pour le formulaire de récupération de mot de passe WordPress"
+
+#: cerber-settings.php:1373
+msgid "Enable reCAPTCHA for WooCommerce lost password form"
+msgstr "Activer reCAPTCHA pour le formulaire de récupération de mot de passe WooCommerce"
+
+#: cerber-settings.php:1383
+msgid "Enable reCAPTCHA for WooCommerce login form"
+msgstr "Activer reCAPTCHA pour le formulaire de connexion WooCommerce"
+
+#: cerber-common.php:1703 cerber-common.php:1805
+msgid "Request to the Google reCAPTCHA service failed"
+msgstr "La requête au service Google reCAPTCHA a échouée"
+
+#: admin/cerber-dashboard.php:1061 admin/cerber-dashboard.php:1072
+#: admin/cerber-dashboard.php:1085 admin/cerber-dashboard.php:2744
+#: admin/cerber-dashboard.php:4608
+msgid "View all"
+msgstr "Voir tout"
+
+#: admin/cerber-dashboard.php:2752
+msgid "Recently locked out IP addresses"
+msgstr "IPs récemment bloquées"
+
+#: cerber-lab.php:895
+msgid "OK, nail them all"
+msgstr "D'accord, tout va bien"
+
+#: cerber-lab.php:896
+msgid "NO, maybe later"
+msgstr "NON, peut-être plus tard"
+
+#: admin/cerber-dashboard.php:60 admin/cerber-dashboard.php:2141
+#: admin/cerber-dashboard.php:3184 admin/cerber-dashboard.php:5292
+msgid "Dashboard"
+msgstr "Tableau de bord"
+
+#: cerber-lab.php:893
+msgid "Want to make WP Cerber even more powerful?"
+msgstr "Voulez-vous rendre WP Cerber encore plus puissant ?"
+
+#: cerber-lab.php:894
+msgid "Allow WP Cerber to send locked out malicious IP addresses to Cerber Lab. This helps the plugin team to develop new algorithms for WP Cerber that will defend WordPress against new threats and botnets that are appearing  everyday. You can disable the sending in the plugin settings at any time."
+msgstr "Permettre à WP Cerber d’envoyer les adresses IP qui ont été bloqués au Cerber Lab. Cela aidera l’équipe à créer de nouveau algorithmes pour que WP Cerber puisse défendre WordPress contre les nouvelles attaques et réseaux de robots qui apparaissent chaque jour. Vous pouvez désactiver l’envoi des données à tout moment dans les réglages du plugin."
+
+#: admin/cerber-dashboard.php:4059
+msgid "IP address"
+msgstr "Adresse IP"
+
+#: admin/cerber-dashboard.php:952
+msgid "User login"
+msgstr "Connexion de l'utilisateur"
+
+#: admin/cerber-dashboard.php:953 admin/cerber-dashboard.php:4065
+msgid "User ID"
+msgstr "ID utilisateur"
+
+#: admin/cerber-dashboard.php:1362 admin/cerber-dashboard.php:4636
+msgid "Export"
+msgstr "Exporter"
+
+#: admin/cerber-dashboard.php:1415
+msgid "Search for IP or username"
+msgstr "Rechercher une adresse IP ou un nom d'utilisateur"
+
+#: admin/cerber-dashboard.php:1426
+msgid "Filter"
+msgstr "Filtre"
+
+#: admin/cerber-dashboard.php:60
+msgid "Cerber Dashboard"
+msgstr "Tableau de bord Cerber"
+
+#: admin/cerber-dashboard.php:88
+msgid "Cerber tools"
+msgstr "Outils Cerber"
+
+#: cerber-load.php:5711 admin/cerber-users.php:923
+msgid "User"
+msgstr "Utilisateur"
+
+#: cerber-load.php:5719
+msgid "Search string"
+msgstr "Chaîne de recherche"
+
+#: cerber-settings.php:366
+msgid "Date format"
+msgstr "Format de date"
+
+#: cerber-settings.php:367
+msgid "if empty, the default format %s will be used"
+msgstr "si le champ est vide, on utilisera le format par défaut %s"
+
+#: cerber-settings.php:777
+msgid "Push notifications"
+msgstr "Notifications poussées"
+
+#: cerber-settings.php:749
+msgid "Email notifications"
+msgstr "Notifications par courriel"
+
+#: cerber-settings.php:759 cerber-settings.php:807 cerber-settings.php:922
+#: cerber-settings.php:1109
+msgid "Use comma to specify multiple values"
+msgstr "Utilisez la virgule pour spécifier plusieurs valeurs"
+
+#: cerber-settings.php:118
+msgid "All connected devices"
+msgstr "Tous les appareils connectés"
+
+#: cerber-settings.php:121
+msgid "No devices found"
+msgstr "Aucun appareil trouvé"
+
+#: cerber-settings.php:125
+msgid "Not available"
+msgstr "Non disponible"
+
+#: cerber-common.php:1693
+msgid "Password reset requested"
+msgstr "Réinitialisation du mot de passe demandée"
+
+#: cerber-common.php:1910
+msgid "Limit on failed reCAPTCHA verifications is reached"
+msgstr "La limite sur les vérifications reCAPTCHA échouées est atteinte"
+
+#: cerber-settings.php:175
+msgid "Apply limit login rules to IP addresses in the White IP Access List"
+msgstr "Appliquer les règles de connexion de limite aux adresses IP dans la liste d'accès White IP"
+
+#: cerber-settings.php:279
+msgid "Display 404 page"
+msgstr "Afficher la page 404"
+
+#: cerber-settings.php:1352
+msgid "Invisible reCAPTCHA"
+msgstr "Invisible reCAPTCHA"
+
+#: cerber-settings.php:1353
+msgid "Enable invisible reCAPTCHA"
+msgstr "Activer le reCAPTCHA invisible"
+
+#: cerber-settings.php:1353
+msgid "(do not enable it unless you get and enter the Site and Secret keys for the invisible version)"
+msgstr "(ne l'activez que si vous obtenez et entrez les clés Site et Secret pour la version invisible)"
+
+#: cerber-settings.php:1388
+msgid "Enable reCAPTCHA for WordPress comment form"
+msgstr "Activer le formulaire de commentaire reCAPTCHA pour WordPress"
+
+#: cerber-settings.php:1403
+msgid "Limit attempts"
+msgstr "Limiter les tentatives"
+
+#: cerber-settings.php:1404
+msgid "Lock out IP address for %s minutes after %s failed attempts within %s minutes"
+msgstr "Verrouiller l'adresse IP pendant %s minutes après %s tentatives échouées en %s minutes"
+
+#: cerber-settings.php:290
+msgid "In the Citadel mode nobody is able to log in except IPs from the White IP Access List. Active user sessions will not be affected."
+msgstr "En mode Citadel, il est impossible de se connecter, à l'exception des adresses IP de la liste d'accès IP blanche. Les sessions utilisateur actives ne seront pas affectées."
+
+#: admin/cerber-dashboard.php:949 admin/cerber-dashboard.php:1331
+msgid "Event"
+msgstr "Événement"
+
+#: cerber-common.php:388
+msgid "Spam comments denied"
+msgstr "Les commentaires de spam sont refusés"
+
+#: cerber-common.php:390
+msgid "Malicious IP addresses detected"
+msgstr "Adresses IP malveillantes détectées"
+
+#: cerber-common.php:391
+msgid "Lockouts occurred"
+msgstr "Il y a eu des blocages"
+
+#: cerber-load.php:1932 cerber-load.php:1938 cerber-load.php:1943
+#: cerber-load.php:1963 cerber-load.php:1968
+msgid "You are not allowed to register."
+msgstr "Vous n'êtes pas autorisé à vous inscrire."
+
+#: cerber-common.php:1678
+msgid "Spam comment denied"
+msgstr "Commentaire anti-spam refusé"
+
+#: cerber-common.php:1711
+msgid "Attempt to log in denied"
+msgstr "La tentative d'ouverture de session a été refusée"
+
+#: cerber-common.php:1712
+msgid "Attempt to register denied"
+msgstr "La tentative d'enregistrement a été refusée"
+
+#: cerber-common.php:385
+msgid "Malicious activities mitigated"
+msgstr "atténuations d'activités malveillantes"
+
+#: cerber-settings.php:1243 cerber-settings.php:1387
+msgid "Comment form"
+msgstr "Formulaire de commentaires"
+
+#: cerber-settings.php:1244
+msgid "Protect comment form with bot detection engine"
+msgstr "Protéger le formulaire de commentaires avec le moteur de détection de bot"
+
+#: cerber-settings.php:1239
+msgid "Protect registration form with bot detection engine"
+msgstr "Protéger le formulaire d'inscription avec le moteur de détection de bot"
+
+#: admin/cerber-dashboard.php:5482
+msgid "Diagnostic"
+msgstr "Diagnostic"
+
+#: admin/cerber-dashboard.php:5485
+msgid "License"
+msgstr "Licence"
+
+#: cerber-load.php:2296
+msgid "Sorry, human verification failed."
+msgstr "Désolé, la vérification humaine a échoué."
+
+#: cerber-common.php:1911
+msgid "Bot activity is detected"
+msgstr "L'activité du robot est détectée"
+
+#: cerber-settings.php:1315
+msgid "Comment processing"
+msgstr "Commentaire en cours de traitement"
+
+#: cerber-settings.php:1319
+msgid "If a spam comment detected"
+msgstr "Si un commentaire indésirable est détecté"
+
+#: cerber-settings.php:1324
+msgid "Trash spam comments"
+msgstr "Commentaires sur les spam"
+
+#: cerber-settings.php:1326
+msgid "Move spam comments to trash after"
+msgstr "Déplacer les commentaires indésirables à la corbeille"
+
+#: cerber-common.php:1679
+msgid "Spam form submission denied"
+msgstr "Soumission du formulaire anti-spam refusée"
+
+#: cerber-settings.php:1254
+msgid "Other forms"
+msgstr "Autres formulaires"
+
+#: cerber-settings.php:1255
+msgid "Protect all forms on the website with bot detection engine"
+msgstr "Protégez tous les formulaires sur le site Web avec le moteur de détection de robot"
+
+#: cerber-settings.php:1290
+msgid "Safe mode"
+msgstr "Mode sans échec"
+
+#: cerber-settings.php:1291
+msgid "Use less restrictive policies (allow AJAX)"
+msgstr "Utiliser des politiques moins restrictives (autoriser AJAX)"
+
+#: admin/cerber-dashboard.php:213 admin/cerber-dashboard.php:1329
+msgid "Country"
+msgstr "Pays"
+
+#: admin/cerber-dashboard.php:67
+msgid "Cerber Security Rules"
+msgstr "Règles de sécurité Cerber"
+
+#: admin/cerber-dashboard.php:67 admin/cerber-dashboard.php:5409
+msgid "Security Rules"
+msgstr "Règles de sécurité"
+
+#: admin/cerber-dashboard.php:1969
+msgid "Failed login attempts"
+msgstr "Echec des tentatives de connexion"
+
+#: admin/cerber-dashboard.php:1893 admin/cerber-dashboard.php:1970
+msgid "Registered"
+msgstr "Enregistré"
+
+#: admin/cerber-dashboard.php:2017 admin/cerber-users.php:52
+#: admin/cerber-users.php:1082
+msgid "You"
+msgstr "Vous"
+
+#: cerber-common.php:389
+msgid "Spam form submissions denied"
+msgstr "Refus d'envoi du formulaire anti-spam"
+
+#: cerber-load.php:4895 cerber-load.php:5985
+msgid "Getting Started Guide"
+msgstr "Guide de démarrage"
+
+#: admin/cerber-dashboard.php:5411
+msgid "Countries"
+msgstr "Pays"
+
+#: admin/cerber-dashboard.php:3788
+msgid "Permitted for one country"
+msgid_plural "Permitted for %d countries"
+msgstr[0] "Autorisé pour un pays"
+msgstr[1] "Autorisé pour %d pays"
+
+#: admin/cerber-dashboard.php:3799
+msgid "No rule"
+msgstr "Aucune règle"
+
+#: admin/cerber-dashboard.php:3960
+msgid "Security rules have been updated"
+msgstr "Les règles de sécurité ont été mises à jour"
+
+#. URI of the plugin
+#: 
+msgid "https://wpcerber.com"
+msgstr "https://wpcerber.com"
+
+#: cerber-common.php:1680
+msgid "Form submission denied"
+msgstr "Refus d'envoi du formulaire"
+
+#: cerber-common.php:1681
+msgid "Comment denied"
+msgstr "Commentaire refusé"
+
+#: cerber-common.php:1717
+msgid "Request to REST API denied"
+msgstr "Demande d'REST API refusée"
+
+#: cerber-common.php:1752
+msgid "Bot detected"
+msgstr "Robot détecté"
+
+#: cerber-common.php:1753
+msgid "Citadel mode is active"
+msgstr "Le mode Citadel est actif"
+
+#: cerber-common.php:1757
+msgid "Malicious activity detected"
+msgstr "Activité malveillante détectée"
+
+#: cerber-common.php:1758
+msgid "Blocked by country rule"
+msgstr "Bloqué par la règle du pays"
+
+#: cerber-common.php:1759
+msgid "Limit reached"
+msgstr "Limite atteinte"
+
+#: cerber-common.php:1760
+msgid "Multiple suspicious activities"
+msgstr "Plusieurs activités suspectes"
+
+#: cerber-common.php:1912
+msgid "Multiple suspicious activities were detected"
+msgstr "Plusieurs activités suspectes ont été détectées"
+
+#: cerber-settings.php:476
+msgid "Specify REST API namespaces to be allowed if REST API is disabled. One string per line."
+msgstr "Spécifiez les espaces de noms de l'REST API à autoriser si l'REST API est désactivée. Une chaîne par ligne."
+
+#: cerber-settings.php:584
+msgid "Registration limit"
+msgstr "Limite d'enregistrement"
+
+#: cerber-settings.php:695
+msgid "by date of registration"
+msgstr "par date d'enregistrement"
+
+#: cerber-settings.php:1305
+msgid "Query whitelist"
+msgstr "Liste blanche des requêtes"
+
+#: admin/cerber-dashboard.php:3768
+msgid "Start typing here to find a country"
+msgstr "Commencez à taper ici pour trouver un pays"
+
+#: admin/cerber-dashboard.php:3883
+msgid "Click on a country name to add it to the list of selected countries"
+msgstr "Cliquez sur le nom d'un pays pour l'ajouter à la liste des pays sélectionnés"
+
+#: admin/cerber-dashboard.php:3915
+msgid "Submit forms"
+msgstr "Soumettre les formulaires"
+
+#: admin/cerber-dashboard.php:3916
+msgid "Post comments"
+msgstr "Poster des commentaires"
+
+#: admin/cerber-dashboard.php:3914
+msgid "Register on the website"
+msgstr "S'inscrire sur le site"
+
+#: admin/cerber-dashboard.php:3917
+msgid "Use XML-RPC"
+msgstr "Utiliser XML-RPC"
+
+#: admin/cerber-dashboard.php:3918
+msgid "Use REST API"
+msgstr "Utiliser REST API"
+
+#: cerber-settings.php:1321
+msgid "Deny it completely"
+msgstr "Le nier complètement"
+
+#: cerber-settings.php:1321
+msgid "Mark it as spam"
+msgstr "Marquez-le comme spam"
+
+#: admin/cerber-dashboard.php:3185
+msgid "Main settings"
+msgstr "Réglages principaux"
+
+#: cerber-settings.php:792
+msgid "Weekly reports"
+msgstr "Rapports hebdomadaires"
+
+#: admin/cerber-admin-settings.php:697 admin/cerber-admin-settings.php:698
+msgid "If you use a caching plugin, you have to add your new login URL to the list of pages not to cache."
+msgstr "Si vous utilisez un plugin de mise en cache, vous devez ajouter votre nouvelle URL de connexion à la liste des pages à ne pas mettre en cache."
+
+#: cerber-load.php:4914
+msgid "Weekly report"
+msgstr "Rapport hebdomadaire"
+
+#: cerber-load.php:4917 cerber-load.php:4925
+msgid "To change reporting settings visit"
+msgstr "Pour modifier les paramètres de reporting, visitez"
+
+#: cerber-load.php:4951
+msgid "Your login page:"
+msgstr "Votre page de connexion :"
+
+#: cerber-load.php:4956
+msgid "Your license is valid until"
+msgstr "Votre licence est valable jusqu'au"
+
+#: cerber-load.php:5062
+msgid "Activity details"
+msgstr "Détails de l'activité"
+
+#: admin/cerber-admin-settings.php:590
+msgid "Click to send now"
+msgstr "Cliquez pour envoyer maintenant"
+
+#: admin/cerber-dashboard.php:671
+msgid "Email has been sent to"
+msgstr "Un courriel a été envoyé à"
+
+#: admin/cerber-dashboard.php:674
+msgid "Unable to send email to"
+msgstr "Impossible d'envoyer un courriel à"
+
+#: admin/cerber-dashboard.php:3791
+msgid "Not permitted for one country"
+msgid_plural "Not permitted for %d countries"
+msgstr[0] "Interdit pour un pays"
+msgstr[1] "Interdit pour %d pays"
+
+#: admin/cerber-dashboard.php:3887
+msgctxt "to is a marker of infinitive, e.g. \"to use it\""
+msgid "Selected countries are permitted to %s, other countries are not permitted to"
+msgstr "Les pays sélectionnés sont autorisés à %s, les autres pays ne sont pas autorisés à"
+
+#: admin/cerber-dashboard.php:3890
+msgctxt "to is a marker of infinitive, e.g. \"to use it\""
+msgid "Selected countries are not permitted to %s, other countries are permitted to"
+msgstr "Les pays sélectionnés ne sont pas autorisés à %s, les autres pays sont autorisés à"
+
+#: cerber-load.php:5050
+msgid "Weekly Report"
+msgstr "Rapport hebdomadaire"
+
+#: cerber-settings.php:282
+msgid "Use 404 template from the active theme"
+msgstr "Utiliser le modèle 404 du thème actif"
+
+#: cerber-settings.php:283
+msgid "Display simple 404 page"
+msgstr "Afficher une simple page 404"
+
+#: cerber-settings.php:1306
+msgid "Enter a part of query string or query path to exclude a request from inspection by the engine. One item per line."
+msgstr "Entrer une partie de la chaîne ou du chemin de requête pour exclure une requête de l'inspection par le moteur. Un article par ligne."
+
+#: cerber-settings.php:796
+msgid "Enable reporting"
+msgstr "Activer le signalement"
+
+#: cerber-load.php:4980
+msgid "Your last sign-in was %s from %s"
+msgstr "Votre dernière connexion était %s de %s"
+
+#: admin/cerber-dashboard.php:343
+msgid "Optional comment for this entry"
+msgstr "Commentaire facultatif pour cette entrée"
+
+#: admin/cerber-dashboard.php:365
+msgid "You cannot add your IP address or network"
+msgstr "Vous ne pouvez pas ajouter votre adresse IP ou votre réseau"
+
+#: cerber-settings.php:600 cerber-settings.php:669
+msgid "To specify a REGEX pattern wrap a pattern in two forward slashes."
+msgstr "Pour spécifier un motif REGEX, enroulez un motif en deux barres obliques vers l'avant."
+
+#: admin/cerber-dashboard.php:62
+msgid "Cerber Traffic Inspector"
+msgstr "Inspecteur du trafic du Cerber"
+
+#: admin/cerber-dashboard.php:62 admin/cerber-dashboard.php:2104
+#: admin/cerber-dashboard.php:5363
+msgid "Traffic Inspector"
+msgstr "Inspecteur du trafic"
+
+#: admin/cerber-dashboard.php:2143 admin/cerber-users.php:1116
+msgid "Traffic"
+msgstr "Trafic"
+
+#: admin/cerber-dashboard.php:4544
+msgid "Request"
+msgstr "Demande"
+
+#: admin/cerber-dashboard.php:4546 admin/cerber-users.php:928
+msgid "Host Info"
+msgstr "Informations sur l'hôte"
+
+#: admin/cerber-dashboard.php:4547
+msgid "User Agent"
+msgstr "Agent utilisateur"
+
+#: admin/cerber-dashboard.php:4613
+msgid "Form submissions"
+msgstr "Soumission des formulaires"
+
+#: admin/cerber-dashboard.php:4614
+msgid "Page Not Found"
+msgstr "La page n'a pas été trouvée"
+
+#: admin/cerber-dashboard.php:4621
+msgid "Longer than"
+msgstr "Plus long que"
+
+#: admin/cerber-dashboard.php:4644
+msgid "Refresh"
+msgstr "Actualiser"
+
+#: cerber-common.php:283
+msgid "Check for requests"
+msgstr "Vérifier les demandes"
+
+#: admin/cerber-dashboard.php:4679
+msgid "Not specified"
+msgstr "Non spécifié(e)(s)"
+
+#: cerber-settings.php:874
+msgid "Logging mode"
+msgstr "Mode d'enregistrement"
+
+#: cerber-settings.php:877
+msgid "Logging disabled"
+msgstr "Enregistrement désactivé"
+
+#: cerber-settings.php:879
+msgid "Smart"
+msgstr "Intelligent"
+
+#: cerber-settings.php:880
+msgid "All traffic"
+msgstr "Tout le trafic"
+
+#: cerber-settings.php:920
+msgid "Mask these form fields"
+msgstr "Masquer ces champs du formulaire"
+
+#: cerber-settings.php:961
+msgid "milliseconds"
+msgstr "millisecondes"
+
+#: cerber-settings.php:822
+msgid "Enable traffic inspection"
+msgstr "Activer l'inspection du trafic"
+
+#: cerber-settings.php:915
+msgid "Save request fields"
+msgstr "Sauvegarder les champs de demande"
+
+#: cerber-settings.php:960
+msgid "Page generation time threshold"
+msgstr "Temps limite de génération des pages"
+
+#: admin/cerber-dashboard.php:2103
+msgid "enabled"
+msgstr "activé(s)"
+
+#: admin/cerber-dashboard.php:2108
+msgid "no connection"
+msgstr "aucune connexion"
+
+#: admin/cerber-dashboard.php:1921
+msgid "Last seen"
+msgstr "Vu pour la dernière fois"
+
+#: cerber-load.php:4688
+msgid "We're sorry, you are not allowed to proceed"
+msgstr "Nous nous excusons, mais vous n'avez pas le droit de continuer"
+
+#: cerber-settings.php:837
+msgid "Request whitelist"
+msgstr "Demander la liste blanche"
+
+#: cerber-settings.php:841
+msgid "Enter a request URI to exclude the request from inspection. One item per line."
+msgstr "Saisissez une requête URI pour que la requête soit exclue du contrôle. Un article par ligne."
+
+#: cerber-settings.php:928
+msgid "Save request headers"
+msgstr "Sauvegarder les en-têtes de requête"
+
+#: cerber-settings.php:950
+msgid "Save $_SERVER"
+msgstr "Sauvegarder $_SERVER"
+
+#: cerber-settings.php:940
+msgid "Save request cookies"
+msgstr "Sauvegarder les cookies de demande"
+
+#: cerber-settings.php:419
+msgid "Protect admin scripts"
+msgstr "Protéger les scripts d'administration"
+
+#: cerber-settings.php:420
+msgid "Block unauthorized access to load-scripts.php and load-styles.php"
+msgstr "Bloquer l'accès non autorisé à load-scripts.php et load-styles.php"
+
+#: cerber-common.php:3281
+msgid "Unable to create the directory"
+msgstr "Impossible de créer le répertoire"
+
+#: cerber-common.php:3286
+msgid "Destination folder access denied"
+msgstr "Accès au dossier de destination refusé"
+
+#: cerber-common.php:3289
+msgid "File not found"
+msgstr "Fichier non trouvé"
+
+#: cerber-common.php:3292
+msgid "Unable to copy the file"
+msgstr "Impossible de copier le fichier"
+
+#: cerber-common.php:3298
+msgid "Unable to delete the file"
+msgstr "Impossible de supprimer le fichier"
+
+#: cerber-settings.php:145
+msgid "Load security engine"
+msgstr "Charger le moteur de sécurité"
+
+#: cerber-settings.php:148
+msgid "Legacy mode"
+msgstr "Mode traditionnel"
+
+#: cerber-settings.php:149
+msgid "Standard mode"
+msgstr "Mode standard"
+
+#: admin/cerber-admin-settings.php:668
+msgid "Plugin initialization mode has not been changed"
+msgstr "Le mode d'initialisation du plugin n'a pas été modifié"
+
+#: cerber-common.php:1715
+msgid "File upload denied"
+msgstr "Envoi de fichier refusé"
+
+#: cerber-settings.php:841 cerber-settings.php:903
+msgid "To specify a REGEX pattern, enclose a whole line in two braces."
+msgstr "Pour spécifier un motif REGEX, insérez une ligne entière entre deux accolades."
+
+#: cerber-settings.php:134
+msgid "Be careful about enabling these options."
+msgstr "Soyez prudent lorsque vous activez ces options."
+
+#: cerber-settings.php:134
+msgid "If you forget your Custom login URL, you will be unable to log in."
+msgstr "Si vous oubliez votre URL de connexion personnalisée, vous ne pourrez pas vous connecter."
+
+#: admin/cerber-dashboard.php:73 admin/cerber-dashboard.php:5424
+msgid "Site Integrity"
+msgstr "Intégrité du site"
+
+#: cerber-scanner.php:1717 cerber-settings.php:683 cerber-settings.php:825
+#: cerber-settings.php:856 cerber-settings.php:990 cerber-settings.php:999
+#: cerber-settings.php:1466 admin/cerber-dashboard.php:2128
+#: admin/cerber-dashboard.php:2130 admin/cerber-users.php:20
+#: admin/cerber-users.php:474 admin/cerber-users.php:488
+msgid "Disabled"
+msgstr "Désactivé"
+
+#: cerber-scanner.php:1032 admin/cerber-dashboard.php:2129
+msgid "Quick Scan"
+msgstr "Balayage rapide"
+
+#: cerber-scanner.php:1032 admin/cerber-dashboard.php:2131
+msgid "Full Scan"
+msgstr "Balayage complet"
+
+#: cerber-common.php:1751 cerber-common.php:1761
+msgid "Denied"
+msgstr "Refusé"
+
+#: cerber-settings.php:174 cerber-settings.php:610 cerber-settings.php:637
+#: cerber-settings.php:831 cerber-settings.php:1300 cerber-settings.php:1398
+msgid "Use White IP Access List"
+msgstr "Utiliser la liste d'accès IP blanche"
+
+#: cerber-settings.php:242
+msgid "Disable dashboard redirection"
+msgstr "Désactiver la redirection du tableau de bord"
+
+#: cerber-settings.php:243
+msgid "Disable automatic redirection to the login page when /wp-admin/ is requested by an unauthorized request"
+msgstr "Désactiver la redirection automatique vers la page de connexion lorsque /wp-admin/ est demandé par une requête non autorisée"
+
+#: cerber-settings.php:982
+msgid "Scanner settings"
+msgstr "Paramètres du balayer"
+
+#: cerber-settings.php:1022
+msgid "Custom signatures"
+msgstr "Signatures personnalisées"
+
+#: cerber-settings.php:1026
+msgid "Specify custom PHP code signatures. One item per line. To specify a REGEX pattern, enclose a whole line in two braces."
+msgstr "Spécifiez des signatures de code PHP personnalisées. Un article par ligne. Pour spécifier un motif REGEX, entourez une ligne entière de deux accolades."
+
+#: cerber-settings.php:1013
+msgid "Unwanted file extensions"
+msgstr "Extensions de fichiers indésirables"
+
+#: cerber-settings.php:1019
+msgid "Specify file extensions to search for. Full scan only. Use comma to separate items."
+msgstr "Spécifiez les extensions de fichier à rechercher. Balayage complet uniquement. Utilisez la virgule pour séparer les éléments."
+
+#: cerber-settings.php:1029
+msgid "Directories to exclude"
+msgstr "Répertoires à exclure"
+
+#: cerber-settings.php:1051
+msgid "Delete quarantined files after"
+msgstr "Supprimer les fichiers mis en quarantaine après"
+
+#: cerber-settings.php:1064
+msgid "Launch Quick Scan"
+msgstr "Lancez le balayage rapide"
+
+#: cerber-scanner.php:1718
+msgid "Every hour"
+msgstr "Toutes les heures"
+
+#: cerber-scanner.php:1719
+msgid "Every 3 hours"
+msgstr "Toutes les 3 heures"
+
+#: cerber-scanner.php:1720
+msgid "Every 6 hours"
+msgstr "Toutes les 6 heures"
+
+#: cerber-settings.php:1069
+msgid "Launch Full Scan"
+msgstr "Lancez le balayage complet"
+
+#: cerber-settings.php:1084 cerber-settings.php:1130
+msgid "Low severity"
+msgstr "Faible niveau de gravité"
+
+#: cerber-settings.php:1085 cerber-settings.php:1131
+msgid "Medium severity"
+msgstr "Niveau moyen de gravité"
+
+#: cerber-settings.php:1086 cerber-settings.php:1132
+msgid "High severity"
+msgstr "Haut niveau de gravité"
+
+#: cerber-settings.php:1081
+msgid "Report an issue if any of the following is true"
+msgstr "Signaler un problème si l'une des affirmations suivantes est vraie"
+
+#: cerber-settings.php:1090
+msgid "Send email report"
+msgstr "Envoyer le rapport par courriel"
+
+#: cerber-settings.php:1093
+msgid "After every scan"
+msgstr "Après chaque balayage"
+
+#: cerber-settings.php:1094
+msgid "If any changes in scan results occurred"
+msgstr "S'il y a eu des changements dans les résultats d'analyse"
+
+#: cerber-settings.php:1099
+msgid "Include file sizes"
+msgstr "Inclure la taille des fichiers"
+
+#: cerber-settings.php:1103
+msgid "Include scan errors"
+msgstr "Inclure les erreurs de l'analyse"
+
+#: admin/cerber-dashboard.php:5426
+msgid "Security Scanner"
+msgstr "Balayeur de sécurité"
+
+#: admin/cerber-dashboard.php:5428
+msgid "Scheduling"
+msgstr "Planification"
+
+#: admin/cerber-admin.php:173
+msgid "Currently a scheduled scan in progress. Please wait until it is finished."
+msgstr "Il y a actuellement un balayage planifié en cours. Veuillez patienter jusqu'à ce qu'il soit terminé."
+
+#: admin/cerber-admin.php:177
+msgid "Previous scan started %s has not been completed. Continue scanning?"
+msgstr "L'analyse précédente commencée %s n'est pas terminée. Poursuivre le balayage ?"
+
+#: admin/cerber-admin.php:72
+msgid "It seems this website has never been scanned. To start scanning click the button below."
+msgstr "Il semble que ce site n'ait jamais été balayé. Pour lancer le balayage, cliquez sur le bouton ci-dessous."
+
+#: admin/cerber-admin.php:186
+msgid "Start Quick Scan"
+msgstr "Démarrer le balayage rapide"
+
+#: admin/cerber-admin.php:187
+msgid "Start Full Scan"
+msgstr "Démarrer le balayage complet"
+
+#: admin/cerber-admin.php:188
+msgid "Stop Scanning"
+msgstr "Arrêter le balayage"
+
+#: admin/cerber-admin.php:189
+msgid "Continue Scanning"
+msgstr "Poursuivre le balayage"
+
+#: admin/cerber-dashboard.php:1385 admin/cerber-tools.php:355
+#: admin/cerber-admin.php:227
+msgid "Delete"
+msgstr "Supprimer"
+
+#: cerber-scanner.php:1614
+msgid "Verified"
+msgstr "Vérifié"
+
+#: cerber-scanner.php:1621
+msgid "Integrity data not found"
+msgstr "Les données d'intégrité n'ont pas été trouvées"
+
+#: cerber-scanner.php:1622
+msgid "Unable to check the integrity of the plugin due to a network error"
+msgstr "Impossible de vérifier l'intégrité du plugin en raison d'une erreur réseau"
+
+#: cerber-scanner.php:1623
+msgid "Unable to check the integrity of WordPress files due to a network error"
+msgstr "Impossible de vérifier l'intégrité des fichiers WordPress en raison d'une erreur réseau"
+
+#: cerber-scanner.php:1624
+msgid "Unable to check the integrity of the theme due to a network error"
+msgstr "Impossible de vérifier l'intégrité du thème en raison d'une erreur réseau"
+
+#: cerber-scanner.php:1629
+msgid "Unable to process file"
+msgstr "Impossible de traiter le fichier"
+
+#: cerber-scanner.php:1630 cerber-scanner.php:4612
+msgid "Unable to open file"
+msgstr "Impossible d'ouvrir le fichier"
+
+#: cerber-scanner.php:1632 cerber-scanner.php:1674
+msgid "Checksum mismatch"
+msgstr "Erreur de concordance de la somme de contrôle"
+
+#: cerber-scanner.php:1635
+msgid "Suspicious code found"
+msgstr "Code suspect trouvé"
+
+#: cerber-scanner.php:1637
+msgid "Unattended suspicious file"
+msgstr "Fichier suspect non surveillé"
+
+#: cerber-scanner.php:1638
+msgid "Executable code found"
+msgstr "Code exécutable trouvé"
+
+#: cerber-scanner.php:1643
+msgid "Unwanted file extension"
+msgstr "Extension de fichier indésirable"
+
+#: cerber-scanner.php:1645
+msgid "Content has been modified"
+msgstr "Le contenu a été modifié"
+
+#: cerber-scanner.php:1646
+msgid "New file"
+msgstr "Nouveau fichier"
+
+#: cerber-scanner.php:2470
+msgid "Custom signature found"
+msgstr "Signature personnalisée trouvée"
+
+#: cerber-scanner.php:3697
+msgid "Parsing the list of files"
+msgstr "Analyse de la liste des fichiers"
+
+#: cerber-scanner.php:3698
+msgid "Checking for new and modified files"
+msgstr "Vérification des fichiers nouveaux et modifiés"
+
+#: cerber-scanner.php:3699
+msgid "Verifying the integrity of WordPress"
+msgstr "Vérification de l'intégrité de WordPress"
+
+#: cerber-scanner.php:3701
+msgid "Verifying the integrity of the plugins"
+msgstr "Vérification de l'intégrité des plugins"
+
+#: cerber-scanner.php:3703
+msgid "Verifying the integrity of the themes"
+msgstr "Vérification de l'intégrité des thèmes"
+
+#: cerber-scanner.php:3705
+msgid "Searching for malicious code"
+msgstr "Recherche de code malveillant"
+
+#: cerber-scanner.php:3706
+msgid "Finalizing the scan"
+msgstr "Finalisation du balayage"
+
+#: admin/cerber-admin.php:108
+msgid "Files to scan"
+msgstr "Fichiers à balayer"
+
+#: admin/cerber-admin.php:115
+msgid "Critical issues"
+msgstr "Problèmes critiques"
+
+#: cerber-scanner.php:4776 admin/cerber-admin.php:115
+msgid "Issues total"
+msgstr "Problèmes au total"
+
+#: admin/cerber-admin.php:360
+msgid "File access error. Possibly scan results are outdated. Please run Quick or Full Scan."
+msgstr "Erreur d'accès aux fichiers. Les résultats des balayages ne sont peut-être pas à jour. Exécutez un balayage rapide ou complet."
+
+#: cerber-scanner.php:4911
+msgid "To view full report visit"
+msgstr "Pour consulter le rapport complet, visitez"
+
+#: cerber-load.php:4922
+msgid "Scanner Report"
+msgstr "Rapport du balayeur"
+
+#: cerber-settings.php:987
+msgid "Monitor new files"
+msgstr "Surveiller les nouveaux fichiers"
+
+#: cerber-settings.php:996
+msgid "Monitor modified files"
+msgstr "Surveiller les fichiers modifiés"
+
+#: cerber-settings.php:1095
+msgid "If new issues found"
+msgstr "Si de nouveaux problèmes sont découverts"
+
+#: admin/cerber-admin-settings.php:978
+msgid "The schedule has been updated"
+msgstr "Le calendrier a été mis à jour"
+
+#: cerber-scanner.php:1641 cerber-scanner.php:1682 cerber-scanner.php:2625
+msgid "Suspicious directives found"
+msgstr "Directives suspectes trouvées"
+
+#: cerber-scanner.php:2623
+msgid "Suspicious code instruction found"
+msgstr "Instruction de code suspecte trouvée"
+
+#: cerber-scanner.php:2624
+msgid "Suspicious code signatures found"
+msgstr "Signatures de code suspectes trouvées"
+
+#: cerber-scanner.php:2627
+msgid "To solve this issue you have to reinstall %s or update it to the latest version."
+msgstr "Pour résoudre ce problème, vous devez réinstaller %s ou le mettre à jour avec la dernière version."
+
+#: cerber-scanner.php:2628
+msgid "Please upload a reference ZIP archive"
+msgstr "Veuillez télécharger une archive ZIP de référence"
+
+#: cerber-scanner.php:2629
+msgid "Resolve issue"
+msgstr "Résoudre le problème"
+
+#: admin/cerber-admin.php:251
+msgid "We have not found any integrity data to verify"
+msgstr "Nous n'avons trouvé aucune donnée sur l'intégrité à vérifier"
+
+#: admin/cerber-admin.php:253
+msgid "You have to upload a ZIP archive from which you've installed it. This enables the security scanner to verify the integrity of the code and detect malware."
+msgstr "Vous devez télécharger une archive ZIP dont vous l'avez installée. Cela permet au balayeur de sécurité de vérifier l'intégrité du code et de détecter les logiciels malveillants."
+
+#: cerber-scanner.php:4748
+msgid "Full Scan Report"
+msgstr "Rapport de balayage complet"
+
+#: cerber-scanner.php:4748
+msgid "Quick Scan Report"
+msgstr "Rapport de balayage rapide"
+
+#: cerber-scanner.php:4761
+msgid "Files scanned"
+msgstr "Fichiers balayés"
+
+#: admin/cerber-dashboard.php:325 admin/cerber-dashboard.php:1684
+#: admin/cerber-dashboard.php:1741 admin/cerber-dashboard.php:1872
+msgid "Check for activities"
+msgstr "Vérifier les activités"
+
+#: admin/cerber-dashboard.php:1903
+msgid "Activated"
+msgstr "Activé"
+
+#: cerber-common.php:1726
+msgid "Malicious request denied"
+msgstr "Demande malveillante refusée"
+
+#: cerber-common.php:1740
+msgid "User activated"
+msgstr "Activé par l'utilisateur"
+
+#: cerber-common.php:1763
+msgid "Suspicious number of fields"
+msgstr "Nombre de champs suspects"
+
+#: cerber-common.php:1764
+msgid "Suspicious number of nested values"
+msgstr "Nombre suspect de valeurs intégrées dans le fichier"
+
+#: cerber-common.php:1765 cerber-common.php:1914
+msgid "Malicious code detected"
+msgstr "Code malveillant détecté"
+
+#: cerber-common.php:1915
+msgid "Attempt to upload a file with malicious code"
+msgstr "Tentative de téléchargement d'un fichier contenant un code malveillant"
+
+#: cerber-common.php:2198
+msgid "Bytes"
+msgstr "Octets"
+
+#: cerber-scanner.php:1620 cerber-scanner.php:1681
+msgid "Vulnerability found"
+msgstr "Vulnérabilité constatée"
+
+#: cerber-scanner.php:1625
+msgid "Unable to check the integrity due to a DB error"
+msgstr "Impossible de vérifier l'intégrité en raison d'une erreur de base de données"
+
+#: cerber-settings.php:1059
+msgid "Automated recurring scan schedule"
+msgstr "Planification automatisée du balayage périodique"
+
+#: cerber-settings.php:1076
+msgid "Scan results reporting"
+msgstr "Rapports sur les résultats du balayage"
+
+#: admin/cerber-dashboard.php:1082
+msgid "Suspicious activity"
+msgstr "Activité suspecte"
+
+#: admin/cerber-dashboard.php:4610
+msgid "Errors"
+msgstr "Erreurs"
+
+#. Description of the plugin
+#: 
+msgid "Defends WordPress against hacker attacks, spam, trojans, and viruses. Malware scanner and integrity checker. Hardening WordPress with a set of comprehensive security algorithms. Spam protection with a sophisticated bot detection engine and reCAPTCHA. Tracks user and intruder activity with powerful email, mobile and desktop notifications."
+msgstr "Défend WordPress contre les attaques de pirates, le spam, les chevaux de Troie et les virus. Balayeur de logiciels malveillants et vérificateur d'intégrité. Renforcement de WordPress avec un ensemble complet d'algorithmes de sécurité. Protection anti-spam avec un moteur de détection de robot sophistiqué et reCAPTCHA. Suivi de l'activité des utilisateurs et des intrus grâce à de puissantes notifications par courriel, par téléphone mobile et par ordinateur."
+
+#: cerber-load.php:394
+msgid "You have exceeded the number of allowed login attempts. Please try again in %d minutes."
+msgstr "Vous avez dépassé le nombre de tentatives de connexion autorisées. Veuillez réessayer en %d minutes."
+
+#: cerber-common.php:2078
+msgctxt "preposition of a period of time like: in 6 hours"
+msgid "in %s"
+msgstr "en %s"
+
+#: admin/cerber-admin-settings.php:571
+msgctxt "preposition of time like: at 11:00"
+msgid "at"
+msgstr "à"
+
+#: admin/cerber-dashboard.php:5431
+msgid "Quarantine"
+msgstr "Quarantaine"
+
+#: admin/cerber-admin.php:80
+msgid "Started"
+msgstr "Commencé"
+
+#: admin/cerber-admin.php:84
+msgid "Finished"
+msgstr "Fini"
+
+#: admin/cerber-admin.php:92
+msgid "Performance"
+msgstr "Performance"
+
+#: nexus/cerber-slave-list.php:340
+msgid "Vulnerabilities"
+msgstr "Vulnérabilités"
+
+#: cerber-scanner.php:1678
+msgid "New files"
+msgstr "Nouveaux fichiers"
+
+#: cerber-scanner.php:1677
+msgid "Changed files"
+msgstr "Fichiers modifiés"
+
+#: cerber-scanner.php:1676
+msgid "Unwanted extensions"
+msgstr "Extensions non désirées"
+
+#: cerber-scanner.php:1675
+msgid "Unattended files"
+msgstr "Fichiers sans surveillance"
+
+#: admin/cerber-admin.php:108 admin/cerber-admin.php:769
+msgid "Scanned"
+msgstr "Balayé(s)"
+
+#: admin/cerber-admin.php:713
+msgid "There are no files in the quarantine at the moment."
+msgstr "Il n'y a aucun dossier en quarantaine pour le moment."
+
+#: admin/cerber-admin.php:751
+msgid "Restore"
+msgstr "Restaurer"
+
+#: admin/cerber-admin.php:748
+msgid "Delete permanently"
+msgstr "Supprimer définitivement"
+
+#: admin/cerber-admin.php:771
+msgid "Automatic deletion"
+msgstr "Suppression automatique"
+
+#: admin/cerber-admin.php:772 admin/cerber-admin.php:927
+#: admin/cerber-admin.php:1392
+msgid "Size"
+msgstr "Taille"
+
+#: admin/cerber-admin.php:773 admin/cerber-admin.php:928
+msgid "File"
+msgstr "Fichier"
+
+#: admin/cerber-admin.php:846
+msgid "The file has been deleted permanently."
+msgstr "Le fichier a été supprimé définitivement."
+
+#: admin/cerber-admin.php:861
+msgid "The file has been restored to its original location."
+msgstr "Le fichier a été restauré à son emplacement d'origine."
+
+#: admin/cerber-dashboard.php:2144
+msgid "Integrity"
+msgstr "Intégrité"
+
+#: cerber-common.php:1714
+msgid "Attempt to upload malicious file denied"
+msgstr "Tentative de téléchargement d'un fichier malveillant refusée"
+
+#: cerber-load.php:8063
+msgid "Awesome!"
+msgstr "Génial !"
+
+#: cerber-settings.php:1118
+msgid "Automatic cleanup of malware and suspicious files"
+msgstr "Nettoyage automatique des logiciels malveillants et des fichiers suspects"
+
+#: cerber-settings.php:1219
+msgid "Files in the sessions directory"
+msgstr "Fichiers dans le répertoire des sessions"
+
+#: cerber-settings.php:1199
+msgid "Files in these directories"
+msgstr "Fichiers dans ces répertoires"
+
+#: cerber-settings.php:1203
+msgid "Use absolute paths. One item per line."
+msgstr "Utilisez des chemins absolus. Un article par ligne."
+
+#: cerber-settings.php:1206
+msgid "Files with these extensions"
+msgstr "Fichiers avec ces extensions"
+
+#: cerber-settings.php:1212
+msgid "Use comma to separate items."
+msgstr "Utilisez la virgule pour séparer les éléments."
+
+#: admin/cerber-dashboard.php:5429
+msgid "Cleaning up"
+msgstr "Nettoyage"
+
+#: cerber-scanner.php:1636
+msgid "Malicious code found"
+msgstr "Code malveillant trouvé"
+
+#: cerber-scanner.php:2620
+msgid "This file contains executable code and may contain obfuscated malware. If this file is a part of a theme or a plugin, it must be located in the theme or the plugin folder. No exception, no excuses."
+msgstr "Ce fichier contient du code exécutable et peut contenir des logiciels malveillants obscurs. Si ce fichier fait partie d'un thème ou d'un plugin, il doit se trouver dans le dossier du thème ou du plugin. Aucune exception dans tous les cas."
+
+#: cerber-scanner.php:2621
+msgid "The scanner recognizes this file as \"ownerless\" or \"not bundled\" because it does not belong to any known part of the website and should not be here."
+msgstr "Le balayeur reconnaît ce fichier comme un fichier \"sans propriétaire\" ou \"non regroupé\" parce qu'il n'appartient à aucune partie connue du site Web et donc il ne devrait pas être ici."
+
+#: cerber-scanner.php:2622
+msgid "It may remain after upgrading to a newer version of %s. It also may be a piece of obfuscated malware. In a rare case it might be a part of a custom-made (bespoke) plugin or theme."
+msgstr "Après la mise à jour, il est possible qu'il reste à une version plus récente de %s. Il peut également s'agir d'un logiciel malveillant obscurci. Dans de rares cas, il peut s'agir d'une partie d'un plugin ou d'un thème personnalisé (sur mesure)."
+
+#: cerber-scanner.php:2626
+msgid "The contents of the file have been changed and do not match what exists in the official WordPress repository or a reference file you have uploaded earlier. The file may have been altered by malware, infected by a virus or has been tampered with."
+msgstr "Le contenu du fichier a été modifié et ne correspond pas à ce qui existe dans le référentiel officiel WordPress ou dans un fichier de référence que vous avez téléchargé précédemment. Le fichier peut avoir été modifié par un logiciel malveillant, infecté par un virus ou avoir été falsifié."
+
+#: cerber-scanner.php:4835
+msgid "Deleted"
+msgstr "Supprimé"
+
+#: cerber-scanner.php:4895
+msgid "Automatically moved to quarantine"
+msgstr "Passage automatique en quarantaine"
+
+#: cerber-common.php:1766
+msgid "Suspicious SQL code detected"
+msgstr "Code SQL suspect détecté"
+
+#: admin/cerber-dashboard.php:2125
+msgctxt "Example: Last malware scan: 23 Jan 2018"
+msgid "Last malware scan"
+msgstr "Dernière recherche de programmes malveillants"
+
+#: admin/cerber-dashboard.php:5365
+msgid "Live Traffic"
+msgstr "Trafic en direct"
+
+#: cerber-settings.php:424
+msgid "Disable PHP in uploads"
+msgstr "Désactiver PHP dans les téléchargements"
+
+#: cerber-settings.php:429
+msgid "Disable PHP error displaying"
+msgstr "Désactiver l'affichage des erreurs PHP"
+
+#: admin/cerber-dashboard.php:5430
+msgid "Ignore List"
+msgstr "Ignorer la liste"
+
+#: admin/cerber-admin.php:230
+msgid "Ignore"
+msgstr "Ignorer"
+
+#. For translators
+#: admin/cerber-admin.php:885
+msgid "Apply"
+msgstr "Appliquer"
+
+#: admin/cerber-admin.php:925
+msgid "Added"
+msgstr "Ajouté"
+
+#: admin/cerber-admin.php:886 admin/cerber-admin.php:913
+msgid "Remove from the list"
+msgstr "Retirer de la liste"
+
+#: admin/cerber-admin.php:887
+msgid "User Insights"
+msgstr "Aperçus de l'utilisateur"
+
+#: admin/cerber-admin.php:888
+msgid "Traffic Insights"
+msgstr "Aperçu du trafic"
+
+#: admin/cerber-admin.php:889
+msgid "Activity Insights"
+msgstr "Aperçu de l'activité"
+
+#: admin/cerber-dashboard.php:3330
+msgid "Are you sure you want to delete selected files?"
+msgstr "Êtes-vous sûr de vouloir supprimer les fichiers sélectionnés ?"
+
+#: admin/cerber-dashboard.php:3331
+msgid "These files have been moved to the quarantine"
+msgstr "Ces fichiers sont placés en quarantaine"
+
+#: admin/cerber-dashboard.php:3334
+msgid "Do you want to add selected files to the ignore list?"
+msgstr "Voudriez vous ajouter des fichiers sélectionnés à la liste des fichiers ignorés ?"
+
+#: admin/cerber-dashboard.php:3335
+msgid "These files have been added to the ignore list"
+msgstr "Ces fichiers ont été ajoutés à la liste des fichiers ignorés"
+
+#: admin/cerber-dashboard.php:3337
+msgid "Some errors occurred"
+msgstr "Des erreurs se sont produites"
+
+#: admin/cerber-dashboard.php:3338
+msgid "All files have been processed"
+msgstr "Tous les fichiers ont été traités"
+
+#: admin/cerber-dashboard.php:5770
+msgid "Know more about all advantages at"
+msgstr "En savoir plus sur tous les avantages à"
+
+#: cerber-common.php:1767
+msgid "Suspicious JavaScript code detected"
+msgstr "Il a été détecté un code JavaScript suspect"
+
+#: admin/cerber-admin-settings.php:981
+msgid "Unable to update the schedule"
+msgstr "Il n'est pas possible de mettre à jour l'horaire"
+
+#: admin/cerber-admin.php:784
+msgid "All scans"
+msgstr "Tous les balayages"
+
+#: admin/cerber-admin.php:891
+msgid "The list is empty."
+msgstr "La liste est vide."
+
+#: admin/cerber-admin.php:730
+msgid "No files match the specified filter."
+msgstr "Il n'y a pas de fichier qui correspond au filtre spécifié."
+
+#: admin/cerber-admin.php:730
+msgid "Click here to see the full list of files"
+msgstr "Pour voir la liste complète des fichiers, cliquez ici"
+
+#: admin/cerber-dashboard.php:950
+msgid "Additional Details"
+msgstr "Autres détails"
+
+#: admin/cerber-dashboard.php:4066
+msgid "Page generation time"
+msgstr "Le temps pour générer une page"
+
+#: admin/cerber-dashboard.php:5950
+msgid "Log In"
+msgstr "Se connecter"
+
+#: admin/cerber-dashboard.php:5951
+msgid "Log Out"
+msgstr "Se déconnecter"
+
+#: admin/cerber-dashboard.php:5952
+msgid "Register"
+msgstr "Inscrivez-vous"
+
+#: admin/cerber-dashboard.php:5955
+msgid "WooCommerce Log In"
+msgstr "Se connecter à WooCommerce"
+
+#: admin/cerber-dashboard.php:5956
+msgid "WooCommerce Log Out"
+msgstr "Se déconnecter à WooCommerce"
+
+#: cerber-common.php:1755
+msgid "IP address is locked out"
+msgstr "L'adresse IP est bloquée"
+
+#: cerber-common.php:1918
+msgid "Multiple suspicious requests"
+msgstr "De nombreuses demandes suspectes"
+
+#: cerber-settings.php:817
+msgid "Traffic Inspection"
+msgstr "L'inspection du trafic"
+
+#: cerber-settings.php:826 cerber-settings.php:857
+msgid "Maximum compatibility"
+msgstr "Compatibilité maximale"
+
+#: cerber-settings.php:827 cerber-settings.php:858
+msgid "Maximum security"
+msgstr "Sécurité maximale"
+
+#: cerber-settings.php:848
+msgid "Erroneous Request Shielding"
+msgstr "Le blindage de requête erroné"
+
+#: cerber-settings.php:853
+msgid "Enable error shielding"
+msgstr "Activer le blindage des erreurs"
+
+#: cerber-settings.php:955
+msgid "Save software errors"
+msgstr "Sauvegarder les erreurs du logiciel"
+
+#: cerber-scanner.php:3692
+msgid "Preparing for the scan"
+msgstr "Préparation du balayage"
+
+#: cerber-common.php:1768
+msgid "Blocked by administrator"
+msgstr "Bloqué par l'administrateur"
+
+#: cerber-load.php:398
+msgid "You are not allowed to log in"
+msgstr "Vous n'êtes pas autorisé à vous connecter"
+
+#: admin/cerber-users.php:39
+msgid "Block User"
+msgstr "Bloquer l’utilisateur"
+
+#: admin/cerber-users.php:43 admin/cerber-users.php:49
+msgid "User is not permitted to log into the website"
+msgstr "L'utilisateur n'est pas autorisé à se connecter au site Web"
+
+#: cerber-settings.php:644 admin/cerber-users.php:68
+msgid "User Message"
+msgstr "Message de l’utilisateur"
+
+#: admin/cerber-users.php:70
+msgid "An optional message for this user"
+msgstr "Un message facultatif pour cet utilisateur"
+
+#: admin/cerber-users.php:181
+msgid "Blocked Users"
+msgstr "Les utilisateurs bloqués"
+
+#: cerber-settings.php:405
+msgid "Block access to user pages like /?author=n"
+msgstr "Bloquer l'accès aux pages utilisateur comme comme /?author=n"
+
+#: cerber-settings.php:446
+msgid "Access to WordPress REST API"
+msgstr "Accès à l'API WordPress REST"
+
+#: cerber-settings.php:457
+msgid "Block access to WordPress REST API except any of the following"
+msgstr "Bloquer l'accès à l'API WordPress REST à l'exception de l'une ou l'autre des options suivantes"
+
+#: cerber-settings.php:467
+msgid "Allow REST API for these roles"
+msgstr "Autoriser l'API REST pour ces rôles"
+
+#: cerber-settings.php:472
+msgid "Allow these namespaces"
+msgstr "Permettez à ces noms d'avoir des espaces"
+
+#: cerber-settings.php:137
+msgid "These restrictions do not apply to IP addresses in the White IP Access List"
+msgstr "Ces limitations ne s'appliquent pas aux adresses IP de la liste d'accès IP blanche"
+
+#: admin/cerber-admin-settings.php:531
+msgid "Select one or more roles"
+msgstr "Sélectionnez un ou plusieurs rôles"
+
+#: admin/cerber-dashboard.php:1414 admin/cerber-users.php:971
+msgid "Filter by registered user"
+msgstr "Filtrer par utilisateur enregistré"
+
+#: cerber-settings.php:631
+msgid "Authorized users only"
+msgstr "Réservé aux utilisateurs autorisés"
+
+#: cerber-settings.php:632
+msgid "Only registered and logged in website users have access to the website"
+msgstr "L'accès au site n'est accordé qu'aux utilisateurs enregistrés et connectés"
+
+#: cerber-settings.php:648 cerber-settings.php:1744
+msgid "Only registered and logged in users are allowed to view this website"
+msgstr "Le siteWeb  ne peut être consulté que par les utilisateurs enregistrés et connectés"
+
+#: cerber-settings.php:653
+msgid "Redirect to URL"
+msgstr "Rediriger vers l'URL"
+
+#: admin/cerber-dashboard.php:5484
+msgid "Changelog"
+msgstr "Journal des modifications"
+
+#: admin/cerber-dashboard.php:741
+msgid "Default settings have been loaded"
+msgstr "Les paramètres par défaut ont été téléchargés"
+
+#: admin/cerber-dashboard.php:3775
+msgid "Save all rules"
+msgstr "Sauvegarder toutes les règles"
+
+#: cerber-common.php:1743
+msgid "Invalid master credentials"
+msgstr "Les informations d'identification de base sont incorrectes"
+
+#: cerber-settings.php:1411
+msgid "Master settings"
+msgstr "Paramètres de base"
+
+#: cerber-settings.php:1419
+msgid "Return to the website list"
+msgstr "Retourner à la liste des sites Web"
+
+#: cerber-settings.php:1423
+msgid "Show \"Switched to\" notification"
+msgstr "Afficher la notification \"passé à\""
+
+#: cerber-settings.php:1427
+msgid "Add @ site to the page title"
+msgstr "Ajouter @ site au titre de la page"
+
+#: cerber-settings.php:1046 cerber-settings.php:1444 cerber-settings.php:1472
+msgid "Enable diagnostic logging"
+msgstr "Activer le diagnostic"
+
+#: cerber-settings.php:1455
+msgid "Limit access by IP address"
+msgstr "Limiter l'accès par adresse IP"
+
+#: cerber-settings.php:1461
+msgid "Access to this website"
+msgstr "Accéder à ce site web"
+
+#: cerber-settings.php:1464
+msgid "Full access mode"
+msgstr "Mode d'accès complet"
+
+#: cerber-settings.php:1465
+msgid "Read-only mode"
+msgstr "Mode lecture seulement"
+
+#: cerber-settings.php:1486
+msgid "The full access mode requires the PRO version of WP Cerber"
+msgstr "Le mode d'accès complet requiert la version PRO du WP Cerber"
+
+#: nexus/cerber-slave-list.php:47
+msgid "WordPress"
+msgstr "WordPress"
+
+#: nexus/cerber-slave-list.php:51
+msgid "Malware Scan"
+msgstr "Balayage de logiciels malveillants"
+
+#: nexus/cerber-nexus-master.php:516 nexus/cerber-slave-list.php:56
+msgid "Notes"
+msgstr "Notes"
+
+#: nexus/cerber-slave-list.php:161
+msgid "Add a slave website"
+msgstr "Ajouter un site esclave"
+
+#: nexus/cerber-slave-list.php:247 admin/cerber-users.php:1037
+msgid "Search results for:"
+msgstr "Résultats de recherche pour :"
+
+#: nexus/cerber-slave-list.php:282
+msgid "Edit"
+msgstr "Modifier"
+
+#: nexus/cerber-slave-list.php:288
+msgid "Switch to"
+msgstr "Passez à"
+
+#: nexus/cerber-slave-list.php:420
+msgid "No websites configured."
+msgstr "Il n'y a pas de sites Web configurés."
+
+#: nexus/cerber-slave-list.php:420
+msgid "Add a new one"
+msgstr "Ajouter un(e) nouvel(le)"
+
+#: nexus/cerber-nexus-master.php:479
+msgid "Website Properties"
+msgstr "Propriétés du site Web"
+
+#: nexus/cerber-nexus-master.php:489
+msgid "Website URL"
+msgstr "URL du site Web"
+
+#: nexus/cerber-nexus-master.php:494
+msgid "Display as"
+msgstr "Afficher comme"
+
+#: nexus/cerber-nexus-master.php:524
+msgid "Website Owner"
+msgstr "Propriétaire du site Web"
+
+#: nexus/cerber-nexus-master.php:540
+msgid "Phone"
+msgstr "Téléphone"
+
+#: nexus/cerber-nexus-master.php:548
+msgid "Address"
+msgstr "Adresse"
+
+#: nexus/cerber-nexus-master.php:691
+msgid "The website you are trying to add is already in the list"
+msgstr "Le site web que vous voulez ajouter est déjà ajouté dans la liste"
+
+#: nexus/cerber-nexus-master.php:700
+msgid "The website has been added successfully"
+msgstr "Le site Web a été ajouté correctement"
+
+#: nexus/cerber-nexus-master.php:701
+msgid "Click to edit"
+msgstr "Cliquez pour faire une modification"
+
+#: nexus/cerber-nexus-master.php:702
+msgid "Switch to the Dashboard"
+msgstr "Aller au tableau de bord"
+
+#: nexus/cerber-nexus-master.php:705
+msgid "Keep in mind: You have added the website that does not support SSL encryption. This may lead to data leakage."
+msgstr "Il ne faut pas l'oublier : Vous avez ajouté un site Web qui ne prend pas en charge le cryptage SSL. Cela peut entraîner des risques de fuite de données."
+
+#: nexus/cerber-nexus-master.php:824
+msgid "Website has been deleted"
+msgid_plural "%s websites have been deleted"
+msgstr[0] "Le site Web a été supprimé"
+msgstr[1] "%s  sites web ont été supprimés"
+
+#: nexus/cerber-nexus-master.php:1074
+msgid "You have switched to %s"
+msgstr "Vous êtes passé à %s"
+
+#: nexus/cerber-nexus-master.php:1084
+msgid "You have switched back to the master website"
+msgstr "Vous êtes retourné sur le site Web de base"
+
+#: nexus/cerber-nexus-master.php:1300
+msgid "You are here:"
+msgstr "Vous êtes ici :"
+
+#: nexus/cerber-nexus-master.php:1303 nexus/cerber-nexus.php:94
+#: nexus/cerber-nexus.php:104
+msgid "My Websites"
+msgstr "Mes sites Web"
+
+#: nexus/cerber-nexus.php:66
+msgid "Enable slave mode"
+msgstr "Activer le mode esclave"
+
+#: nexus/cerber-nexus.php:67
+msgid "This website can be managed from a master website"
+msgstr "Ce site web peut être géré à partir d'un site web de base"
+
+#: nexus/cerber-nexus.php:70
+msgid "Enable master mode"
+msgstr "Activer le mode de base"
+
+#: nexus/cerber-nexus.php:71
+msgid "Configure this website as a master to manage other website"
+msgstr "Configurer ce site comme site de base pour gérer d'autres sites web"
+
+#: nexus/cerber-nexus.php:76
+msgid "To proceed, please select the mode for this website"
+msgstr "Pour continuer, veuillez sélectionner le mode de fonctionnement de ce site Web"
+
+#: nexus/cerber-nexus.php:100 nexus/cerber-nexus.php:104
+msgid "Slave Settings"
+msgstr "Paramètres de l'esclave"
+
+#: nexus/cerber-nexus.php:146
+msgid "Secret Access Token"
+msgstr "Jeton pour accès secret"
+
+#: nexus/cerber-nexus.php:148
+msgid "The token is unique to this website. Keep it secret. Install the token on a master website to grant access to this website."
+msgstr "Le jeton est unique à ce site Web. Il faut le garder secret. Installez le jeton sur un site Web de base pour permettre l'accès à ce site Web."
+
+#: nexus/cerber-nexus.php:150
+msgid "Are you sure? This permanently invalidates the token."
+msgstr "Êtes-vous sûr ? Le jeton est alors définitivement invalidé."
+
+#: nexus/cerber-nexus.php:151
+msgid "Disable slave mode"
+msgstr "Désactiver le mode esclave"
+
+#: nexus/cerber-nexus.php:266
+msgid "This website is set as master."
+msgstr "Ce site Web est défini comme le site Web de base."
+
+#: nexus/cerber-nexus.php:267
+msgid "Add slave websites by using access tokens."
+msgstr "Ajoutez des sites Web esclaves en utilisant des jetons d'accès."
+
+#: nexus/cerber-nexus.php:270
+msgid "This website is set as slave."
+msgstr "Ce site Web est configuré comme esclave."
+
+#: nexus/cerber-nexus.php:271
+msgid "Install the access token on the master website."
+msgstr "Installez le jeton d'accès sur le site Web de base."
+
+#. translators: Time difference between two dates, in seconds (sec=second). 1: Number of seconds
+#: cerber-common.php:2071
+msgid "%s sec"
+msgid_plural "%s secs"
+msgstr[0] "%s sec"
+msgstr[1] "%s secs"
+
+#: cerber-settings.php:800
+msgid "Send reports on"
+msgstr "Envoyer des rapports sur"
+
+#: nexus/cerber-slave-list.php:50
+msgid "Updates"
+msgstr "Mises à jour"
+
+#: nexus/cerber-nexus-master.php:502 nexus/cerber-slave-list.php:54
+msgid "Group"
+msgstr "Groupe"
+
+#: nexus/cerber-slave-list.php:117
+msgid "Upgrade WP Cerber"
+msgstr "Mise à niveau du WP Cerber"
+
+#: nexus/cerber-slave-list.php:118
+msgid "Upgrade all active plugins"
+msgstr "Mise à niveau de tous les plugins actifs"
+
+#: nexus/cerber-slave-list.php:119
+msgid "Delete website"
+msgstr "Supprimer le site Web"
+
+#: nexus/cerber-slave-list.php:135
+msgid "All groups"
+msgstr "Tous les groupes"
+
+#: nexus/cerber-nexus-master.php:1384
+msgid "Are you sure you want to delete selected websites?"
+msgstr "Êtes-vous sûr que vous voulez supprimer les sites Web sélectionnés ?"
+
+#: admin/cerber-users.php:221
+msgid "Block"
+msgstr "Bloquer"
+
+#: nexus/cerber-nexus-master.php:471
+msgid "Select an existing group or enter a new one to add it"
+msgstr "Sélectionner un groupe existant ou en saisir un nouveau pour l'ajouter"
+
+#: nexus/cerber-nexus-master.php:544
+msgid "Company"
+msgstr "Entreprise"
+
+#: nexus/cerber-nexus-master.php:178
+msgid "Invalid response from the slave website"
+msgstr "Réponse invalide du site Web esclave"
+
+#: cerber-common.php:1707 cerber-common.php:1908
+msgid "Attempt to log in with non-existing username"
+msgstr "Tentative de connexion avec un identifiant inexistant"
+
+#: cerber-load.php:5076
+msgid "Attempts to log in with non-existing usernames"
+msgstr "Tentatives d'ouverture de session avec un nom d'utilisateur inexistant"
+
+#: cerber-settings.php:1431
+msgid "Use master language"
+msgstr "Utiliser la langue de base"
+
+#: cerber-settings.php:247
+msgid "Non-existing users"
+msgstr "Utilisateurs inexistants"
+
+#: cerber-settings.php:248
+msgid "Immediately block IP when attempting to log in with a non-existing username"
+msgstr "Bloquer immédiatement l’IP si la tentative de connexion est faite avec un identifiant utilisateur inexistant"
+
+#: nexus/cerber-slave-list.php:55
+msgid "Owner"
+msgstr "Propriétaire"
+
+#: nexus/cerber-slave-list.php:420
+msgid "Disable master mode"
+msgstr "Désactiver le mode de base"
+
+#: nexus/cerber-nexus.php:151
+msgid "To revoke the token and disable remote management, click here:"
+msgstr "Pour suspendre le jeton et désactiver la gestion à distance, cliquez ici :"
+
+#: cerber-settings.php:425
+msgid "Block execution of PHP scripts in the WordPress media folder"
+msgstr "Bloquer l'exécution des scripts PHP dans le dossier média de WordPress"
+
+#: nexus/cerber-nexus-master.php:1451 nexus/cerber-nexus-master.php:1459
+msgid "Active plugins and updates on"
+msgstr "Plugins actifs et mises à jour sur"
+
+#: nexus/cerber-nexus-master.php:1429
+msgid "A newer version is available"
+msgstr "Il y a une version plus récente disponible"
+
+#: admin/cerber-dashboard.php:1076
+msgid "New users"
+msgstr "Nouvel utilisateur"
+
+#: admin/cerber-dashboard.php:1096
+msgid "My activity"
+msgstr "Mon Activité"
+
+#: admin/cerber-dashboard.php:2993
+msgid "Create Alert"
+msgstr "Créer une alerte"
+
+#: admin/cerber-dashboard.php:2997
+msgid "Delete Alert"
+msgstr "Supprimer l'alerte"
+
+#: admin/cerber-dashboard.php:3095
+msgid "The alert has been created"
+msgstr "L'alerte a été créée"
+
+#: admin/cerber-dashboard.php:3104
+msgid "The alert has been deleted"
+msgstr "L’alerte a été supprimée"
+
+#: admin/cerber-dashboard.php:4626
+msgid "Advanced Search"
+msgstr "Recherche avancée"
+
+#. Author of the plugin
+#: 
+msgid "Cerber Tech Inc."
+msgstr "Cerber Tech Inc."
+
+#: cerber-load.php:5743
+msgid "To delete the alert, click here"
+msgstr "Pour supprimer l'alerte, cliquez ici"
+
+#: cerber-settings.php:226
+msgid "Custom login URL may contain Latin alphanumeric characters, dashes and underscores only"
+msgstr "L'URL de connexion personnalisée peut contenir uniquement des caractères alphanumériques latins, des tirets et des tirets bas"
+
+#: cerber-settings.php:264
+msgid "Site-specific settings"
+msgstr "Réglages spécifiques au site"
+
+#: cerber-settings.php:272
+msgid "Prefix for plugin cookies"
+msgstr "Préfixe pour les cookies de l'extension"
+
+#: cerber-settings.php:273
+msgid "Prefix may contain only Latin alphanumeric characters and underscores"
+msgstr "Le préfixe doit contenir seulement des caractères alphanumériques et des tirets bas"
+
+#: cerber-settings.php:754
+msgid "Lockout notifications"
+msgstr "Notifications de verrouillage"
+
+#: cerber-settings.php:782
+msgid "Pushbullet access token"
+msgstr "Jeton d'accès PushBullet"
+
+#: cerber-settings.php:785
+msgid "Pushbullet device"
+msgstr "Appareil PushBullet"
+
+#: cerber-settings.php:1123
+msgid "Delete unattended files"
+msgstr "Supprimer les fichiers non surveillés"
+
+#: cerber-settings.php:1182
+msgid "Automatic recovery of modified and infected files"
+msgstr "Récupération automatique des fichiers modifiés et infectés"
+
+#: cerber-settings.php:1185
+msgid "Recover WordPress files"
+msgstr "Récupérer les fichiers de WordPress"
+
+#: cerber-scanner.php:1649
+msgid "File deleted"
+msgstr "Fichier supprimé"
+
+#: cerber-scanner.php:1650
+msgid "File recovered"
+msgstr "Fichier récupéré"
+
+#: cerber-scanner.php:3700
+msgid "Recovering WordPress files"
+msgstr "Récupération des fichiers de WordPress"
+
+#: cerber-scanner.php:3702
+msgid "Recovering plugins files"
+msgstr "Récupération des fichiers des extensions"
+
+#: cerber-scanner.php:4839
+msgid "Recovered"
+msgstr "Rétablis"
+
+#: cerber-scanner.php:4896
+msgid "Automatically deleted"
+msgstr "Automatiquement supprimé"
+
+#: cerber-scanner.php:4899
+msgid "Automatically recovered"
+msgstr "Automatiquement récupéré"
+
+#: admin/cerber-dashboard.php:70
+msgid "Cerber User Security"
+msgstr "Sécurité Utilisateur Cerber"
+
+#: admin/cerber-dashboard.php:70 admin/cerber-dashboard.php:5389
+msgid "User Policies"
+msgstr "Stratégies Utilisateur"
+
+#: admin/cerber-dashboard.php:2147
+msgid "A new version is available"
+msgstr "Une nouvelle version est disponible"
+
+#: admin/cerber-dashboard.php:5392
+msgid "Global"
+msgstr "Global"
+
+#: cerber-common.php:1769
+msgid "Site policy enforcement"
+msgstr "Mise en application de la politique du site"
+
+#: cerber-common.php:1770
+msgid "2FA code verified"
+msgstr "Code 2FA vérifié"
+
+#: cerber-common.php:1771
+msgid "Initiated by the user"
+msgstr "Initié par l'utilisateur"
+
+#: cerber-common.php:2321
+msgid "A new version of %s is available. Please install it."
+msgstr "Une nouvelle version de %s est disponible. Veuillez l’installer s’il vous plaît."
+
+#: cerber-load.php:1958
+msgid "Email address is not permitted."
+msgstr "L'adresse e-mail n'est pas permise."
+
+#: cerber-load.php:1958
+msgid "Please choose another one."
+msgstr "Veuillez en choisir un autre."
+
+#: admin/cerber-users.php:10 admin/cerber-users.php:481
+msgid "Two-Factor Authentication"
+msgstr "Authentification à deux facteurs"
+
+#: admin/cerber-users.php:18
+msgid "Determined by user role policies"
+msgstr "Déterminé par les stratégies de rôle utilisateur"
+
+#: admin/cerber-users.php:19 admin/cerber-users.php:489
+msgid "Always enabled"
+msgstr "Toujours activé"
+
+#: admin/cerber-users.php:86
+msgid "2FA PIN Code"
+msgstr "Code PIN 2FA"
+
+#: admin/cerber-users.php:296
+msgid "Save All Changes"
+msgstr "Enregistrer toutes les modifications"
+
+#: admin/cerber-users.php:409
+msgid "Block access to WordPress Dashboard"
+msgstr "Bloquer l'accès au tableau de bord WordPress "
+
+#: admin/cerber-users.php:414
+msgid "Hide Toolbar when viewing site"
+msgstr "Masquer la barre d'outils lorsque vous visualisez le site"
+
+#: admin/cerber-users.php:420
+msgid "Redirection rules"
+msgstr "Règles de redirection"
+
+#: admin/cerber-users.php:424
+msgid "Redirect user after login"
+msgstr "Rediriger l'utilisateur après la connexion"
+
+#: admin/cerber-users.php:429
+msgid "Redirect user after logout"
+msgstr "Rediriger l'utilisateur après la déconnexion"
+
+#: cerber-settings.php:687 admin/cerber-users.php:440
+msgid "User session expiration time"
+msgstr "Temps d'expiration de la session utilisateur"
+
+#: admin/cerber-users.php:485
+msgid "Two-factor authentication"
+msgstr "Authentification à deux facteurs"
+
+#: admin/cerber-users.php:490
+msgid "Advanced mode"
+msgstr "Mode avancé"
+
+#: admin/cerber-users.php:494
+msgid "Enforce two-factor authentication if any of the following conditions is true"
+msgstr "Forcer l'authentification à double-facteur seulement si une des conditions suivantes est vraie"
+
+#: admin/cerber-users.php:500
+msgid "Login from a different country"
+msgstr "Connexion depuis un pays différent"
+
+#: admin/cerber-users.php:506
+msgid "Login from a different network Class C"
+msgstr "Connexion depuis un réseau de classe C différent"
+
+#: admin/cerber-users.php:512
+msgid "Login from a different IP address"
+msgstr "Connexion depuis une adresse IP différente"
+
+#: admin/cerber-users.php:530
+msgid "Enforce two-factor authentication with fixed intervals"
+msgstr "Forcer l'authentification à double-facteur à intervalles réguliers"
+
+#: admin/cerber-users.php:536
+msgid "Regular time intervals (days)"
+msgstr "Intervalle de temps régulier (jours)"
+
+#: admin/cerber-users.php:543
+msgid "Fixed number of logins"
+msgstr "Nombre fixe de connexions"
+
+#: admin/cerber-users.php:545
+msgid "number of logins"
+msgstr "Nombre de connexions"
+
+#: admin/cerber-users.php:589
+msgid "Policies have been updated"
+msgstr "Les stratégies ont été mises à jour"
+
+#: cerber-settings.php:590
+msgid "Restrict email addresses"
+msgstr "Restreindre les adresses e-mail"
+
+#: cerber-settings.php:593
+msgid "No restrictions"
+msgstr "Aucune restriction"
+
+#: cerber-settings.php:594
+msgid "Deny all email addresses that match the following"
+msgstr "Refuser toutes les adresses e-mail qui correspondent à"
+
+#: cerber-settings.php:595
+msgid "Permit only email addresses that match the following"
+msgstr "Autoriser seulement les adresses e-mail qui correspondent à"
+
+#: cerber-settings.php:600
+msgid "Specify email addresses, wildcards or REGEX patterns. Use comma to separate items."
+msgstr "Spécifiez des adresses e-mail, des jokers ou des expressions régulières. Utilisez la virgule pour séparer les éléments."
+
+#: cerber-settings.php:1196
+msgid "These files will never be deleted during automatic cleanup."
+msgstr "Ces fichiers ne seront jamais supprimés durant le nettoyage automatique."
+
+#: cerber-2fa.php:363
+msgid "This verification PIN code is expired. We have just sent a new one to your email."
+msgstr "Ce code PIN de vérification a expiré. Nous venons d’en envoyer un nouveau par e-mail."
+
+#: cerber-2fa.php:366
+msgid "You have entered an incorrect verification PIN code"
+msgstr "Vous avez saisi un code PIN de vérification incorrect"
+
+#: cerber-2fa.php:413 cerber-2fa.php:501
+msgid "Please verify that it’s you"
+msgstr "Veuillez vérifier que c'est vous"
+
+#: cerber-2fa.php:523
+msgid "Here are the details of the sign-in attempt"
+msgstr "Voici les détails de la tentative d'identification"
+
+#: cerber-2fa.php:577
+msgid "expires"
+msgstr "expire le"
+
+#: cerber-2fa.php:654
+msgid "only digits are allowed"
+msgstr "seuls les chiffres sont autorisés"
+
+#: cerber-2fa.php:657
+msgid "We've sent a verification PIN code to your email"
+msgstr "Nous vous avons envoyé un code PIN de vérification sur votre adresse e-mail"
+
+#: cerber-2fa.php:658
+msgid "Enter the code from the email in the field below."
+msgstr "Saisissez le code reçu par mail dans le champ ci-dessous."
+
+#: cerber-2fa.php:660
+msgid "Try again"
+msgstr "Réessayer"
+
+#: cerber-2fa.php:661 admin/cerber-dashboard.php:5839
+msgid "Cancel"
+msgstr "Annuler"
+
+#: cerber-2fa.php:662
+msgid "or"
+msgstr "ou"
+
+#: cerber-2fa.php:668
+msgid "Verify it's you"
+msgstr "Vérifiez que c'est bien vous"
+
+#: cerber-2fa.php:673
+msgid "Verify"
+msgstr "Vérifier"
+
+#: admin/cerber-users.php:101
+msgid "Two-Factor Authentication Email"
+msgstr "E-mail d'authentification à deux facteurs"
+
+#: admin/cerber-dashboard.php:3718
+msgid "Role-based rules are configured"
+msgstr "Les règles basées sur les rôles sont configurées"
+
+#: admin/cerber-users.php:58
+msgctxt "e.g. blocked by John at 11:00"
+msgid "blocked by %s at %s"
+msgstr "bloqué par %s à %s"
+
+#: cerber-2fa.php:506
+msgid "The code is valid for %s minutes."
+msgstr "Le code est valide pour %s minutes."
+
+#: admin/cerber-dashboard.php:372
+msgid "IP address %s has been added to White IP Access List"
+msgstr "L'adresse IP %s a été ajoutée à la liste blanche d'accès"
+
+#: admin/cerber-dashboard.php:369
+msgid "IP address %s has been added to Black IP Access List"
+msgstr "L'adresse IP %s a été ajoutée à la liste noire d'accès"
+
+#: admin/cerber-dashboard.php:211 admin/cerber-dashboard.php:947
+#: admin/cerber-dashboard.php:1327 admin/cerber-dashboard.php:4545
+#: admin/cerber-users.php:927
+msgid "IP Address"
+msgstr "Adresse IP"
+
+#: admin/cerber-dashboard.php:954 admin/cerber-dashboard.php:1333
+msgid "Username"
+msgstr "Nom d'utilisateur"
+
+#: admin/cerber-dashboard.php:3800
+msgid "Any country is permitted"
+msgstr "Tous les pays sont autorisés"
+
+#: admin/cerber-dashboard.php:3405 admin/cerber-dashboard.php:5294
+msgid "Sessions"
+msgstr "Sessions"
+
+#: cerber-load.php:1717
+msgid "Session has been terminated"
+msgid_plural "%s sessions have been terminated"
+msgstr[0] "La session est terminée"
+msgstr[1] "%s sessions sont terminées"
+
+#: admin/cerber-users.php:925
+msgid "Created"
+msgstr "Créé"
+
+#: admin/cerber-users.php:946
+msgid "Terminate session"
+msgstr "Session terminée"
+
+#: admin/cerber-users.php:947
+msgid "Block user"
+msgstr "Bloquer l'utilisateur"
+
+#: admin/cerber-users.php:1079
+msgid "Profile"
+msgstr "Profil"
+
+#: admin/cerber-users.php:1092
+msgid "All Logins"
+msgstr "Toutes les connexions"
+
+#: admin/cerber-users.php:1093
+msgid "User Activity"
+msgstr "Activité de l'utilisateur"
+
+#: admin/cerber-users.php:1139
+msgid "Terminate"
+msgstr "Terminer"
+
+#: admin/cerber-dashboard.php:2097
+msgid "user"
+msgid_plural "users"
+msgstr[0] "utilisateur"
+msgstr[1] "utilisateurs"
+
+#: cerber-settings.php:452
+msgid "Block access to users' data via REST API"
+msgstr "Bloquer l'accès aux données des utilisateurs via l'API REST"
+
+#: cerber-scanner.php:1648
+msgid "Unable to delete"
+msgstr "Impossible de supprimer"
+
+#: admin/cerber-dashboard.php:66
+msgid "Cerber Data Shield Policies"
+msgstr "Stratégies du Bouclier de données Cerber"
+
+#: admin/cerber-dashboard.php:66
+msgid "Data Shield"
+msgstr "Bouclier de données"
+
+#: admin/cerber-dashboard.php:5379
+msgid "Data Shield Policies"
+msgstr "Stratégies du Bouclier de données"
+
+#: admin/cerber-dashboard.php:5381
+msgid "Accounts & Roles"
+msgstr "Comptes & Rôles"
+
+#: admin/cerber-dashboard.php:5382
+msgid "Site Settings"
+msgstr "Paramètres du site"
+
+#: cerber-common.php:1720
+msgid "User creation denied"
+msgstr "La création de l'utilisateur a été refusée"
+
+#: cerber-common.php:1722
+msgid "Role update denied"
+msgstr "La mise à jour du rôle a été refusée"
+
+#: cerber-common.php:1723
+msgid "Setting update denied"
+msgstr "La mise à jour des paramètres a été refusée"
+
+#: cerber-common.php:1776
+msgid "Permission denied"
+msgstr "Permission refusée"
+
+#: cerber-common.php:1778
+msgid "Invalid user"
+msgstr "Utilisateur Invalide"
+
+#: cerber-common.php:1779
+msgid "Incorrect password"
+msgstr "Mot de passe incorrect"
+
+#: cerber-settings.php:487
+msgid "Protect user accounts"
+msgstr "Protéger les comptes utilisateur"
+
+#: cerber-settings.php:492
+msgid "Restrict user account creation and user management with the following policies"
+msgstr "Restreindre la création et la gestion des comptes d'utilisateur à l'aide des politiques suivantes"
+
+#: cerber-settings.php:498
+msgid "User registrations are limited to these roles"
+msgstr "Les enregistrements utilisateur sont limités à ces rôles"
+
+#: cerber-settings.php:504
+msgid "Users with these roles are permitted to create new accounts"
+msgstr "Les utilisateurs ayant ces rôles sont autorisés à créer de nouveaux comptes"
+
+#: cerber-settings.php:509
+msgid "Users with these roles are permitted to change sensitive user data"
+msgstr "Les utilisateurs ayant ces rôles sont autorisés à modifier les données sensibles des utilisateurs"
+
+#: cerber-settings.php:514 cerber-settings.php:542 cerber-settings.php:571
+msgid "Do not apply these policies to the IP addresses in the White IP Access List"
+msgstr "N'appliquez pas ces politiques aux adresses IP figurant dans la liste blanche d'accès aux adresses IP"
+
+#: cerber-settings.php:522
+msgid "Protect user roles"
+msgstr "Protéger les rôles utilisateur"
+
+#: cerber-settings.php:526
+msgid "Restrict roles and capabilities management with the following policies"
+msgstr "Restreindre la gestion des rôles et des capacités au moyen des politiques suivantes"
+
+#: cerber-settings.php:532
+msgid "Users with these roles are permitted to add new roles"
+msgstr "Les utilisateurs avec ces rôles peuvent ajouter de nouveaux rôles"
+
+#: cerber-settings.php:537
+msgid "Users with these roles are permitted to change role capabilities"
+msgstr "Les utilisateurs avec ces rôles peuvent changer les permissions du rôle"
+
+#: cerber-settings.php:550
+msgid "Protect site settings"
+msgstr "Protéger les paramètres du site"
+
+#: cerber-settings.php:554
+msgid "Restrict updating site settings with the following policies"
+msgstr "Restreindre la mise à jour des paramètres du site à l'aide des stratégies suivantes"
+
+#: cerber-settings.php:560
+msgid "Users with these roles are permitted to change protected settings"
+msgstr "Les utilisateurs avec ces rôles ont le droit de changer les paramètres protégés"
+
+#: cerber-settings.php:565
+msgid "Protected settings"
+msgstr "Paramètres protégés"
+
+#: cerber-settings.php:638
+msgid "Do not apply these policy to the IP addresses in the White IP Access List"
+msgstr "Ne pas appliquer cette politique aux adresses IP figurant dans la liste blanche d'accès aux adresses IP"
+
+#: nexus/cerber-slave-list.php:52
+msgid "Server"
+msgstr "Serveur"
+
+#: nexus/cerber-slave-list.php:53
+msgid "Server Country"
+msgstr "Pays du serveur"
+
+#: nexus/cerber-slave-list.php:145
+msgid "All servers"
+msgstr "Tous les serveurs"
+
+#: nexus/cerber-slave-list.php:152
+msgid "All countries"
+msgstr "Tous les pays"
+
+#: nexus/cerber-nexus-master.php:442
+msgid "Show homepage in the Website column"
+msgstr "Afficher la page d'accueil dans la colonne Site"
+
+#: nexus/cerber-nexus-master.php:444
+msgid "Hide server IP address"
+msgstr "Cacher l'adresse IP du serveur"
+
+#: admin/cerber-dashboard.php:341
+msgid "IP address, range, wildcard, or CIDR"
+msgstr "Adresse IP, intervalle, joker ou CIDR"
+
+#: admin/cerber-dashboard.php:342
+msgid "Add Entry"
+msgstr "Nouvelle entrée"
+
+#: admin/cerber-dashboard.php:5634
+msgid "The IP address you are trying to add is already in the list"
+msgstr "L'adresse IP que vous essayez ajouter est déjà dans la liste"
+
+#: cerber-common.php:1674
+msgid "IP subnet blocked"
+msgstr "Sous-réseau IP bloqué"
+
+#: cerber-common.php:1721
+msgid "User row update denied"
+msgstr "La mise à jour de la ligne utilisateur a été refusée"
+
+#: cerber-common.php:1724
+msgid "User metadata update denied"
+msgstr "La mise a jour des métadonnées utilisateur a été refusée"
+
+#: cerber-settings.php:1562
+msgid "Any activity"
+msgstr "Toute activité"
+
+#: admin/cerber-tools.php:228
+msgid "A database error occurred while importing access list entries"
+msgstr "Une erreur de base de données s'est produite en tentant d'importer les entrées de la liste d'accès"
+
+#: cerber-settings.php:293
+msgid "Enable authentication log monitoring"
+msgstr "Activer le journal de surveillance de l'authentification"
+
+#: cerber-settings.php:325 cerber-settings.php:967
+msgid "Keep log records of not logged in visitors for"
+msgstr "Conserver les enregistrements de journal des visiteurs non connectés pendant"
+
+#: cerber-settings.php:331 cerber-settings.php:973
+msgid "Keep log records of logged in users for"
+msgstr "Conserver les enregistrements de journal des utilisateurs connectés pendant"
+
+#: admin/cerber-users.php:75
+msgid "Admin Note"
+msgstr "Note d'admin"
+
+#: cerber-settings.php:703
+msgid "Personal Data"
+msgstr "Données personnelles"
+
+#: cerber-settings.php:709
+msgid "Enable data erase"
+msgstr "Activer l'effacement des données"
+
+#: cerber-settings.php:716
+msgid "Terminate user sessions"
+msgstr "Mettre fin aux sessions utilisateur"
+
+#: cerber-settings.php:717
+msgid "Delete user sessions data when user data is erased"
+msgstr "Supprimer les données de session utilisateur quand les données d'utilisateur sont effacées"
+
+#: cerber-settings.php:723
+msgid "Enable data export"
+msgstr "Activer l'export de données"
+
+#: cerber-settings.php:730
+msgid "Include activity log events"
+msgstr "Inclure les événements d'activité"
+
+#: cerber-settings.php:736
+msgid "Include traffic log entries"
+msgstr "Inclure les entrées du journal de trafic"
+
+#: cerber-settings.php:739
+msgid "Request URL"
+msgstr "URL de la Requête"
+
+#: cerber-settings.php:740
+msgid "Form fields data"
+msgstr "Données de formulaire"
+
+#: cerber-settings.php:741
+msgid "Cookies"
+msgstr "Cookies"
+
+#: admin/cerber-dashboard.php:77
+msgid "Cerber anti-spam settings"
+msgstr "Réglages de l'antispam Cerber"
+
+#: admin/cerber-dashboard.php:77
+msgid "Anti-spam"
+msgstr "Anti-spam"
+
+#: cerber-addons.php:289 admin/cerber-dashboard.php:85
+#: admin/cerber-dashboard.php:85
+msgid "Add-ons"
+msgstr "Modules"
+
+#: admin/cerber-dashboard.php:5343
+msgid "Anti-spam and bot detection settings"
+msgstr "Réglages de la détéction de bot et de l'antispam"
+
+#: admin/cerber-dashboard.php:5345
+msgid "Anti-spam engine"
+msgstr "Moteur anti-spam"
+
+#: cerber-common.php:1917
+msgid "Multiple erroneous requests"
+msgstr "Multiple requêtes erronées"
+
+#: admin/cerber-admin-settings.php:340
+msgid "%s retries are allowed within %s minutes"
+msgstr "%s nouvelles tentatives sont permises pendant %s minutes"
+
+#: admin/cerber-admin-settings.php:346
+msgid "%s registrations are allowed within %s minutes from one IP address"
+msgstr "%s inscriptions sont autorisées pendant %s minutes depuis une adresse IP"
+
+#: admin/cerber-admin-settings.php:369
+msgid "Enable after %s failed login attempts in the last %s minutes"
+msgstr "Activer après %s tentatives échouées dans les %s dernières minutes"
+
+#: cerber-settings.php:447
+msgid "Restrict or completely block access to the WordPress REST API according to your needs"
+msgstr "Restreindre ou bloquer complètement l'accès à l'API REST de WordPress en fonction de vos besoins"
+
+#: cerber-settings.php:705
+msgid "These features help your organization to be in compliance with personal data protection laws"
+msgstr "Ces fonctionnalités aident votre organisation/entreprise à se conformer aux lois de protection des données privées"
+
+#: cerber-settings.php:763
+msgid "if empty, the website administrator email %s will be used"
+msgstr "si vide, l'adresse e-mail de l'administrateur %s sera utilisée"
+
+#: cerber-settings.php:767
+msgid "notifications are allowed per hour (0 means unlimited)"
+msgstr "notifications autorisées par heure (0 = illimité)"
+
+#: cerber-settings.php:778
+msgid "Get notified instantly with mobile and desktop notifications"
+msgstr "Soyez notifiés instantanément grâce aux notifications mobile et bureau"
+
+#: cerber-settings.php:793
+msgid "Weekly report is a summary of all activities and suspicious events occurred during the last seven days"
+msgstr "Le rapport hebdomadaire est un résumé de toutes les activités et les événements suspects qui sont survenus les sept derniers jours"
+
+#: cerber-settings.php:806 cerber-settings.php:1108
+msgid "if empty, the email addresses from the notification settings will be used"
+msgstr "si vide, les adresses e-mail renseignées dans les paramètres de notification seront utilisées"
+
+#: cerber-settings.php:818
+msgid "Traffic Inspector is a context-aware web application firewall (WAF) that protects your website by recognizing and denying malicious HTTP requests"
+msgstr "Traffic Inspector est un firewall d'application web (WAF) contextuel qui protège votre site web en reconnaissant et en refusant les requêtes HTTP malveillantes"
+
+#: cerber-settings.php:850
+msgid "Block IP addresses that send excessive requests for non-existing pages or scan website for security breaches"
+msgstr "Bloquer les adresses IP qui envoient des demandes excessives pour des pages inexistantes ou scanner le site web à la recherche de failles de sécurité"
+
+#: cerber-settings.php:869
+msgid "Traffic Logging"
+msgstr "Enregistrement du trafic"
+
+#: cerber-settings.php:870
+msgid "Enable optional traffic logging if you need to monitor suspicious and malicious activity or solve security issues"
+msgstr "Activez la journalisation facultative du trafic si vous devez surveiller des activités suspectes et malveillantes ou résoudre des problèmes de sécurité"
+
+#: cerber-settings.php:983
+msgid "The scanner monitors file changes, verifies the integrity of WordPress, plugins, and themes, and detects malware"
+msgstr "Le balayeur surveille les changements de fichiers, vérifie l'intégrité de WordPress, des extensions et des thèmes, et détecte les logiciels malveillants"
+
+#: cerber-settings.php:1033
+msgid "Specify directories to exclude from scanning. One directory per line."
+msgstr "Spécifier les répertoires à exclure du scan. Un répertoire par ligne."
+
+#: cerber-settings.php:1060
+msgid "The scanner automatically scans the website, removes malware and sends email reports with the results of a scan"
+msgstr "Le balayeur scanne automatiquement le site, supprime les logiciels malveillants et envoie des rapports par e-mail avec le résultat du balayage"
+
+#: cerber-settings.php:1077
+msgid "Configure what issues to include in the email report and the condition for sending reports"
+msgstr "Configurer les problèmes à inclure dans le rapport e-mail et la condition d'envoi des rapports"
+
+#: cerber-settings.php:1227
+msgid "Cerber anti-spam engine"
+msgstr "Moteur Antispam Cerber"
+
+#: cerber-settings.php:1286
+msgid "Adjust anti-spam engine"
+msgstr "Régler le moteur anti-spam"
+
+#: cerber-settings.php:1287
+msgid "These settings enable you to fine-tune the behavior of anti-spam algorithms and avoid false positives"
+msgstr "Ces paramètres vous permettent de peaufiner le comportement des algorithmes anti-spam et d'éviter les faux-positifs"
+
+#: cerber-settings.php:1316
+msgid "How the plugin processes comments submitted through the standard comment form"
+msgstr "Manière dont l'extension traite les commentaires envoyés à l'aide du formulaire standard"
+
+#: nexus/cerber-nexus-slave.php:435
+msgid "Settings updated"
+msgstr "Réglages mis à jour"
+
+#: admin/cerber-dashboard.php:1418
+msgid "Request ID"
+msgstr "ID de requête"
+
+#: admin/cerber-dashboard.php:1419
+msgid "Search in URL"
+msgstr "Rechercher dans l’URL"
+
+#: cerber-settings.php:991 cerber-settings.php:1000
+msgid "Executable files"
+msgstr "Fichiers exécutables"
+
+#: cerber-settings.php:992 cerber-settings.php:1001
+msgid "All files"
+msgstr "Tous les fichiers"
+
+#: admin/cerber-dashboard.php:1926
+msgid "Active sessions"
+msgstr "Sessions actives"
+
+#: cerber-settings.php:688
+msgid "minutes (leave empty to use the default WordPress value)"
+msgstr "minutes (laisser vide pour utiliser la valeur par défaut de WordPress)"
+
+#: admin/cerber-tools.php:72
+msgid "Load entries"
+msgstr "Charger les entrées"
+
+#: admin/cerber-dashboard.php:1097 admin/cerber-dashboard.php:4618
+msgid "My IP"
+msgstr "Mon IP"
+
+#: admin/cerber-dashboard.php:5432
+msgid "Analytics"
+msgstr "Statistiques"
+
+#: admin/cerber-dashboard.php:5481
+msgid "Manage Settings"
+msgstr "Gérer les paramètres"
+
+#: cerber-settings.php:1047 cerber-settings.php:1445 cerber-settings.php:1473
+#: admin/cerber-dashboard.php:5483
+msgid "Diagnostic Log"
+msgstr "Journal de diagnostic"
+
+#: cerber-common.php:1665
+msgid "User deleted"
+msgstr "Utilisateur supprimé"
+
+#: cerber-common.php:1774
+msgid "Email address is prohibited"
+msgstr "L’adresse e-mail est interdite."
+
+#: admin/cerber-admin.php:770
+msgid "Quarantined"
+msgstr "Mis en quarantaine"
+
+#: admin/cerber-admin.php:926 admin/cerber-admin.php:1393
+msgid "Modified"
+msgstr "Modifié"
+
+#: admin/cerber-admin.php:1002
+msgid "Files without extension"
+msgstr "Fichiers sans extension"
+
+#: admin/cerber-admin.php:1003
+msgid "Back to list"
+msgstr "Retour à la liste"
+
+#: admin/cerber-admin.php:1063
+msgid "Brief summary"
+msgstr "Bref résumé"
+
+#: admin/cerber-admin.php:1114
+msgid "Folder"
+msgstr "Dossier"
+
+#: admin/cerber-admin.php:1115
+msgid "Path"
+msgstr "Chemin"
+
+#: admin/cerber-admin.php:1116 admin/cerber-admin.php:1210
+msgid "Files"
+msgstr "Fichiers"
+
+#: admin/cerber-admin.php:1117 admin/cerber-admin.php:1211
+msgid "Space Occupied"
+msgstr "Espace occupé"
+
+#: admin/cerber-admin.php:1181
+msgid "No extension"
+msgstr "Aucune extension"
+
+#: admin/cerber-admin.php:1206
+msgid "File extensions statistics"
+msgstr "Statistiques des extensions de fichier"
+
+#: admin/cerber-admin.php:1209
+msgid "Extension"
+msgstr "Extension"
+
+#: admin/cerber-admin.php:1212
+msgid "Smallest"
+msgstr "Le plus petit"
+
+#: admin/cerber-admin.php:1213
+msgid "Largest"
+msgstr "Le plus large"
+
+#: admin/cerber-admin.php:1214
+msgid "Average Size"
+msgstr "Taille moyenne"
+
+#: admin/cerber-admin.php:1215
+msgid "Oldest"
+msgstr "Plus anciens"
+
+#: admin/cerber-admin.php:1216
+msgid "Newest"
+msgstr "Plus récents"
+
+#: admin/cerber-admin.php:1232
+msgid "Top 10 largest files"
+msgstr "Top 10 des plus gros fichiers"
+
+#: admin/cerber-admin.php:1391
+msgid "File Name"
+msgstr "Nom de fichier"
+
+#: cerber-settings.php:373
+msgid "Date format for CSV export"
+msgstr "Format de la date pour l'exportation CSV"
+
+#: cerber-settings.php:374
+msgid "Use ISO 8601 date format for CSV export files"
+msgstr "Utiliser les dates au format ISO 8601 pour l'export de fichiers CSV"
+
+#: cerber-settings.php:388
+msgid "My IP address"
+msgstr "Mon adresse IP"
+
+#: cerber-settings.php:389
+msgid "Do not add my IP address to the White IP Access List upon plugin activation"
+msgstr "Ne pas ajouter mon adresse IP à la liste blanche d'accès lors de l'activation de l'extension"
+
+#: admin/cerber-tools.php:52
+msgid "Load the default plugin settings"
+msgstr "Charger les paramètres par défaut de l'extension"
+
+#: admin/cerber-tools.php:53
+msgid "When you click the button below, the default WP Cerber settings will be loaded. The Custom login URL and Access Lists will not be changed."
+msgstr "Lorsque vous cliquez sur le bouton ci-dessous, les paramètres par défaut de WP Cerber seront chargés. L'URL de la page de connexion personnalisée et les listes d'accès ne seront pas impactées."
+
+#: admin/cerber-tools.php:54
+msgid "To get the most out of WP Cerber, follow these steps:"
+msgstr "Pour tirer parti de WP Cerber, suivez les étapes suivantes :"
+
+#: cerber-common.php:1789
+msgid "IP whitelisted"
+msgstr "IP mise en liste blanche"
+
+#: admin/cerber-dashboard.php:4617
+msgid "My requests"
+msgstr "Mes requêtes"
+
+#: admin/cerber-dashboard.php:3910
+msgid "Log into the website"
+msgstr "Se connecter sur le site"
+
+#. Name of the plugin
+#: 
+msgid "WP Cerber Security, Anti-spam & Malware Scan"
+msgstr "WP Cerber Security, Antispam & Malware Scan"
+
+#: cerber-common.php:1713 cerber-common.php:1913
+msgid "Probing for vulnerable code"
+msgstr "Recherche de code PHP vulnérable"
+
+#: cerber-load.php:5967
+msgid "Your IP address %s has been added to the White IP Access List"
+msgstr "Votre adresse IP %s a été ajoutée à la liste blanche d'accès"
+
+#: admin/cerber-users.php:974
+msgid "Search for IP address"
+msgstr "Rechercher l’adresse IP"
+
+#: cerber-settings.php:878
+msgid "Minimal"
+msgstr "Minimal"
+
+#: cerber-settings.php:894
+msgid "Do not log known crawlers"
+msgstr "Ne pas consigner les requêtes de robots d'exploration connus"
+
+#: cerber-settings.php:899
+msgid "Do not log these locations"
+msgstr "Ne pas consigner ces emplacements"
+
+#: cerber-settings.php:903
+msgid "Specify URL paths to exclude requests from logging. One item per line."
+msgstr "Spécifier les chemins URL pour lesquelles il ne faut pas consigner les requêtes. Un élément par ligne."
+
+#: cerber-settings.php:907
+msgid "Do not log these User-Agents"
+msgstr "Ne pas consigner ces User-Agents"
+
+#: cerber-settings.php:911
+msgid "Specify User-Agents to exclude requests from logging. One item per line."
+msgstr "Spécifier les User-Agents pour lesquels il ne faut pas consigner les requêtes. Un élément par ligne."
+
+#: admin/cerber-dashboard.php:4739
+msgid "Unknown Google's bot"
+msgstr "Robot Google inconnu"
+
+#: cerber-common.php:1780
+msgid "IP address is not allowed"
+msgstr "L'adresse IP n'est pas autorisée"
+
+#: cerber-settings.php:611
+msgid "Only users from IP addresses in the White IP Access List may register on the website"
+msgstr "Seuls les utilisateurs dont l'adresse IP est dans la liste blanche des accès peuvent s'inscrire sur le site"
+
+#: cerber-settings.php:616
+msgid "User message"
+msgstr "Message utilisateur"
+
+#: cerber-scanner.php:1627
+msgid "File is missing"
+msgstr "Le fichier est manquant"
+
+#. Mandatory
+#: cerber-scanner.php:2636
+msgid "This file is missing. It's been deleted or it's not been installed."
+msgstr "Ce fichier est manquant. Il a été supprimé ou n'a pas été installé."
+
+#: cerber-scanner.php:3938
+msgid "Error: file %s cannot be used."
+msgstr "Erreur : le fichier %s ne peut pas être utilisé."
+
+#: cerber-scanner.php:3938
+msgid "Please upload another file."
+msgstr "Merci de charger un autre fichier."
+
+#: cerber-settings.php:231
+msgid "Deferred rendering"
+msgstr "Rendu différé"
+
+#: cerber-settings.php:232
+msgid "Defer rendering the custom login page"
+msgstr "Différer le rendu de la page de connexion personnalisée"
+
+#: cerber-load.php:414
+msgid "You have only one login attempt remaining."
+msgstr "Il ne vous reste plus qu’une seule tentative de connexion."
+
+#: admin/cerber-users.php:446
+msgid "Number of allowed concurrent user sessions"
+msgstr "Nombre de sessions utilisateur concurrentes autorisé"
+
+#: admin/cerber-users.php:451
+msgid "When the limit on concurrent user sessions is reached"
+msgstr "Quand la limite des sessions utilisateur concurrentes est atteinte"
+
+#: admin/cerber-users.php:454
+msgid "Terminate the oldest user session on a new login"
+msgstr "Mettre fin à la session utilisateur la plus ancienne lors d'une nouvelle connexion"
+
+#: admin/cerber-users.php:455
+msgid "Deny further login attempts"
+msgstr "Refuser les prochaines tentatives de connexion"
+
+#: admin/cerber-users.php:518
+msgid "Login from a different browser or device"
+msgstr "Connexion depuis un navigateur/appareil différent"
+
+#: admin/cerber-users.php:524
+msgid "If the number of concurrent user sessions is greater"
+msgstr "Si le nombre de sessions utilisateur concurrents est supérieur"
+
+#: admin/cerber-dashboard.php:5769
+msgid "These features are available in the professional version of WP Cerber."
+msgstr "Ces fonctionnalités sont disponibles dans la version professionnelle de WP Cerber."
+
+#: cerber-common.php:1694
+msgid "User session terminated"
+msgstr "Session utilisateur terminée"
+
+#: cerber-common.php:1781
+msgid "Limit on concurrent user sessions"
+msgstr "Limiter les sessions utilisateur concurrentes"
+
+#: admin/cerber-users.php:77
+msgid "It is visible only to website administrators"
+msgstr "C'est uniquement visible par les administrateurs du site"
+
+#: admin/cerber-admin.php:1498
+msgid "Authorized"
+msgstr "Autorisé"
+
+#: admin/cerber-admin.php:1499
+msgid "Authorization Failed"
+msgstr "L'autorisation a échoué"
+
+#: admin/cerber-admin-settings.php:778
+msgid "Important note if you have a caching plugin in place"
+msgstr "Note importante si vous utilisez une extension de mise en cache"
+
+#: admin/cerber-admin-settings.php:779
+msgid "To avoid false positives and get better anti-spam performance, please clear the plugin cache."
+msgstr "Pour éviter les faux-positifs et obtenir de meilleures performances pour l'anti-spam, veuillez effacer le cache de l'extension."
+
+#: cerber-common.php:1733
+msgid "API request authorized"
+msgstr "Requête API autorisée"
+
+#: cerber-common.php:1734
+msgid "API request authorization failed"
+msgstr "Échec de l'autorisation de la demande d'API"
+
+#: cerber-common.php:1718
+msgid "Request to XML-RPC API denied"
+msgstr "Requête au serveur XML-RPC refusée"
+
+#: cerber-common.php:1782
+msgid "Invalid cookies"
+msgstr "Cookies invalides"
+
+#: cerber-settings.php:166
+msgid "Block IP address for"
+msgstr "Bloquer l'adresse IP pour"
+
+#: cerber-settings.php:170
+msgid "Mitigate aggressive attempts"
+msgstr "Atténuer les essais agressifs"
+
+#: cerber-settings.php:430
+msgid "Do not show PHP errors on my website"
+msgstr "Ne pas afficher les erreurs PHP sur mon site"
+
+#: cerber-settings.php:884
+msgid "Log all REST API requests"
+msgstr "Consigner toutes les requêtes à l'API REST"
+
+#: cerber-settings.php:889
+msgid "Log all XML-RPC requests"
+msgstr "Consigner toutes les requêtes XML-RPC"
+
+#: cerber-settings.php:1248
+msgid "Custom comment URL"
+msgstr "URL de commentaire personnalisée"
+
+#: cerber-settings.php:1249
+msgid "Use custom URL for the WordPress comment form"
+msgstr "Utiliser une URL personnalisée pour le formulaire de commentaire WordPress"
+
+#: cerber-settings.php:461 cerber-settings.php:1295
+#: admin/cerber-dashboard.php:2097
+msgid "Logged-in users"
+msgstr "Utilisateurs connectés"
+
+#: cerber-settings.php:358
+msgid "Personal Preferences"
+msgstr "Préférences personnelles"
+
+#: cerber-settings.php:462
+msgid "Allow access to REST API for logged-in users"
+msgstr "Autoriser l'accès à l'API REST pour les utilisateurs connectés"
+
+#: cerber-settings.php:580
+msgid "User registration"
+msgstr "Enregistrement d'un utilisateur"
+
+#: cerber-settings.php:581
+msgid "Restrict new user registrations by the following conditions"
+msgstr "Restreindre les nouvelles inscriptions utilisateur à l'aide des conditions suivantes"
+
+#: cerber-settings.php:626
+msgid "Authorized Access"
+msgstr "Accès autorisé"
+
+#: cerber-settings.php:627
+msgid "Grant access to the website to logged-in users only"
+msgstr "Autoriser l'accès au site aux utilisateurs connectés seulement"
+
+#: cerber-settings.php:665 cerber-settings.php:1038
+msgid "Miscellaneous Settings"
+msgstr "Réglages divers"
+
+#: cerber-settings.php:678 admin/cerber-users.php:468
+msgid "Application Passwords"
+msgstr "Mots de passe d’application"
+
+#: cerber-settings.php:681 admin/cerber-users.php:472
+msgid "Enabled, access to API using standard user passwords is allowed"
+msgstr "Activé, l'accès à l'API est autorisé en utilisant les mots de passe standards"
+
+#: cerber-settings.php:682 admin/cerber-users.php:473
+msgid "Enabled, no access to API using standard user passwords"
+msgstr "Activé, aucun accès à l'API en utilisant les mots de passe standards"
+
+#: cerber-settings.php:862
+msgid "Ignore logged-in users"
+msgstr "Ne pas tenir compte des utilisateurs connectés"
+
+#: cerber-settings.php:1296
+msgid "Disable bot detection engine for logged-in users"
+msgstr "Désactiver le moteur de détection de bot pour les utilisateurs connectés"
+
+#: cerber-settings.php:1393
+msgid "Disable reCAPTCHA for logged-in users"
+msgstr "Désactiver reCAPTCHA pour les utilisateurs connectés"
+
+#: admin/cerber-users.php:471
+msgid "Use global policies"
+msgstr "Utiliser les stratégies globales"
+
+#: cerber-load.php:417
+msgid "You have %d login attempt remaining."
+msgid_plural "You have %d login attempts remaining."
+msgstr[0] "Il vous reste %d tentative de connexion."
+msgstr[1] "Il vous reste %d tentatives de connexion."
+
+#: admin/cerber-users.php:461
+msgid "Display this message if an attempt to log in is denied because the limit on concurrent user sessions has been reached"
+msgstr "Afficher ce message si un essai de connexion est refusé car la limite de sessions utilisateur concurrentes a été atteinte"
+
+#: admin/cerber-dashboard.php:5391
+msgid "Role-Based"
+msgstr "Basé sur le Rôle"
+
+#: cerber-common.php:1730
+msgid "User application password created"
+msgstr "Mot de passe de l'application utilisateur créé"
+
+#: cerber-settings.php:141
+msgid "Initialization Mode"
+msgstr "Mode d'initialisation"
+
+#: cerber-settings.php:934
+msgid "Save response headers"
+msgstr "Sauver les en-têtes de réponse"
+
+#: cerber-settings.php:945
+msgid "Save response cookies"
+msgstr "Sauver les cookies de réponse"
+
+#: cerber-load.php:8041
+msgid "We need your support to keep moving forward"
+msgstr "Nous avons besoin de votre soutien pour continuer à avancer"
+
+#: cerber-load.php:8043
+msgid "By sharing your unique opinion on WP Cerber, you help the engineers behind the plugin make greater progress and help other professionals find the right software. You can leave your review on one of the following websites. Feel free to use your native language. Thanks!"
+msgstr "En partageant votre opinion unique sur WP Cerber, vous aidez les ingénieurs derrière le plugin à progresser davantage et vous aidez les autres professionnels à trouver le bon logiciel. Vous pouvez laisser votre avis sur l'un des sites web suivants. N'hésitez pas à utiliser votre langue maternelle. Merci !"
+
+#: nexus/cerber-nexus-master.php:661
+msgid "Secret Access Token is invalid"
+msgstr "Le jeton d'accès secret n'est pas valable"
+
+#: admin/cerber-dashboard.php:225
+msgid "Click the IP address to see its activity"
+msgstr "Cliquez sur l'adresse IP pour voir son activité"
+
+#: admin/cerber-dashboard.php:1077
+msgid "Login issues"
+msgstr "Problèmes d'accès"
+
+#: admin/cerber-dashboard.php:1094 admin/cerber-dashboard.php:4612
+msgid "Non-authenticated"
+msgstr "Non-authentifié"
+
+#: admin/cerber-dashboard.php:1379 admin/cerber-dashboard.php:1826
+#: admin/cerber-dashboard.php:2681 admin/cerber-admin.php:1333
+msgid "No activity has been logged yet."
+msgstr "Aucune activité n'a encore été enregistrée."
+
+#: admin/cerber-dashboard.php:2701
+msgid "Users' Activity"
+msgstr "Activité des Utilisateurs"
+
+#: admin/cerber-dashboard.php:2721
+msgid "Malicious Activity"
+msgstr "Activités Malveillantes"
+
+#: admin/cerber-dashboard.php:4609
+msgid "Suspicious requests"
+msgstr "Requêtes suspectes"
+
+#: admin/cerber-dashboard.php:1093 admin/cerber-dashboard.php:4611
+msgid "Users"
+msgstr "Utilisateurs"
+
+#: cerber-common.php:1784
+msgid "Forbidden URL"
+msgstr "URL interdite"
+
+#: cerber-settings.php:142
+msgid "How WP Cerber loads its core and security mechanisms"
+msgstr "Comment WP Cerber charge ses mécanismes de base et de sécurité"
+
+#: cerber-settings.php:156
+msgid "Login Security"
+msgstr "Sécurité de l'Accès"
+
+#: cerber-settings.php:224
+msgid "A unique string that does not overlap with slugs of the existing pages or posts"
+msgstr "Une chaîne unique qui ne se chevauche pas avec les slugs des pages ou des messages existants"
+
+#: cerber-settings.php:179
+msgid "Processing wp-login.php authentication requests"
+msgstr "Traitement des demandes d'authentification wp-login.php"
+
+#: cerber-settings.php:183
+msgid "Default processing"
+msgstr "Traitement par défaut"
+
+#: cerber-settings.php:184
+msgid "Block access to wp-login.php"
+msgstr "Bloquer l'accès à wp-login.php"
+
+#: cerber-settings.php:383
+msgid "Shift admin menu"
+msgstr "Déplacer menu admin"
+
+#: cerber-2fa.php:505
+msgid "You or someone else trying to log into the website. We have to verify that it's you. If this wasn't you, please immediately reset your password to safeguard your account."
+msgstr "Vous ou une autre personne essayant de se connecter au site web. Nous devons vérifier que c'est bien vous. Si ce n'est pas vous, veuillez immédiatement réinitialiser votre mot de passe afin de protéger votre compte."
+
+#: cerber-2fa.php:662
+msgid "Did not receive the email?"
+msgstr "Pas reçu le courriel ?"
+
+#: cerber-2fa.php:506
+msgid "Please use the following verification PIN code to verify your identity."
+msgstr "Veuillez utiliser le code PIN de vérification suivant pour vérifier votre identité."
+
+#: admin/cerber-admin-settings.php:712
+msgid "You have disabled the default login page. Ensure that you have configured an alternative login page. Otherwise, you will not be able to log in."
+msgstr "Vous avez désactivé la page de connexion par défaut. Assurez-vous que vous avez configuré une autre page de connexion. Sinon, vous ne pourrez pas vous connecter."
+
+#: cerber-settings.php:157
+msgid "Brute-force attack mitigation and user authentication settings"
+msgstr "Atténuation des attaques de force brute et paramètres d'authentification des utilisateurs"
+
+#: cerber-settings.php:193
+msgid "Disable the default login error message"
+msgstr "Désactiver le message d'erreur de connexion par défaut"
+
+#: cerber-settings.php:194
+msgid "Do not reveal non-existing usernames and emails in the failed login attempt message"
+msgstr "Ne pas révéler les noms d'utilisateur et les courriels non existants dans le message de tentative de connexion échouée"
+
+#: cerber-settings.php:185
+msgid "Deny authentication through wp-login.php"
+msgstr "Refuser l'authentification via wp-login.php"
+
+#: cerber-common.php:1783
+msgid "Invalid cookies cleared"
+msgstr "Cookies invalides supprimés"
+
+#: cerber-load.php:1862
+msgid "If we have found your account, we have sent the confirmation link to the email address on the account."
+msgstr "Si nous avons trouvé votre compte, nous avons envoyé le lien de confirmation à l’adresse e-mail figurant sur le compte."
+
+#: cerber-load.php:5925 cerber-common.php:525
+msgid "WP Cerber requires PHP %s or higher. You are running %s."
+msgstr "WP Cerber nécessite PHP %s ou supérieur. Vous avez actuellement %s."
+
+#: cerber-load.php:5929 cerber-common.php:529
+msgid "WP Cerber requires WordPress %s or higher. You are running %s."
+msgstr "WP Cerber nécessite WordPress %s ou supérieur. Vous avez actuellement %s."
+
+#: cerber-settings.php:204
+msgid "Disable the default reset password error message"
+msgstr "Désactiver le message d’erreur de réinitialisation du mot de passe par défaut"
+
+#: cerber-settings.php:205
+msgid "Do not reveal non-existing usernames and emails in the reset password error message"
+msgstr "Ne révélez pas d’identifiants et d’e-mails inexistants dans le message d’erreur de réinitialisation du mot de passe"
+
+#: cerber-settings.php:409 cerber-settings.php:414
+msgid "Prevent username discovery"
+msgstr "Empêcher la découverte de l’identifiant"
+
+#: cerber-settings.php:410
+msgid "Prevent username discovery via oEmbed"
+msgstr "Empêcher la découverte de l’identifiant via oEmbed"
+
+#: cerber-settings.php:415
+msgid "Prevent username discovery via user XML sitemaps"
+msgstr "Empêche la découverte des identifiants via les plans de site XML de l’utilisateur/utilisatrice"
+
+#: admin/cerber-admin.php:1018
+msgid "No data for generating reports. Please run the Full Scan. After the scan is completed, the reports will be generated."
+msgstr "Aucune donnée pour générer des rapports. Veuillez exécuter le Scan complet. Une fois le scan terminé, les rapports seront générés."
+
+#: cerber-settings.php:1047 cerber-settings.php:1445 cerber-settings.php:1473
+msgid "Once enabled, the log is available here: %s"
+msgstr "Une fois activé, le journal est disponible ici : %s"
+
+#: cerber-scanner.php:2637
+msgid "The scanner identifies this file as missing based on the integrity data (checksums) provided by the developer of %s."
+msgstr "Le scanner identifie ce fichier comme manquant sur la base des données d’intégrité (sommes de contrôle) fournies par le développeur ou la développeuse de %s."
+
+#: cerber-settings.php:362
+msgid "Retrieve IP address WHOIS information when viewing the logs"
+msgstr "Récupérer l’information WHOIS de l’adresse IP lors de la visualisation des journaux."
+
+#: cerber-settings.php:384
+msgid "Shift the WP Cerber admin menu to the top when navigating through WP Cerber admin pages"
+msgstr "Déplacer le menu d’administration de WP Cerber vers le haut lors de la navigation dans les pages d’administration de WP Cerber."
+
+#: cerber-settings.php:361
+msgid "Show IP WHOIS data"
+msgstr "Afficher les données IP WHOIS"
+
+#: cerber-settings.php:1148
+msgid "Analyze the uploads directory"
+msgstr "Analyser le répertoire de téléversement"
+
+#: cerber-settings.php:1149
+msgid "Analyze the WordPress uploads directory to detect injected files"
+msgstr "Analyser le répertoire de téléversement de WordPress pour détecter les fichiers injectés"
+
+#: cerber-settings.php:1042
+msgid "Change file and directory permissions if it is required to delete files"
+msgstr "Modifier les droits des fichiers et des répertoires s’il est obligatoire de supprimer des fichiers"
+
+#: cerber-settings.php:1041
+msgid "Change filesystem permissions"
+msgstr "Modifier les droits du système de fichiers"
+
+#: cerber-settings.php:1127
+msgid "Delete files in the WordPress uploads directory"
+msgstr "Supprimer les fichiers dans le répertoire des téléversements de WordPress"
+
+#: cerber-settings.php:1136
+msgid "Delete files with unwanted extensions"
+msgstr "Supprimer les fichiers avec des extensions indésirables"
+
+#: cerber-settings.php:1169
+msgid "Delete publicly accessible files with these extensions"
+msgstr "Supprimer les fichiers avec ces extensions accessibles publiquement"
+
+#: cerber-scanner.php:3704
+msgid "Detecting injected files in the WordPress uploads directory"
+msgstr "Détection des fichiers injectés dans le répertoire des téléversements de WordPress"
+
+#: cerber-common.php:1785
+msgid "Executable file extension detected"
+msgstr "Extension de fichier exécutable détecté"
+
+#: cerber-common.php:1786
+msgid "Filename is prohibited"
+msgstr "Le nom de fichier est interdit"
+
+#: cerber-settings.php:1215
+msgid "Files in temporary directories"
+msgstr "Fichiers dans les répertoires temporaires"
+
+#: cerber-settings.php:1195
+msgid "Global Exclusions"
+msgstr "Exclusions globales"
+
+#: cerber-settings.php:1156
+msgid "Ignore files with these extensions"
+msgstr "Ignorer les fichiers avec ces extensions"
+
+#: cerber-scanner.php:1642
+msgid "Injected file"
+msgstr "Fichier injecté"
+
+#: cerber-scanner.php:1680
+msgid "Injected files"
+msgstr "Fichiers injectés"
+
+#: cerber-scanner.php:311
+msgid "KB/sec"
+msgstr "ko/sec"
+
+#: cerber-settings.php:1143
+msgid "Keep the WordPress uploads directory clean and secure. Detect injected files with public web access, report them, and remove malicious ones."
+msgstr "Conserver le répertoire de téléversement de WordPress propre et en sécurité. Détecter les fichiers injectés avec accès public, les rapporter, et supprimer les malicieux."
+
+#: cerber-scanner.php:1628
+msgid "Local hash not found"
+msgstr "Hachage local non trouvé"
+
+#: cerber-settings.php:1071
+msgid "once a day at"
+msgstr "un fois par jour à"
+
+#: cerber-settings.php:1167
+msgid "Prohibited extensions"
+msgstr "Extensions interdites"
+
+#: cerber-settings.php:1189
+msgid "Recover plugins' files"
+msgstr "Récupérer les fichiers des extensions"
+
+#: cerber-settings.php:1009
+msgid "Scan the sessions directory"
+msgstr "Analyser le répertoire des sessions"
+
+#: cerber-settings.php:1005
+msgid "Scan web server's temporary directories"
+msgstr "Analyser les répertoires temporaires du serveur"
+
+#: cerber-scanner.php:3695
+msgid "Scanning server's temporary directories for files"
+msgstr "Recherche de fichiers dans les répertoires temporaires du serveur"
+
+#: cerber-scanner.php:3696
+msgid "Scanning the sessions directory for files"
+msgstr "Recherche de fichiers dans le répertoire des sessions"
+
+#: cerber-scanner.php:3694
+msgid "Scanning the temporary upload directory for files"
+msgstr "Recherche de fichiers dans le répertoire de téléversement temporaire"
+
+#: cerber-scanner.php:3693
+msgid "Scanning website directories for files"
+msgstr "Recherche de fichiers dans les répertoires du site"
+
+#: cerber-settings.php:1154
+msgid "Skip files with these extensions"
+msgstr "Passer les fichiers avec ces extensions"
+
+#: cerber-settings.php:1119
+msgid "These policies are automatically enforced at the end of every scan based on its results. All affected files are moved to the quarantine."
+msgstr "Ces politiques sont automatiquement appliquées à la fin de chaque analyse en fonction de ses résultats. Tous les fichiers affectés sont mis en quarantaine."
+
+#: admin/cerber-dashboard.php:3339
+msgid "This scan report was generated by the previous version of WP Cerber. Please run a new scan to get consistent and accurate results."
+msgstr "Ce rapport de scan a été généré par la version précédente de WP Cerber. Veuillez exécuter un nouveau scan pour obtenir des résultats cohérents et précis."
+
+#: cerber-settings.php:1157 cerber-settings.php:1170
+msgid "Use comma to separate multiple extensions"
+msgstr "Utiliser la virgule pour séparer plusieurs extensions"
+
+#: cerber-settings.php:1142
+msgid "WordPress uploads analysis"
+msgstr "Analyse des fichiers téléversés WordPress"
+
+#. This is a risk level.
+#: cerber-scanner.php:1607
+msgctxt "This is a risk level."
+msgid "High"
+msgstr "Élevé"
+
+#. This is a risk level.
+#: cerber-scanner.php:1603
+msgctxt "This is a risk level."
+msgid "Low"
+msgstr "Faible"
+
+#. This is a risk level.
+#: cerber-scanner.php:1605
+msgctxt "This is a risk level."
+msgid "Medium"
+msgstr "Moyen"
+
+#: cerber-load.php:4690
+msgid "If you believe you should be able to perform this request, please let us know."
+msgstr "Si vous pensez que vous devriez être autorisé à effectuer cette requête, veuillez nous le faire savoir."
+
+#: cerber-load.php:4689
+msgid "Your request looks suspiciously similar to automated requests from spam posting software or it has been denied by a security policy configured by the website administrator."
+msgstr "Votre requête semble suspicieusement similaire à des requêtes automatisées de logiciel d’envoi de message indésirable ou elle a été refusée par la politique de sécurité configurée par l’administrateur/administratrice du site."
+
+#: cerber-settings.php:1301
+msgid "Disable bot detection engine for IP addresses in the White IP Access List"
+msgstr "Désactiver le mécanisme de détection des bots pour les adresses IP de la liste d'accès IP blanche"
+
+#: cerber-settings.php:1399
+msgid "Disable reCAPTCHA for IP addresses in the White IP Access List"
+msgstr "Désactiver reCAPTCHA pour les adresses IP de la liste d'accès IP blanche"
+
+#: admin/cerber-admin.php:538
+msgid "Executable files are not supported. Please upload a ZIP archive."
+msgstr "Les fichiers exécutables ne sont pas pris en charge. Veuillez téléverser une archive ZIP."
+
+#: cerber-load.php:775
+msgid "Human verification failed."
+msgstr "Vérification humaine échouée."
+
+#: cerber-common.php:1800
+msgid "Logged out everywhere"
+msgstr "Déconnecté partout"
+
+#: cerber-common.php:1698
+msgid "Password reset request denied"
+msgstr "Demande de réinitialisation du mot de passe refusée"
+
+#: cerber-common.php:1802
+msgid "reCAPTCHA verified"
+msgstr "reCAPTCHA vérifié"
+
+#: cerber-load.php:3359
+msgid "Sorry, password reset is not allowed for this user."
+msgstr "Désolé, la réinitialisation du mot de passe n'est pas autorisée pour cet utilisateur."
+
+#: admin/cerber-admin.php:534
+msgid "This type of file is not supported. Please upload a ZIP archive."
+msgstr "Ce type de fichier n’est pas pris en charge. Veuillez téléverser une archive ZIP."
+
+#: cerber-settings.php:832
+msgid "Use less restrictive security filters for IP addresses in the White IP Access List"
+msgstr "Utiliser des filtres de sécurité moins restrictifs pour les adresses IP de la liste d'accès IP blanche"
+
+#: cerber-common.php:1729
+msgid "User application password updated"
+msgstr "Mot de passe application utilisateur mis à jour"
+
+#: cerber-common.php:1772
+msgid "User blocked by administrator"
+msgstr "Utilisateur bloqué par l'administrateur"
+
+#. %s is the name of a website administrator who terminated the session.
+#: cerber-common.php:1696
+msgid "User session terminated by %s"
+msgstr "Session utilisateur terminée par %s"
+
+#: cerber-common.php:1773
+msgid "Username is prohibited"
+msgstr "Nom d'utilisateur interdit"
+
+#: cerber-settings.php:480
+msgid "View all REST API requests"
+msgstr "Voir toutes les requêtes API REST"
+
+#: cerber-settings.php:480
+msgid "View denied REST API requests"
+msgstr "Voir les requêtes API REST refusée"
+
+#: cerber-load.php:4908 cerber-load.php:4909
+msgid "A new activity has occurred"
+msgstr "Une nouvelle activité a eu lieu"
+
+#: admin/cerber-dashboard.php:3019
+msgid "Do not send alerts after this date"
+msgstr "Ne pas envoyer d'alertes après cette date"
+
+#: admin/cerber-dashboard.php:3059 admin/cerber-dashboard.php:4589
+msgid "Documentation"
+msgstr "Documentation"
+
+#: admin/cerber-dashboard.php:3046
+msgid "Email alerts will be sent to these emails:"
+msgstr "Les alertes e-mail seront envoyées à ces adresses :"
+
+#: admin/cerber-dashboard.php:3046
+msgid "Email alerts will be sent to this email:"
+msgstr "Les alertes e-mail seront envoyées à cette adresse :"
+
+#: admin/cerber-dashboard.php:3024
+msgid "Ignore global rate limits"
+msgstr "Ignorer les limites de taux globales"
+
+#: admin/cerber-dashboard.php:3010
+msgid "Maximum number of alerts to send"
+msgstr "Nombre maximal d'alertes à envoyer"
+
+#: admin/cerber-dashboard.php:3054
+msgid "Mobile alerts are not configured"
+msgstr "Les alertes mobiles ne sont pas configurées"
+
+#. %s is the name of a mobile device.
+#: admin/cerber-dashboard.php:3051
+msgid "Mobile alerts will be sent to %s"
+msgstr "Les alertes mobiles seront envoyées à %s"
+
+#: admin/cerber-dashboard.php:3015
+msgid "No limit"
+msgstr "Aucune limite"
+
+#: admin/cerber-dashboard.php:5838
+msgid "OK"
+msgstr "OK"
+
+#: admin/cerber-dashboard.php:3061
+msgid "Optional alert limits"
+msgstr "Limites d'alerte facultatives"
+
+#. %s is the name of a website administrator who changed the password.
+#: cerber-common.php:1692
+msgid "Password changed by %s"
+msgstr "Mot de passe modifié par %s"
+
+#: cerber-settings.php:1228
+msgid "Spam protection for registration, comment, and other forms on the website"
+msgstr "Protection anti-spam pour les formulaires d'inscription, de commentaires et autres du site Web."
+
+#: cerber-common.php:1816
+msgid "Unknown label"
+msgstr "Étiquette inconnue"
+
+#. %s is the name of a website administrator who created the password.
+#: cerber-common.php:1732
+msgid "User application password created by %s"
+msgstr "Mot de passe de l'application utilisateur créé par %s"
+
+#: cerber-common.php:1735
+msgid "User application password deleted"
+msgstr "Mot de passe de l'application utilisateur supprimé"
+
+#. %s is the name of a website administrator who deleted the password.
+#: cerber-common.php:1737
+msgid "User application password deleted by %s"
+msgstr "Mot de passe de l'application utilisateur supprimé par %s"
+
+#. %s is the name of a website administrator who created the user.
+#: cerber-common.php:1663
+msgid "User created by %s"
+msgstr "Utilisateur créé par %s"
+
+#. %s is the name of a website administrator who deleted the user.
+#: cerber-common.php:1667
+msgid "User deleted by %s"
+msgstr "Utilisateur supprimé par %s"
+
+#: cerber-settings.php:1232
+msgid "View bot events"
+msgstr "Afficher événements bots"
+
+#: cerber-settings.php:1338
+msgid "View reCAPTCHA events"
+msgstr "Afficher événements reCAPTCHA"
+
+#: admin/cerber-dashboard.php:1400
+msgid "Check for requests from the IP address"
+msgstr ""
+
+#: admin/cerber-dashboard.php:1387
+msgid "Get me notified when such an event occurs"
+msgstr ""
+
+#: admin/cerber-dashboard.php:1382
+msgid "No events found using the given search criteria"
+msgstr ""
+
+#: admin/cerber-dashboard.php:4580
+msgid "No requests found using the given search criteria"
+msgstr ""
+
+#: admin/cerber-dashboard.php:4577
+msgid "No requests have been logged yet."
+msgstr ""
+
+#: admin/cerber-dashboard.php:4587
+msgid "Note: Logging is currently disabled"
+msgstr ""
+
+#: cerber-settings.php:694
+msgid "Sort users in the Dashboard"
+msgstr ""
+
+#: cerber-load.php:4827 cerber-load.php:5742
+msgid "View activity in the Dashboard"
+msgstr ""
+
+#: admin/cerber-dashboard.php:1392
+msgid "View all logged events"
+msgstr ""
+
+#: admin/cerber-dashboard.php:4582
+msgid "View all logged requests"
+msgstr ""
+
+#: cerber-load.php:4865
+msgid "View lockouts in the Dashboard"
+msgstr ""
+
+#: cerber-settings.php:188 cerber-settings.php:189
+msgid "View violations in the log"
+msgstr ""
+
+#: admin/cerber-dashboard.php:1385
+msgid "You will be notified when such an event occurs"
+msgstr ""
+
