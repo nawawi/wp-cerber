@@ -3,36 +3,41 @@
 	Copyright (C) 2015-22 CERBER TECH INC., https://cerber.tech
 	Copyright (C) 2015-22 Markov Gregory, https://wpcerber.com
 
-    Licenced under the GNU GPL.
+	Licenced under the GNU GPL.
 
-    This program is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 3 of the License, or
-    (at your option) any later version.
+	This program is free software; you can redistribute it and/or modify
+	it under the terms of the GNU General Public License as published by
+	the Free Software Foundation; either version 3 of the License, or
+	(at your option) any later version.
 
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details.
 
-    You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+	You should have received a copy of the GNU General Public License
+	along with this program; if not, write to the Free Software
+	Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-if ( ! defined( 'WPINC' ) ) { exit; }
+if ( ! defined( 'WPINC' ) ) {
+	exit; }
 
 final class CRB_DS {
-	private static $setting = '_crb_ds_shadowing';
-	private static $config = null;
-	private static $the_user = null;
-	private static $update_user = null;
-	private static $acc_owner = false;
-	private static $user_blocked = false;
-	private static $user_fields = array( 'user_login' => 'lgn', 'user_pass' => 'pwd', 'user_email' => 'eml' );
-	private static $opt_cache = array();
+	private static $setting             = '_crb_ds_shadowing';
+	private static $config              = null;
+	private static $the_user            = null;
+	private static $update_user         = null;
+	private static $acc_owner           = false;
+	private static $user_blocked        = false;
+	private static $user_fields         = array(
+		'user_login' => 'lgn',
+		'user_pass'  => 'pwd',
+		'user_email' => 'eml',
+	);
+	private static $opt_cache           = array();
 	private static $no_user_meta_shadow = ''; // Do not return user meta from shadow when meta is updating.
-	//private static $user_metas = array( 'capabilities' );
+	// private static $user_metas = array( 'capabilities' );
 
 	static function enable_shadowing( $type ) {
 
@@ -54,11 +59,9 @@ final class CRB_DS {
 
 		switch ( $type ) {
 			case 1: // Users data
-
 				if ( defined( 'CRB_USHD_KEY' ) && is_string( CRB_USHD_KEY ) ) {
 					$data[5] = CRB_USHD_KEY; // If users' tables are shared among mutiple websites, define it in the wp-config.php on all websites before (!) activation shadowing
-				}
-				else {
+				} else {
 					$data[5] = crb_random_string( 14, 16, false, false );
 				}
 
@@ -73,7 +76,6 @@ final class CRB_DS {
 
 			case 2: // Roles
 			case 3: // Settings
-
 				$data[1] = time(); // Should be set after all shadows has created
 				$data[5] = crb_random_string( 10, 12, false, false );
 				$data[6] = crb_random_string( 8, 14, true, false );
@@ -134,13 +136,13 @@ final class CRB_DS {
 		$lenght = count( $conf );
 
 		$b = rand( 1, 10 );
-		//$config           = array_fill( $b, rand( 12, 14 ), 0 );
-		$config = array_fill( $b, rand( $lenght + 8, $lenght + 10 ), 0 );
-		$s = rand( 3, 5 );
-		$config[ $b + 1 ] = $s; // crucial for extracting
-		$config[ $b + $s ] = $conf;
+		// $config           = array_fill( $b, rand( 12, 14 ), 0 );
+		$config                = array_fill( $b, rand( $lenght + 8, $lenght + 10 ), 0 );
+		$s                     = rand( 3, 5 );
+		$config[ $b + 1 ]      = $s; // crucial for extracting
+		$config[ $b + $s ]     = $conf;
 		$config[ $b + $s + 1 ] = array( array( $b ) ); // is not used
-		$config[] = $b + 3; // crucial for verification
+		$config[]              = $b + 3; // crucial for verification
 
 		update_site_option( self::$setting, $config );
 	}
@@ -194,14 +196,14 @@ final class CRB_DS {
 			$conf       = self::get_config();
 			$conf[1][1] = time();
 			self::save_config( $conf );
-			//cerber_diag_log( 'Create shadow completed' );
+			// cerber_diag_log( 'Create shadow completed' );
 
 			return false;
 		}
 
 		foreach ( $to_do as $user_id ) {
 			self::update_user_shadow( $user_id, null, null, self::is_meta_preserve() );
-			//wp_cache_delete( $user_id, 'user_meta' );
+			// wp_cache_delete( $user_id, 'user_meta' );
 		}
 
 		return true;
@@ -248,8 +250,7 @@ final class CRB_DS {
 
 		if ( $fields ) {
 			$list = array_intersect_key( self::$user_fields, array_flip( $fields ) );
-		}
-		else {
+		} else {
 			$list = self::$user_fields;
 		}
 
@@ -261,7 +262,8 @@ final class CRB_DS {
 			$sh[2] = array();
 		}
 
-		/*if ( ! $fields ) { // We use $fields only for updating password
+		/*
+		if ( ! $fields ) { // We use $fields only for updating password
 			if ( empty( $sh[2] ) ) { // New user
 				foreach ( self::is_meta_preserve() as $key ) {
 					$sh[2][ $key ] = get_user_meta( $user_id, $key, true );
@@ -292,7 +294,7 @@ final class CRB_DS {
 		}
 
 		if ( ( $sh = self::get_user_shadow( $user_id ) )
-		     && $sh[0] == $user_id ) {
+			 && $sh[0] == $user_id ) {
 			return true;
 		}
 
@@ -313,8 +315,8 @@ final class CRB_DS {
 		}
 
 		if ( ! ( $sh = self::get_user_shadow( $user_id ) )
-		     || $sh[0] != $user_id
-		     || ! ( $ret = crb_array_get( $sh[1], self::$user_fields['user_pass'] ) ) ) {
+			 || $sh[0] != $user_id
+			 || ! ( $ret = crb_array_get( $sh[1], self::$user_fields['user_pass'] ) ) ) {
 			return '';
 		}
 
@@ -324,7 +326,7 @@ final class CRB_DS {
 	/**
 	 * @param $mode
 	 * @param $user_id
-	 * @param null $data User data from 'wp_pre_insert_user_data' filter
+	 * @param null    $data User data from 'wp_pre_insert_user_data' filter
 	 */
 	static function acc_processor( $mode, $user_id, $data = null ) {
 
@@ -334,7 +336,7 @@ final class CRB_DS {
 			return;
 		}
 
-		//$update_permitted = self::acc_update_permitted_by_ip();
+		// $update_permitted = self::acc_update_permitted_by_ip();
 		$update_permitted = ( crb_get_settings( 'ds_4acc_acl' ) && crb_acl_is_white() );
 
 		switch ( $mode ) {
@@ -355,9 +357,12 @@ final class CRB_DS {
 				}
 				if ( $update_permitted ) {
 					// Must be deferred till user's data is saved to DB
-					add_action( 'profile_update', function ( $user_id ) {
-						CRB_DS::update_helper( $user_id );
-					} );
+					add_action(
+						'profile_update',
+						function ( $user_id ) {
+							CRB_DS::update_helper( $user_id );
+						}
+					);
 				}
 				break;
 		}
@@ -366,7 +371,7 @@ final class CRB_DS {
 
 	static function update_helper( $user_id ) {
 		if ( ( self::$update_user != $user_id )
-		     || ( self::$user_blocked && ! self::$acc_owner ) ) {
+			 || ( self::$user_blocked && ! self::$acc_owner ) ) {
 			return;
 		}
 
@@ -382,31 +387,29 @@ final class CRB_DS {
 	 */
 	private static function acc_new( $user_id ) {
 
-		$set = crb_get_settings();
+		$set                = crb_get_settings();
 		self::$user_blocked = false;
 
 		// Due to lack of a hook in the wp_insert_user() we are forced to check permissions and use wp_delete_user() after the user was created
 		if ( ! is_user_logged_in() ) {
 			if ( ! crb_user_has_role_strict( $set['ds_regs_roles'], $user_id ) ) {
 				CRB_Globals::$act_status = 32;
-				self::$user_blocked = true;
+				self::$user_blocked      = true;
 			}
-		}
-		else {
+		} else {
 			if ( ! cerber_user_has_role( $set['ds_add_acc'] ) ) {
 				CRB_Globals::$act_status = 33;
-				self::$user_blocked = true;
+				self::$user_blocked      = true;
 			}
 		}
 
 		if ( self::$user_blocked ) {
-			require_once( ABSPATH . 'wp-admin/includes/user.php' );
+			require_once ABSPATH . 'wp-admin/includes/user.php';
 			wp_delete_user( $user_id );
 			cerber_log( 72 );
 			remove_action( 'register_new_user', 'wp_send_new_user_notifications' );
 			remove_action( 'edit_user_created_user', 'wp_send_new_user_notifications', 10 );
-		}
-		elseif ( ! has_filter( 'register_new_user', 'wp_send_new_user_notifications' ) ) {
+		} elseif ( ! has_filter( 'register_new_user', 'wp_send_new_user_notifications' ) ) {
 			// this is needed in the case of a bulk user import
 			add_action( 'register_new_user', 'wp_send_new_user_notifications' );
 			add_action( 'edit_user_created_user', 'wp_send_new_user_notifications', 10 );
@@ -418,7 +421,7 @@ final class CRB_DS {
 	/**
 	 * Protect user's data from authorized modification
 	 *
-	 * @param int $user_id
+	 * @param int   $user_id
 	 * @param array $data User data from 'wp_pre_insert_user_data' filter
 	 *
 	 * @return bool true if this operation is permitted
@@ -428,7 +431,7 @@ final class CRB_DS {
 
 		$cid = get_current_user_id();
 
-		self::$acc_owner = ( $user_id == $cid );
+		self::$acc_owner    = ( $user_id == $cid );
 		self::$user_blocked = false;
 
 		if ( ! cerber_user_has_role( crb_get_settings( 'ds_edit_acc' ) ) ) {
@@ -436,8 +439,8 @@ final class CRB_DS {
 			// An exception: password reset requested (since WP 5.3)
 			if ( ! empty( $data['user_activation_key'] ) && cerber_is_http_post() ) {
 				// These fields cannot be changed during a normal password reset process
-				$protected = array('user_pass','user_nicename','user_email','user_url','user_registered','display_name');
-				$ok = true;
+				$protected = array( 'user_pass', 'user_nicename', 'user_email', 'user_url', 'user_registered', 'display_name' );
+				$ok        = true;
 				if ( $row = cerber_db_get_row( 'SELECT * FROM ' . $wpdb->users . ' WHERE ID = ' . $user_id ) ) {
 					foreach ( $protected as $field ) {
 						if ( $row[ $field ] != $data[ $field ] ) {
@@ -465,7 +468,6 @@ final class CRB_DS {
 			if ( ! has_filter( 'insert_user_meta', array( 'CRB_DS', 'user_meta' ) ) ) {
 				add_filter( 'insert_user_meta', array( 'CRB_DS', 'user_meta' ), 0, 3 );
 			}
-
 		}
 
 		return ( ! self::$user_blocked );
@@ -481,7 +483,7 @@ final class CRB_DS {
 				remove_filter( 'pre_get_col_charset', 'crb_return_wp_error', PHP_INT_MAX );
 			}
 
-			//return array(); // No user meta to update
+			// return array(); // No user meta to update
 		}
 
 		return $meta;
@@ -518,8 +520,8 @@ final class CRB_DS {
 			}
 			// Makes sense for user's role meta ONLY
 			elseif ( is_array( $meta_value )
-			         && ( $reg_roles = (array) crb_get_settings( 'ds_regs_roles' ) )
-			         && ! array_diff_key( $meta_value, array_flip( $reg_roles ) ) ) {
+					 && ( $reg_roles = (array) crb_get_settings( 'ds_regs_roles' ) )
+					 && ! array_diff_key( $meta_value, array_flip( $reg_roles ) ) ) {
 				$ok = true;
 			}
 
@@ -550,7 +552,7 @@ final class CRB_DS {
 		global $wpdb;
 
 		if ( ( isset( self::$the_user ) && ( $meta_key == self::$the_user->cap_key ) ) // User roles are here
-		     || $meta_key == $wpdb->get_blog_prefix() . 'user_level' ) {
+			 || $meta_key == $wpdb->get_blog_prefix() . 'user_level' ) {
 			return true;
 		}
 
@@ -566,7 +568,7 @@ final class CRB_DS {
 	static function get_shadow_user_meta( $user_id, $meta_key, $single ) {
 
 		if ( self::$no_user_meta_shadow == $meta_key
-		     || ( ( $conf = self::get_config( 1 ) ) && $conf[5] == $meta_key ) ) {
+			 || ( ( $conf = self::get_config( 1 ) ) && $conf[5] == $meta_key ) ) {
 			return false; // Skip use shadow meta (infinite loop protection)
 		}
 
@@ -594,8 +596,8 @@ final class CRB_DS {
 		}
 
 		if ( $value == $old_value
-		     || ( is_array( $value ) && is_array( $old_value )
-		          && ( serialize( $value ) === serialize( $old_value ) ) ) ) {
+			 || ( is_array( $value ) && is_array( $old_value )
+				  && ( serialize( $value ) === serialize( $old_value ) ) ) ) {
 			return $value;
 		}
 
@@ -628,7 +630,7 @@ final class CRB_DS {
 	static function role_processor( &$value, $option, &$old_value ) {
 
 		if ( ! is_array( $value )
-		     || ( substr( $option, - 11 ) != '_user_roles' ) ) {
+			 || ( substr( $option, - 11 ) != '_user_roles' ) ) {
 			return $value;
 		}
 
@@ -696,7 +698,8 @@ final class CRB_DS {
 		return true;
 	}
 
-	/*static function acc_update_permitted_by_ip() {
+	/*
+	static function acc_update_permitted_by_ip() {
 		if ( crb_get_settings( 'ds_4acc_acl' ) && crb_acl_is_white() ) {
 			return true;
 		}
@@ -706,7 +709,6 @@ final class CRB_DS {
 
 	/**
 	 * Install hooks for retrieving data of protected settings
-	 *
 	 */
 	static function settings_hooks( $type ) {
 
@@ -718,23 +720,29 @@ final class CRB_DS {
 
 		foreach ( $list as $option ) {
 
-			add_filter( "pre_option_{$option}", function ( $var, $option, $default ) {
+			add_filter(
+				"pre_option_{$option}",
+				function ( $var, $option, $default ) {
 
-				$value = CRB_DS::get_setting_shadow( $option );
+					$value = CRB_DS::get_setting_shadow( $option );
 
-				if ( $value ) {
-					return $value;
-				}
+					if ( $value ) {
+						return $value;
+					}
 
-				/*add_filter( "option_{$option}", function ( $value, $option ) {
+					/*
+					add_filter( "option_{$option}", function ( $value, $option ) {
 					CRB_DS::update_setting_shadow( $option, $value );
 
 					return $value;
-				}, 10, 2 );*/
+					}, 10, 2 );*/
 
-				return $var;
+					return $var;
 
-			}, PHP_INT_MAX, 3 );
+				},
+				PHP_INT_MAX,
+				3
+			);
 
 		}
 
@@ -776,8 +784,7 @@ final class CRB_DS {
 
 		if ( $set = crb_get_settings( 'ds_4opts_list' ) ) {
 			$list[3] = $set;
-		}
-		else {
+		} else {
 			$list[3] = array();
 		}
 
@@ -807,9 +814,12 @@ final class CRB_DS {
 			return $set;
 		}
 
-		array_walk( $set, function ( &$e ) {
-			$e = 1; // Default value is ON
-		} );
+		array_walk(
+			$set,
+			function ( &$e ) {
+				$e = 1; // Default value is ON
+			}
+		);
 
 		return $set;
 	}
@@ -826,8 +836,8 @@ final class CRB_DS {
 
 	private static function decode( $str ) {
 		static $equs = array( '', '=', '==' );
-		$num = substr( $str, 0, 1 );
-		$str = ltrim( $str, (string) $num );
+		$num         = substr( $str, 0, 1 );
+		$str         = ltrim( $str, (string) $num );
 
 		return base64_decode( $str . $equs[ $num ] );
 	}
@@ -856,8 +866,7 @@ final class CRB_DS {
 			if ( $conf[1] ) {
 				$msg = 'Active since ' . cerber_date( $conf[1] ) . '.';
 				return true;
-			}
-			else {
+			} else {
 				$msg = 'Creating shadow data in progress. ';
 				return true;
 			}
@@ -876,61 +885,90 @@ final class CRB_DS {
 
 if ( crb_get_settings( 'ds_4acc' ) && CRB_DS::is_ready( 1 ) ) {
 
-	add_action( 'user_register', function ( $user_id ) {
+	add_action(
+		'user_register',
+		function ( $user_id ) {
 
-		CRB_DS::acc_processor( 'new', $user_id );
+			CRB_DS::acc_processor( 'new', $user_id );
 
-	}, 0 );
+		},
+		0
+	);
 
-	add_filter( 'wp_pre_insert_user_data', function ( $data, $update, $user_id ) {
+	add_filter(
+		'wp_pre_insert_user_data',
+		function ( $data, $update, $user_id ) {
 
-		if ( $update ) {
-			CRB_DS::acc_processor( 'update', $user_id, $data );
-		}
+			if ( $update ) {
+				CRB_DS::acc_processor( 'update', $user_id, $data );
+			}
 
-		return $data;
-	}, PHP_INT_MAX, 3 );
+			return $data;
+		},
+		PHP_INT_MAX,
+		3
+	);
 
-	add_filter( 'update_user_metadata', function ( $var, $object_id, $meta_key, $meta_value ) {
-		// apply_filters( "update_{$meta_type}_metadata", null, $object_id, $meta_key, $meta_value, $prev_value );
+	add_filter(
+		'update_user_metadata',
+		function ( $var, $object_id, $meta_key, $meta_value ) {
+			// apply_filters( "update_{$meta_type}_metadata", null, $object_id, $meta_key, $meta_value, $prev_value );
 
-		$allowed = CRB_DS::update_user_meta( $object_id, $meta_key, $meta_value );
+			$allowed = CRB_DS::update_user_meta( $object_id, $meta_key, $meta_value );
 
-		if ( ! $allowed ) {
-			return true;
-		}
+			if ( ! $allowed ) {
+				return true;
+			}
 
-		return $var;
+			return $var;
 
-	}, PHP_INT_MAX, 4 );
+		},
+		PHP_INT_MAX,
+		4
+	);
 
-	add_filter( 'get_user_metadata', function ( $var, $object_id, $meta_key, $single ) {
-		//$check = apply_filters( "get_{$meta_type}_metadata", null, $object_id, $meta_key, $single );
+	add_filter(
+		'get_user_metadata',
+		function ( $var, $object_id, $meta_key, $single ) {
+			// $check = apply_filters( "get_{$meta_type}_metadata", null, $object_id, $meta_key, $single );
 
-		if ( $meta = CRB_DS::get_shadow_user_meta( $object_id, $meta_key, $single ) ) {
-			return $meta;
-		}
+			if ( $meta = CRB_DS::get_shadow_user_meta( $object_id, $meta_key, $single ) ) {
+				return $meta;
+			}
 
-		return $var;
+			return $var;
 
-	}, PHP_INT_MAX, 4 );
+		},
+		PHP_INT_MAX,
+		4
+	);
 
-	add_action( 'crb_after_reset', function ( $null, $user_id ) {
+	add_action(
+		'crb_after_reset',
+		function ( $null, $user_id ) {
 
-		CRB_DS::acc_processor( 'pass', $user_id );
+			CRB_DS::acc_processor( 'pass', $user_id );
 
-	}, 10, 2 );
+		},
+		10,
+		2
+	);
 }
 
 if ( crb_get_settings( 'ds_4roles' ) && CRB_DS::is_ready( 2 ) ) {
 
 	CRB_DS::settings_hooks( 2 );
 
-	add_filter( 'pre_update_option', function ( $value, $option, $old_value ) {
+	add_filter(
+		'pre_update_option',
+		function ( $value, $option, $old_value ) {
 
-		return CRB_DS::role_processor( $value, $option, $old_value );
+			return CRB_DS::role_processor( $value, $option, $old_value );
 
-	}, PHP_INT_MAX, 3 );
+		},
+		PHP_INT_MAX,
+		3
+	);
 
 }
 
@@ -938,11 +976,16 @@ if ( crb_get_settings( 'ds_4opts' ) && CRB_DS::is_ready( 3 ) ) {
 
 	CRB_DS::settings_hooks( 3 );
 
-	add_filter( 'pre_update_option', function ( $value, $option, $old_value ) {
+	add_filter(
+		'pre_update_option',
+		function ( $value, $option, $old_value ) {
 
-		return CRB_DS::setting_processor( $value, $option, $old_value );
+			return CRB_DS::setting_processor( $value, $option, $old_value );
 
-	}, PHP_INT_MAX, 3 );
+		},
+		PHP_INT_MAX,
+		3
+	);
 
 }
 

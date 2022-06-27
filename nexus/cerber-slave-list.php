@@ -3,26 +3,25 @@
 	Copyright (C) 2015-22 CERBER TECH INC., https://cerber.tech
 	Copyright (C) 2015-22 Markov Gregory, https://wpcerber.com
 
-    Licenced under the GNU GPL.
+	Licenced under the GNU GPL.
 
-    This program is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 3 of the License, or
-    (at your option) any later version.
+	This program is free software; you can redistribute it and/or modify
+	it under the terms of the GNU General Public License as published by
+	the Free Software Foundation; either version 3 of the License, or
+	(at your option) any later version.
 
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details.
 
-    You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+	You should have received a copy of the GNU General Public License
+	along with this program; if not, write to the Free Software
+	Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 */
 
 /*
-
 *========================================================================*
 |                                                                        |
 |	       ATTENTION!  Do not change or edit this file!                  |
@@ -31,22 +30,23 @@
 
 */
 
-if ( ! defined( 'WPINC' ) ) { exit; }
+if ( ! defined( 'WPINC' ) ) {
+	exit; }
 
 // Only this filter lets user manage table columns. See render_list_table_columns_preferences()
-add_filter( "manage_wp-cerber_page_cerber-nexus_columns", 'nexus_slave_list_cols' );
+add_filter( 'manage_wp-cerber_page_cerber-nexus_columns', 'nexus_slave_list_cols' );
 function nexus_slave_list_cols() {
 	if ( ! crb_get_configurable_screen() ) {
 		return array();
 	}
 	$cols = array(
-		'cb'          => '<input type="checkbox" />', //Render a checkbox instead of text
+		'cb'          => '<input type="checkbox" />', // Render a checkbox instead of text
 		'site_name'   => __( 'Website', 'wp-cerber' ),
 		'site_url'    => 'Homepage',
-		//'site_status' => __( 'Status', 'wp-cerber' ),
+		// 'site_status' => __( 'Status', 'wp-cerber' ),
 		'wp_v'        => __( 'WordPress', 'wp-cerber' ),
 		'plugin_v'    => 'WP Cerber',
-		//'new_users'  => __( 'New Users', 'wp-cerber' ),
+		// 'new_users'  => __( 'New Users', 'wp-cerber' ),
 		'updates'     => __( 'Updates', 'wp-cerber' ),
 		'last_scan'   => __( 'Malware Scan', 'wp-cerber' ),
 		'srv_name'    => __( 'Server', 'wp-cerber' ),
@@ -60,26 +60,28 @@ function nexus_slave_list_cols() {
 		unset( $cols['server_country'] );
 	}
 
-    return $cols;
+	return $cols;
 }
 
 if ( ! class_exists( 'WP_List_Table' ) ) {
-	require_once( ABSPATH . 'wp-admin/includes/class-wp-list-table.php' );
+	require_once ABSPATH . 'wp-admin/includes/class-wp-list-table.php';
 }
 
 class CRB_Slave_Table extends WP_List_Table {
-    private $settings;
+	private $settings;
 	private $show_url;
 	private $hide_ip;
 	private $base_switch;
-    private $base_sites;
+	private $base_sites;
 
 	function __construct() {
-		parent::__construct( array(
-			'singular' => 'Site',
-			'plural'   => 'Sites',
-			'ajax'     => false
-		) );
+		parent::__construct(
+			array(
+				'singular' => 'Site',
+				'plural'   => 'Sites',
+				'ajax'     => false,
+			)
+		);
 
 		$this->settings    = get_site_option( '_cerber_slist_screen', array() );
 		$this->show_url    = crb_array_get( $this->settings, 'url_name' );
@@ -93,7 +95,8 @@ class CRB_Slave_Table extends WP_List_Table {
 		return nexus_slave_list_cols();
 	}
 
-	/*protected function get_default_primary_column_name() {
+	/*
+	protected function get_default_primary_column_name() {
 		return 'site_name';
 	}*/
 
@@ -125,14 +128,14 @@ class CRB_Slave_Table extends WP_List_Table {
 		if ( $which == 'top' ) {
 			?>
 
-            <div class="alignleft actions">
+			<div class="alignleft actions">
 				<?php
 
 				$filter = '';
 
 				$groups = nexus_get_groups( true );
 				if ( count( $groups ) > 1 ) {
-					$groups = array( '-1' => __( 'All groups', 'wp-cerber' ) ) + $groups;
+					$groups  = array( '-1' => __( 'All groups', 'wp-cerber' ) ) + $groups;
 					$filter .= cerber_select( 'filter_group_id', $groups, crb_array_get( $_GET, 'filter_group_id', '-1', '\d+' ) );
 				}
 
@@ -142,14 +145,14 @@ class CRB_Slave_Table extends WP_List_Table {
 					foreach ( $servers as $id => $server ) {
 						$list[ $id ] = $server[1];
 					}
-					$list = array( '*' => __( 'All servers', 'wp-cerber' ) ) + $list;
+					$list    = array( '*' => __( 'All servers', 'wp-cerber' ) ) + $list;
 					$filter .= cerber_select( 'filter_server_id', $list, crb_array_get( $_GET, 'filter_server_id', '*', '[\w\.\:]+' ) );
 				}
 
-				//$countries = wp_cache_get( 'cerber_nexus', 'countries' );
+				// $countries = wp_cache_get( 'cerber_nexus', 'countries' );
 				$countries = (array) cerber_get_set( 'nexus_countries' );
 				if ( count( $countries ) > 1 ) {
-					$list = array( '*' => __( 'All countries', 'wp-cerber' ) ) + $countries;
+					$list    = array( '*' => __( 'All countries', 'wp-cerber' ) ) + $countries;
 					$filter .= cerber_select( 'filter_country', $list, crb_array_get( $_GET, 'filter_country', '*', '\w+' ) );
 				}
 
@@ -160,16 +163,16 @@ class CRB_Slave_Table extends WP_List_Table {
 				// for_tb_blur is for removing focus from closing button
 				echo '<input type="button" alt="' . CRB_ADD_SLAVE_LNK . '" title="' . __( 'Add a slave website', 'wp-cerber' ) . '" class="thickbox button" value="Add">';
 				?>
-                <script>
-                    jQuery(document).ready(function ($) {
-                        $('.thickbox').on('click', function () {
-                            setTimeout(function () {
-                                $('#TB_closeWindowButton').blur();
-                            }, 50);
-                        });
-                    });
-                </script>
-            </div>
+				<script>
+					jQuery(document).ready(function ($) {
+						$('.thickbox').on('click', function () {
+							setTimeout(function () {
+								$('#TB_closeWindowButton').blur();
+							}, 50);
+						});
+					});
+				</script>
+			</div>
 
 			<?php
 		}
@@ -188,7 +191,7 @@ class CRB_Slave_Table extends WP_List_Table {
 
 		// Sorting
 		$orderby = crb_array_get( $_REQUEST, 'orderby', 'id' );
-		$order = crb_array_get( $_REQUEST, 'order', 'DESC' );
+		$order   = crb_array_get( $_REQUEST, 'order', 'DESC' );
 		$orderby = sanitize_sql_orderby( $orderby . ' ' . $order ); // !works only with fields, not tables references!
 		$orderby = ' ORDER BY ' . $table . '.' . $orderby . ' ';
 
@@ -197,8 +200,7 @@ class CRB_Slave_Table extends WP_List_Table {
 		if ( $current_page > 1 ) {
 			$offset = ( $current_page - 1 ) * $per_page;
 			$limit  = ' LIMIT ' . $offset . ',' . $per_page;
-		}
-		else {
+		} else {
 			$limit = 'LIMIT ' . $per_page;
 		}
 
@@ -218,26 +220,24 @@ class CRB_Slave_Table extends WP_List_Table {
 		// Search
 		if ( $term = cerber_get_get( 's' ) ) {
 			$term = stripslashes( $term );
-			$s = '"%' . cerber_real_escape( $term ) . '%"';
+			$s    = '"%' . cerber_real_escape( $term ) . '%"';
 			if ( preg_match( '/[^A-Z\d\-\/\.\:]/i', $term ) ) {
 				// Mixing columns with different collations for non-latin symbols generates MySQL error
 				$where[] = ' (site_name LIKE ' . $s . ' OR site_name_remote LIKE ' . $s . ' OR site_notes LIKE ' . $s . ' OR details LIKE ' . $s . ') ';
-			}
-			else {
+			} else {
 				$where[] = ' (site_name LIKE ' . $s . ' OR site_name_remote LIKE ' . $s . ' OR site_notes LIKE ' . $s . ' OR details LIKE ' . $s . ' OR site_url LIKE ' . $s . ') ';
 			}
 		}
 
 		if ( ! empty( $where ) ) {
 			$where = ' WHERE ' . implode( ' AND ', $where );
-		}
-		else {
+		} else {
 			$where = '';
 		}
 
 		// Retrieving actual data
 
-		$query = 'SELECT SQL_CALC_FOUND_ROWS * FROM '.$table . " $join $where $orderby $limit";
+		$query = 'SELECT SQL_CALC_FOUND_ROWS * FROM ' . $table . " $join $where $orderby $limit";
 
 		if ( $this->items = cerber_db_get_results( $query ) ) {
 			$total_items = cerber_db_get_var( 'SELECT FOUND_ROWS()' );
@@ -248,13 +248,16 @@ class CRB_Slave_Table extends WP_List_Table {
 		}
 
 		// Pagination, part 2
-		$this->set_pagination_args( array(
-			'total_items' => $total_items,
-			'per_page'    => $per_page,
-			'total_pages' => ceil( $total_items / $per_page )
-		) );
+		$this->set_pagination_args(
+			array(
+				'total_items' => $total_items,
+				'per_page'    => $per_page,
+				'total_pages' => ceil( $total_items / $per_page ),
+			)
+		);
 
-		/*$this->set_pagination_args( array(
+		/*
+		$this->set_pagination_args( array(
 			'total_items' => count( $themes ),
 			'per_page' => $per_page,
 			'infinite_scroll' => true,
@@ -276,18 +279,19 @@ class CRB_Slave_Table extends WP_List_Table {
 
 	function column_site_name( $item ) {
 
-		$set     = array();
+		$set = array();
 
-		$edit = cerber_admin_link( 'nexus_sites', array( 'site_id' => $item['id'] ) );
+		$edit        = cerber_admin_link( 'nexus_sites', array( 'site_id' => $item['id'] ) );
 		$set['edit'] = '<a href="' . $edit . '">' . __( 'Edit', 'wp-cerber' ) . '</a>';
 
-		//$login        = $item['site_url'] ;
-		//$set['login'] = ' <a href="' . $login . '" target="_blank">' . __( 'Log in', 'wp-cerber' ) . '</a>';
+		// $login        = $item['site_url'] ;
+		// $set['login'] = ' <a href="' . $login . '" target="_blank">' . __( 'Log in', 'wp-cerber' ) . '</a>';
 
 		$switch        = $this->base_switch . '&nexus_site_id=' . $item['id'];
 		$set['switch'] = ' <a href="' . $switch . '">' . __( 'Switch to', 'wp-cerber' ) . '</a>';
 
-		/*$set['delete'] = '<a href="' . wp_nonce_url( add_query_arg( array(
+		/*
+		$set['delete'] = '<a href="' . wp_nonce_url( add_query_arg( array(
 				'cerber_admin_do' => 'nexus_delete_slave',
 				'site_id'         => $item['id']
 			) ), 'control', 'cerber_nonce' ) . '" ' . $onclick . '>' . __( 'Delete', 'wp-cerber' ) . '</a>';
@@ -299,7 +303,7 @@ class CRB_Slave_Table extends WP_List_Table {
 	}
 
 	/**
-	 * @param array $item // not object!
+	 * @param array  $item // not object!
 	 * @param string $column_name
 	 *
 	 * @return string
@@ -315,7 +319,7 @@ class CRB_Slave_Table extends WP_List_Table {
 		if ( ! $pup ) {
 			$pup = nexus_get_update( CERBER_PLUGIN_ID );
 		}
-		//return $item[ $column_name ]; // raw output as is
+		// return $item[ $column_name ]; // raw output as is
 		$val = crb_array_get( $item, $column_name, null );
 		switch ( $column_name ) {
 			case 'site_status':
@@ -326,7 +330,7 @@ class CRB_Slave_Table extends WP_List_Table {
 				return 'Down';
 				break;
 			case 'site_url':
-				return '<a href="' . $val . '" target="_blank">' . str_replace( array('.', '/'), array('<wbr>.','<wbr>/'), $val ) . '</a>';
+				return '<a href="' . $val . '" target="_blank">' . str_replace( array( '.', '/' ), array( '<wbr>.', '<wbr>/' ), $val ) . '</a>';
 				break;
 			case 'last_scan':
 				if ( ! $item['refreshed'] ) {
@@ -357,15 +361,14 @@ class CRB_Slave_Table extends WP_List_Table {
 					if ( isset( $pup['new_version'] ) && version_compare( $val, $pup['new_version'], '<' ) ) {
 						$ret .= ' <i style="color: red; font-size: 1.2em;" class="dashicons dashicons-warning"></i>';
 					}
-				}
-				else {
+				} else {
 					$ret = '-';
 				}
 
 				return $ret;
 			case 'updates':
 				return ( ! empty( $item['refreshed'] ) ) ? '<a href="#">' . $val . '</a>' : '';
-				//return ( $val ) ? '<a href="#">' . $val . '</a>' : $val;
+				// return ( $val ) ? '<a href="#">' . $val . '</a>' : $val;
 			case 'srv_name':
 				$srv = nexus_get_srv_info( $item['server_id'] );
 
@@ -410,12 +413,17 @@ class CRB_Slave_Table extends WP_List_Table {
 	function no_items() {
 		if ( ! empty( $_GET['s'] ) ) {
 			parent::no_items();
-		}
-		else {
-			$no_master = wp_nonce_url( add_query_arg( array(
-				'cerber_admin_do' => 'nexus_set_role',
-				'nexus_set_role'  => 'none',
-			) ), 'control', 'cerber_nonce' );
+		} else {
+			$no_master = wp_nonce_url(
+				add_query_arg(
+					array(
+						'cerber_admin_do' => 'nexus_set_role',
+						'nexus_set_role'  => 'none',
+					)
+				),
+				'control',
+				'cerber_nonce'
+			);
 
 			echo __( 'No websites configured.', 'wp-cerber' ) . ' <a class="thickbox" href="' . CRB_ADD_SLAVE_LNK . '">' . __( 'Add a new one', 'wp-cerber' ) . '</a> | <a href="' . $no_master . '">' . __( 'Disable master mode', 'wp-cerber' ) . '</a>';
 		}

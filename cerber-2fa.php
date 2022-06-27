@@ -3,29 +3,29 @@
 	Copyright (C) 2015-22 CERBER TECH INC., https://cerber.tech
 	Copyright (C) 2015-22 Markov Gregory, https://wpcerber.com
 
-    Licenced under the GNU GPL.
+	Licenced under the GNU GPL.
 
-    This program is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 3 of the License, or
-    (at your option) any later version.
+	This program is free software; you can redistribute it and/or modify
+	it under the terms of the GNU General Public License as published by
+	the Free Software Foundation; either version 3 of the License, or
+	(at your option) any later version.
 
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details.
 
-    You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+	You should have received a copy of the GNU General Public License
+	along with this program; if not, write to the Free Software
+	Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-const CERBER_PIN_LENGTH = 4;
+const CERBER_PIN_LENGTH  = 4;
 const CERBER_PIN_EXPIRES = 15;
 
 final class CRB_2FA {
 	private static $user_id = null;
-	static $token = null;
+	static $token           = null;
 
 	/**
 	 * Enforce 2FA for a user if needed
@@ -64,15 +64,13 @@ final class CRB_2FA {
 
 		if ( $tfm == 1 ) {
 			$go = true;
-		}
-		else {
+		} else {
 
 			$u_roles = null;
 
 			if ( ! empty( $user->roles ) ) {
 				$u_roles = $user->roles;
-			}
-			else { // a backup way
+			} else { // a backup way
 				$data = get_userdata( $user->ID );
 				if ( ! empty( $data->roles ) ) {
 					$u_roles = $data->roles;
@@ -107,8 +105,8 @@ final class CRB_2FA {
 	}
 
 	/**
-     * @param int $user_id
-     * @param array $cus
+	 * @param int   $user_id
+	 * @param array $cus
 	 * @param array $roles
 	 *
 	 * @return bool
@@ -120,20 +118,19 @@ final class CRB_2FA {
 			$policies = cerber_get_role_policies( $role );
 
 			if ( empty( $policies['2famode'] )
-			     || ( $policies['2famode'] == 2 && ! lab_lab() ) ) {
+				 || ( $policies['2famode'] == 2 && ! lab_lab() ) ) {
 				continue;
-			}
-            elseif ( $policies['2famode'] == 1 ) {
+			} elseif ( $policies['2famode'] == 1 ) {
 				return true;
 			}
 
 			if ( $history = crb_array_get( $cus, '2fa_history' ) ) {
 				if ( ( $logins = crb_array_get( $policies, '2falogins' ) )
-				     && ( $history[0] >= $logins ) ) {
+					 && ( $history[0] >= $logins ) ) {
 					return true;
 				}
 				if ( ( $days = crb_array_get( $policies, '2fadays' ) )
-				     && ( ( time() - $history[1] ) > $days * 24 * 3600 ) ) {
+					 && ( ( time() - $history[1] ) > $days * 24 * 3600 ) ) {
 					return true;
 				}
 			}
@@ -217,7 +214,7 @@ final class CRB_2FA {
 			'expires'  => time() + CERBER_PIN_EXPIRES * 60,
 			'attempts' => 0,
 			'ip'       => cerber_get_remote_ip(),
-			'ua'       => sha1( crb_array_get( $_SERVER, 'HTTP_USER_AGENT', '' ) )
+			'ua'       => sha1( crb_array_get( $_SERVER, 'HTTP_USER_AGENT', '' ) ),
 		);
 
 		if ( self::update_2fa_data( $data, $user_id ) ) {
@@ -233,7 +230,6 @@ final class CRB_2FA {
 
 	/**
 	 * @param null $user_id User ID
-     *
 	 */
 	static function restrict_and_verify( $user_id = null ) {
 		static $done = false;
@@ -242,7 +238,7 @@ final class CRB_2FA {
 			return;
 		}
 
-    	$done = true;
+		$done = true;
 
 		if ( ! $user_id && ! $user_id = get_current_user_id() ) {
 			return;
@@ -250,12 +246,12 @@ final class CRB_2FA {
 
 		self::$user_id = $user_id;
 
-		$cus = cerber_get_set( CRB_USER_SET, $user_id );
+		$cus       = cerber_get_set( CRB_USER_SET, $user_id );
 		$twofactor = self::get_2fa_data( $user_id );
 
 		if ( empty( $twofactor['pin'] ) ) {
 			return;
-        }
+		}
 
 		if ( crb_acl_is_white() ) {
 			self::delete_2fa( $user_id );
@@ -269,10 +265,9 @@ final class CRB_2FA {
 			self::delete_2fa( $user_id, true );
 
 			return;
-		}
-        elseif ( ! $tfm ) {
+		} elseif ( ! $tfm ) {
 			$user = wp_get_current_user();
-	        if ( ! self::check_role_policies( $user_id, $cus, $user->roles ) ) {
+			if ( ! self::check_role_policies( $user_id, $cus, $user->roles ) ) {
 				self::delete_2fa( $user_id );
 
 				return;
@@ -281,10 +276,10 @@ final class CRB_2FA {
 
 		// Check if the same same browser and IP
 		if ( $twofactor['ip'] != cerber_get_remote_ip()
-		     || $twofactor['ua'] != sha1( crb_array_get( $_SERVER, 'HTTP_USER_AGENT', '' ) )
-		     || ! cerber_is_ip_allowed() ) {
+			 || $twofactor['ua'] != sha1( crb_array_get( $_SERVER, 'HTTP_USER_AGENT', '' ) )
+			 || ! cerber_is_ip_allowed() ) {
 
-		    self::delete_2fa( $user_id );
+			self::delete_2fa( $user_id );
 			cerber_user_logout();
 			wp_redirect( get_home_url() );
 
@@ -328,10 +323,10 @@ final class CRB_2FA {
 
 		// The second, final step of verification
 		if ( cerber_is_http_post()
-		     && ! empty( $twofactor['nonce'] )
-		     && $_POST['cerber_tag'] === $twofactor['nonce']
-		     && ( $pin = cerber_get_post( 'cerber_pin' ) )
-		     && self::verify_pin( trim( $pin ) ) ) {
+			 && ! empty( $twofactor['nonce'] )
+			 && $_POST['cerber_tag'] === $twofactor['nonce']
+			 && ( $pin = cerber_get_post( 'cerber_pin' ) )
+			 && self::verify_pin( trim( $pin ) ) ) {
 
 			self::delete_2fa( $user_id );
 
@@ -352,7 +347,7 @@ final class CRB_2FA {
 
 	static function process_ajax( $new_pin ) {
 		if ( ( ! $nonce = cerber_get_post( 'the_2fa_nonce', '\w+' ) )
-		     || ( ! $pin = cerber_get_post( 'cerber_verify_pin' ) ) ) {
+			 || ( ! $pin = cerber_get_post( 'cerber_verify_pin' ) ) ) {
 			return;
 		}
 
@@ -360,11 +355,9 @@ final class CRB_2FA {
 
 		if ( ! wp_verify_nonce( $nonce, 'crb-ajax-2fa' ) ) {
 			$err = 'Nonce error.';
-		}
-        elseif ( $new_pin ) {
+		} elseif ( $new_pin ) {
 			$err = __( 'This verification PIN code is expired. We have just sent a new one to your email.', 'wp-cerber' );
-		}
-        elseif ( ! self::verify_pin( trim( $pin ), $nonce ) ) {
+		} elseif ( ! self::verify_pin( trim( $pin ), $nonce ) ) {
 			$err = __( 'You have entered an incorrect verification PIN code', 'wp-cerber' );
 		}
 
@@ -377,7 +370,7 @@ final class CRB_2FA {
 		$data = self::get_2fa_data();
 
 		if ( empty( $data['pin'] )
-		     || $data['expires'] < time() ) {
+			 || $data['expires'] < time() ) {
 			return false;
 		}
 
@@ -387,8 +380,7 @@ final class CRB_2FA {
 				return $ret;
 			}
 			$data['nonce'] = $nonce;
-		}
-		else {
+		} else {
 			$data['attempts'] ++;
 			$ret = false;
 		}
@@ -400,89 +392,89 @@ final class CRB_2FA {
 
 	static function show_2fa_page( $echo = true ) {
 		@ini_set( 'display_errors', 0 );
-		$ajax_vars = 'var ajaxurl = "' . admin_url( 'admin-ajax.php' ) . '";';
-		$ajax_vars .= 'var nonce2fa = "'. wp_create_nonce( 'crb-ajax-2fa' ).'";';
+		$ajax_vars  = 'var ajaxurl = "' . admin_url( 'admin-ajax.php' ) . '";';
+		$ajax_vars .= 'var nonce2fa = "' . wp_create_nonce( 'crb-ajax-2fa' ) . '";';
 		if ( ! defined( 'CONCATENATE_SCRIPTS' ) ) {
 			define( 'CONCATENATE_SCRIPTS', false );
 		}
 		wp_enqueue_script( 'jquery' );
 		ob_start();
 		?>
-        <!DOCTYPE html>
-        <html style="height: 100%;">
-        <head>
-            <meta charset="UTF-8">
-            <title><?php _e( 'Please verify that it’s you', 'wp-cerber' ); ?></title>
-            <style>
-                body {
-                    font-family: Arial, Helvetica, sans-serif;
-                    color: #555;
-                }
-                #cerber_2fa_inner  {
-                    width: 350px;
-                }
-                @media (-webkit-min-device-pixel-ratio: 2) and (max-width: 1000px),
-                (min-resolution: 192dpi) and (max-width: 1000px), {
-                    #cerber_2fa_inner {
-                        width: 100%;
-                    }
-                }
-                @media screen and (max-width: 900px) {
-                    #cerber_2fa_inner {
-                        /*width: 100%;*/
-                    }
-                }
-                #cerber_2fa_msg {
-                    display: none;
-                    position: fixed;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    /*height: 80px;*/
-                    padding: 40px 0 40px 0;
-                    background-color: #FF5733;
-                    color: #fff;
-                    opacity: 0.9;
-                }
+		<!DOCTYPE html>
+		<html style="height: 100%;">
+		<head>
+			<meta charset="UTF-8">
+			<title><?php _e( 'Please verify that it’s you', 'wp-cerber' ); ?></title>
+			<style>
+				body {
+					font-family: Arial, Helvetica, sans-serif;
+					color: #555;
+				}
+				#cerber_2fa_inner  {
+					width: 350px;
+				}
+				@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 1000px),
+				(min-resolution: 192dpi) and (max-width: 1000px), {
+					#cerber_2fa_inner {
+						width: 100%;
+					}
+				}
+				@media screen and (max-width: 900px) {
+					#cerber_2fa_inner {
+						/*width: 100%;*/
+					}
+				}
+				#cerber_2fa_msg {
+					display: none;
+					position: fixed;
+					top: 0;
+					left: 0;
+					width: 100%;
+					/*height: 80px;*/
+					padding: 40px 0 40px 0;
+					background-color: #FF5733;
+					color: #fff;
+					opacity: 0.9;
+				}
 
-                #cerber_2fa_form input[type="text"] {
-                    color: #000;
-                    text-align: center;
-                    font-size: 1.5em;
-                    letter-spacing: 0.1em;
-                    padding: 5px;
-                    min-width: 140px;
-                    border-radius: 4px;
-                }
-                #cerber_2fa_form input[type="submit"] {
-                    color: white;
-                    background: #0085ba;
-                    /*background: #0073aa;*/
-                    border: 0;
-                    font-size: 1em;
-                    font-weight: 600;
-                    letter-spacing: 0.1em;
-                    text-align: center;
-                    cursor: pointer;
-                    padding: 1em;
-                    min-width: 150px;
-                    border-radius: 4px;
-                }
-            </style>
+				#cerber_2fa_form input[type="text"] {
+					color: #000;
+					text-align: center;
+					font-size: 1.5em;
+					letter-spacing: 0.1em;
+					padding: 5px;
+					min-width: 140px;
+					border-radius: 4px;
+				}
+				#cerber_2fa_form input[type="submit"] {
+					color: white;
+					background: #0085ba;
+					/*background: #0073aa;*/
+					border: 0;
+					font-size: 1em;
+					font-weight: 600;
+					letter-spacing: 0.1em;
+					text-align: center;
+					cursor: pointer;
+					padding: 1em;
+					min-width: 150px;
+					border-radius: 4px;
+				}
+			</style>
 			<?php print_head_scripts(); ?>
-            <script>
+			<script>
 				<?php echo $ajax_vars; ?>
-            </script>
-        </head>
+			</script>
+		</head>
 
-        <body style="height: 90%; text-align: center;">
-        <div style="display: flex; align-items: center; justify-content: center; text-align: center; height: 90%;">
+		<body style="height: 90%; text-align: center;">
+		<div style="display: flex; align-items: center; justify-content: center; text-align: center; height: 90%;">
 			<?php
 			self::cerber_2fa_form();
 			?>
-        </div>
-        </body>
-        </html>
+		</div>
+		</body>
+		</html>
 
 		<?php
 
@@ -499,11 +491,11 @@ final class CRB_2FA {
 			return false;
 		}
 
-		$to = self::get_user_email( $user_id );
+		$to   = self::get_user_email( $user_id );
 		$subj = '[' . crb_get_blogname_decoded() . '] ' . __( 'Please verify that it’s you', 'wp-cerber' );
 		$body = array();
 
-		//$body[] = 'We need to verify that it’s you because you are trying to sign-in from a different device or a different location or you have not signed in for a long time. If this wasn’t you, please reset your password immediately.';
+		// $body[] = 'We need to verify that it’s you because you are trying to sign-in from a different device or a different location or you have not signed in for a long time. If this wasn’t you, please reset your password immediately.';
 		$body[] = __( "You or someone else trying to log into the website. We have to verify that it's you. If this wasn't you, please immediately reset your password to safeguard your account.", 'wp-cerber' );
 		$body[] = __( 'Please use the following verification PIN code to verify your identity.', 'wp-cerber' ) . ' ' . sprintf( __( 'The code is valid for %s minutes.', 'wp-cerber' ), CERBER_PIN_EXPIRES );
 		$body[] = '';
@@ -512,7 +504,7 @@ final class CRB_2FA {
 		$data = get_userdata( $user_id );
 
 		if ( $details ) {
-			$ds = array();
+			$ds   = array();
 			$ds[] = __( 'Login:', 'wp-cerber' ) . ' ' . $data->user_login;
 			$ds[] = __( 'IP address:', 'wp-cerber' ) . ' ' . cerber_get_remote_ip();
 			if ( $c = lab_get_country( cerber_get_remote_ip(), false ) ) {
@@ -531,8 +523,8 @@ final class CRB_2FA {
 		$result = wp_mail( $to, $subj, $body );
 
 		if ( $result && ( $data->user_email != $to ) ) {
-		    // TODO Add a notification to the main email
-			//wp_mail( $data->user_email, $subj, $body );
+			// TODO Add a notification to the main email
+			// wp_mail( $data->user_email, $subj, $body );
 		}
 	}
 
@@ -552,8 +544,8 @@ final class CRB_2FA {
 	}
 
 	/**
-     * Return all valid user PINs
-     *
+	 * Return all valid user PINs
+	 *
 	 * @param $user_id
 	 *
 	 * @return string
@@ -572,7 +564,7 @@ final class CRB_2FA {
 
 		foreach ( $fa as $entry ) {
 			if ( empty( $entry['pin'] )
-			     || $entry['expires'] < time() ) {
+				 || $entry['expires'] < time() ) {
 				continue;
 			}
 
@@ -614,7 +606,7 @@ final class CRB_2FA {
 	static function get_2fa_data( $user_id = null ) {
 		$token = self::cerber_2fa_session_id();
 
-        if ( ! $user_id ) {
+		if ( ! $user_id ) {
 			$user_id = get_current_user_id();
 		}
 
@@ -634,8 +626,7 @@ final class CRB_2FA {
 		if ( $cus && isset( $cus['2fa'] ) ) {
 			if ( $all ) {
 				unset( $cus['2fa'] );
-			}
-			else {
+			} else {
 				unset( $cus['2fa'][ self::cerber_2fa_session_id() ] );
 			}
 
@@ -652,76 +643,76 @@ final class CRB_2FA {
 	}
 
 	static function cerber_2fa_form() {
-		$max    = CERBER_PIN_LENGTH;
-		$atts   = 'pattern="\d{' . $max . '}" maxlength="' . $max . '" size="' . $max . '" title="' . __( 'only digits are allowed', 'wp-cerber' ) . '"';
+		$max  = CERBER_PIN_LENGTH;
+		$atts = 'pattern="\d{' . $max . '}" maxlength="' . $max . '" size="' . $max . '" title="' . __( 'only digits are allowed', 'wp-cerber' ) . '"';
 		// Please enter your PIN code to continue
 		$email = self::get_user_email();
-		$text = __( "We've sent a verification PIN code to your email", 'wp-cerber' ) . ' ' . cerber_mask_email( $email ) .
-		        '<p>'. __( 'Enter the code from the email in the field below.', 'wp-cerber' ).'</p>';
-		//$change = '<a href="' . cerber_get_home_url() . '/?cerber_2fa_now=different">' . __( 'Sign in with a different account', 'wp-cerber' ) . '</a>';
+		$text  = __( "We've sent a verification PIN code to your email", 'wp-cerber' ) . ' ' . cerber_mask_email( $email ) .
+				'<p>' . __( 'Enter the code from the email in the field below.', 'wp-cerber' ) . '</p>';
+		// $change = '<a href="' . cerber_get_home_url() . '/?cerber_2fa_now=different">' . __( 'Sign in with a different account', 'wp-cerber' ) . '</a>';
 		$change = '<a href="' . cerber_get_home_url() . '/?cerber_2fa_now=different">' . __( 'Try again', 'wp-cerber' ) . '</a>';
 		$cancel = '<a href="' . cerber_get_home_url() . '/?cerber_2fa_now=cancel">' . __( 'Cancel', 'wp-cerber' ) . '</a>';
-		$links = '<p>'.__( 'Did not receive the email?', 'wp-cerber' ) .'</p>'. $change . ' ' . __( 'or', 'wp-cerber' ) . ' ' . $cancel;
+		$links  = '<p>' . __( 'Did not receive the email?', 'wp-cerber' ) . '</p>' . $change . ' ' . __( 'or', 'wp-cerber' ) . ' ' . $cancel;
 		?>
-        <div id="cerber_2fa_msg"></div>
-        <div>
-            <div id="cerber_2fa_wrap" style="text-align: center; background-color: #eee; border-top: solid 4px #ddd; padding: 1.5em 3em 1.5em 3em;">
-                <div id="cerber_2fa_inner" style="text-align: center;">
-                    <h1 style="color:#000;"><?php _e( "Verify it's you", 'wp-cerber' ); ?></h1>
-                    <div id="cerber_2fa_info" style="color: #333;"><?php echo $text; ?></div>
-                    <form id="cerber_2fa_form" method="post" data-verified="no" style="margin-bottom: 3em;">
-                        <p><input required type="text" name="cerber_pin" <?php echo $atts; ?> ></p>
-                        <p><input type="hidden" name="cerber_tag" value="2FA"></p>
-                        <p><input type="submit" value="<?php _e( 'Verify', 'wp-cerber' ); ?>"></p>
-                    </form>
-                </div>
-            </div>
+		<div id="cerber_2fa_msg"></div>
+		<div>
+			<div id="cerber_2fa_wrap" style="text-align: center; background-color: #eee; border-top: solid 4px #ddd; padding: 1.5em 3em 1.5em 3em;">
+				<div id="cerber_2fa_inner" style="text-align: center;">
+					<h1 style="color:#000;"><?php _e( "Verify it's you", 'wp-cerber' ); ?></h1>
+					<div id="cerber_2fa_info" style="color: #333;"><?php echo $text; ?></div>
+					<form id="cerber_2fa_form" method="post" data-verified="no" style="margin-bottom: 3em;">
+						<p><input required type="text" name="cerber_pin" <?php echo $atts; ?> ></p>
+						<p><input type="hidden" name="cerber_tag" value="2FA"></p>
+						<p><input type="submit" value="<?php _e( 'Verify', 'wp-cerber' ); ?>"></p>
+					</form>
+				</div>
+			</div>
 			<?php echo $links; ?>
-        </div>
-        <script>
-            jQuery(document).ready(function ($) {
-                let cform = $('#cerber_2fa_form');
-                let umsg = 'cerber_2fa_msg';
-                cform.submit(function (event) {
-                    crb_hide_user_msg();
-                    if (cform.data('verified') === 'yes') {
-                        return;
-                    }
-                    event.preventDefault();
-                    $.post(ajaxurl, {
-                            the_2fa_nonce: nonce2fa,
-                            cerber_verify_pin: $(this).find('input[type="text"]').val()
-                        },
-                        function (server_response, textStatus, jqXHR) {
-                            let server_data = JSON.parse(server_response);
-                            if (server_data.error.length === 0) {
-                                cform.find('[name="cerber_tag"]').val(nonce2fa);
-                                cform.data('verified', 'yes');
-                                cform.submit();
-                            }
-                            else {
-                                crb_display_user_msg(server_data['error']);
-                            }
-                        }
-                    ).fail(function (jqXHR, textStatus, errorThrown) {
-                        let err = errorThrown + ' ' + jqXHR.status;
-                        alert(err);
-                        console.error('Server Error: ' + err);
-                    });
-                });
+		</div>
+		<script>
+			jQuery(document).ready(function ($) {
+				let cform = $('#cerber_2fa_form');
+				let umsg = 'cerber_2fa_msg';
+				cform.submit(function (event) {
+					crb_hide_user_msg();
+					if (cform.data('verified') === 'yes') {
+						return;
+					}
+					event.preventDefault();
+					$.post(ajaxurl, {
+							the_2fa_nonce: nonce2fa,
+							cerber_verify_pin: $(this).find('input[type="text"]').val()
+						},
+						function (server_response, textStatus, jqXHR) {
+							let server_data = JSON.parse(server_response);
+							if (server_data.error.length === 0) {
+								cform.find('[name="cerber_tag"]').val(nonce2fa);
+								cform.data('verified', 'yes');
+								cform.submit();
+							}
+							else {
+								crb_display_user_msg(server_data['error']);
+							}
+						}
+					).fail(function (jqXHR, textStatus, errorThrown) {
+						let err = errorThrown + ' ' + jqXHR.status;
+						alert(err);
+						console.error('Server Error: ' + err);
+					});
+				});
 
-                function crb_display_user_msg(msg) {
-                    $('#' + umsg).fadeIn(500).html(msg);
-                    setTimeout(function (args) {
-                        crb_hide_user_msg();
-                    }, 5000);
-                }
+				function crb_display_user_msg(msg) {
+					$('#' + umsg).fadeIn(500).html(msg);
+					setTimeout(function (args) {
+						crb_hide_user_msg();
+					}, 5000);
+				}
 
-                function crb_hide_user_msg() {
-                    document.getElementById(umsg).style.display = "none";
-                }
-            });
-        </script>
+				function crb_hide_user_msg() {
+					document.getElementById(umsg).style.display = "none";
+				}
+			});
+		</script>
 		<?php
 	}
 }
@@ -733,11 +724,10 @@ final class CRB_2FA {
  */
 function cerber_2fa_get_redirect_to( $user ) {
 	if ( isset( $_REQUEST['redirect_to'] ) ) {
-		$redirect_to = $_REQUEST['redirect_to'];
+		$redirect_to           = $_REQUEST['redirect_to'];
 		$requested_redirect_to = $redirect_to;
-	}
-	else {
-		$redirect_to = admin_url();
+	} else {
+		$redirect_to           = admin_url();
 		$requested_redirect_to = '';
 	}
 
@@ -749,13 +739,11 @@ function cerber_2fa_get_redirect_to( $user ) {
 /**
  * Verify that 2FA on the website works
  * If it works, 2FA can be enabled for admins
- *
  */
 function cerber_2fa_checker( $save = false ) {
 	if ( $save ) {
 		cerber_update_set( 'cerber_2fa_is_ok', 1, null, false );
-	}
-	else {
+	} else {
 		if ( cerber_get_set( 'cerber_2fa_is_ok', null, false ) ) {
 			return true;
 		}

@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'crb';
   src:
-    url('fonts/crb.ttf?v388dd') format('truetype'),
-    url('fonts/crb.woff?v388dd') format('woff'),
-    url('fonts/crb.svg?v388dd#crb') format('svg');
+	url('fonts/crb.ttf?v388dd') format('truetype'),
+	url('fonts/crb.woff?v388dd') format('woff'),
+	url('fonts/crb.svg?v388dd#crb') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;

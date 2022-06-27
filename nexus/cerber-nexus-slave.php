@@ -3,26 +3,25 @@
 	Copyright (C) 2015-22 CERBER TECH INC., https://cerber.tech
 	Copyright (C) 2015-22 Markov Gregory, https://wpcerber.com
 
-    Licenced under the GNU GPL.
+	Licenced under the GNU GPL.
 
-    This program is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 3 of the License, or
-    (at your option) any later version.
+	This program is free software; you can redistribute it and/or modify
+	it under the terms of the GNU General Public License as published by
+	the Free Software Foundation; either version 3 of the License, or
+	(at your option) any later version.
 
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details.
 
-    You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+	You should have received a copy of the GNU General Public License
+	along with this program; if not, write to the Free Software
+	Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 */
 
 /*
-
 *========================================================================*
 |                                                                        |
 |	       ATTENTION!  Do not change or edit this file!                  |
@@ -31,24 +30,29 @@
 
 */
 
-if ( ! defined( 'WPINC' ) ) { exit; }
+if ( ! defined( 'WPINC' ) ) {
+	exit; }
 
-require_once( cerber_plugin_dir() . '/cerber-maintenance.php' );
+require_once cerber_plugin_dir() . '/cerber-maintenance.php';
 
-add_action( 'plugins_loaded', function () {
-	if ( ! $key = cerber_get_get( 'cerber_magic_key', '[\d\w\-_]+' ) ) {
-		return;
-	}
-	if ( ! $data = cerber_get_set( '_the_key_' . $key ) ) {
+add_action(
+	'plugins_loaded',
+	function () {
+		if ( ! $key = cerber_get_get( 'cerber_magic_key', '[\d\w\-_]+' ) ) {
+			return;
+		}
+		if ( ! $data = cerber_get_set( '_the_key_' . $key ) ) {
+			cerber_404_page();
+		}
+
+		@ini_set( 'display_errors', 0 );
+		cerber_delete_set( '_the_key_' . $key );
+		cerber_load_admin_code();
+		crb_admin_download_file( $data['query']['type'], $data['query'] );
 		cerber_404_page();
-	}
-
-	@ini_set( 'display_errors', 0 );
-	cerber_delete_set( '_the_key_' . $key );
-	cerber_load_admin_code();
-	crb_admin_download_file( $data['query']['type'], $data['query'] );
-	cerber_404_page();
-}, 0 );
+	},
+	0
+);
 
 class CRB_Master {
 	public $page;
@@ -78,9 +82,12 @@ class CRB_Master {
 			return;
 		}
 
-		array_walk_recursive( $request, function ( &$e ) {
-			$e = str_replace( array( '<br/>' ), "\n", $e ); // restore new lines after json_decode
-		} );
+		array_walk_recursive(
+			$request,
+			function ( &$e ) {
+				$e = str_replace( array( '<br/>' ), "\n", $e ); // restore new lines after json_decode
+			}
+		);
 
 		$this->seal       = $request['seal'];
 		$this->base       = rtrim( $request['base'], '/' ) . '/';
@@ -111,13 +118,13 @@ class CRB_Master {
 	}
 
 	/**
-	 * @param integer|string $key
-	 * @param mixed $default
+	 * @param integer|string                                                          $key
+	 * @param mixed                                                                   $default
 	 * @param $pattern string REGEX pattern for value validation, UTF is not supported
 	 *
 	 * @return mixed
 	 */
-	final function get_post_fields( $key = null, $default = false, $pattern = ''  ) {
+	final function get_post_fields( $key = null, $default = false, $pattern = '' ) {
 		if ( ! empty( $this->payload['data']['post'] ) ) {
 			if ( $key ) {
 				return crb_array_get( $this->payload['data']['post'], $key, $default, $pattern );
@@ -169,31 +176,41 @@ function nexus_slave_process() {
 
 	nexus_diag_log( 'Request is OK, generating response...' );
 
-	add_filter( 'plugin_locale', function () {
-		return nexus_request_data()->locale;
-	}, 9999 );
+	add_filter(
+		'plugin_locale',
+		function () {
+			return nexus_request_data()->locale;
+		},
+		9999
+	);
 
 	$use_eng = false;
 	if ( nexus_request_data()->locale == 'en_US' ) {
 		$use_eng = true;
 		// We do not load any translation files
-		add_filter( 'override_load_textdomain', function ( $val, $domain, $mofile ) {
-			return true;
-		}, 9999, 3 );
+		add_filter(
+			'override_load_textdomain',
+			function ( $val, $domain, $mofile ) {
+				return true;
+			},
+			9999,
+			3
+		);
 	}
 
 	if ( ! $use_eng ) {
 		$r = load_plugin_textdomain( 'wp-cerber', false, 'wp-cerber/languages' );
 
-		/*if ( ! $r ) {
+		/*
+		if ( ! $r ) {
 			nexus_diag_log( 'Unable to load plugin localization files ' . (string) nexus_request_data()->locale );
 		}*/
 	}
 
-	require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
-	require_once( ABSPATH . 'wp-admin/includes/template.php' );
-	require_once( ABSPATH . WPINC . '/pluggable.php' );
-	require_once( ABSPATH . WPINC . '/vars.php' );
+	require_once ABSPATH . 'wp-admin/includes/plugin.php';
+	require_once ABSPATH . 'wp-admin/includes/template.php';
+	require_once ABSPATH . WPINC . '/pluggable.php';
+	require_once ABSPATH . WPINC . '/vars.php';
 
 	cerber_load_admin_code();
 
@@ -224,7 +241,6 @@ function nexus_slave_process() {
  * Avoid simultaneous requests from the master(s)
  *
  * @return bool
- *
  */
 function nexus_is_processing() {
 	return ( cerber_get_set( 'processing_master_request' ) ) ? true : false;
@@ -289,8 +305,8 @@ function nexus_prepare_response() {
 
 			return array(
 				'html' => nexus_render_admin_page( $master->page, $master->tab ),
-				//'o'    => get_option( 'gmt_offset' ),
-				//'z'    => get_option( 'timezone_string' ),
+				// 'o'    => get_option( 'gmt_offset' ),
+				// 'z'    => get_option( 'timezone_string' ),
 			);
 			break;
 		case 'submit':
@@ -298,18 +314,17 @@ function nexus_prepare_response() {
 
 			if ( $master->get_post_fields( 'option_page' ) ) { // True WP setting page
 				return nexus_process_wp_settings_form( $master->get_post_fields() );
-			}
-			else {
+			} else {
 				return cerber_admin_request( $master->is_post );
 			}
 			// A new way: processing + follow up rendering in a single request
-			//return nexus_render_admin_page( $master->page, $master->tab );
+			// return nexus_render_admin_page( $master->page, $master->tab );
 			break;
 		case 'manage':
 			return cerber_admin_request( $master->is_post );
 			break;
 		case 'hello':
-			//case 'checkup':
+			// case 'checkup':
 			return array( 'numbers' => nexus_get_numbers() );
 			break;
 		case 'ping':
@@ -319,7 +334,7 @@ function nexus_prepare_response() {
 			$result             = nexus_sw_upgrade();
 			$result ['numbers'] = nexus_get_numbers();
 			if ( ! $result['updates'] ) {
-				//nexus_diag_log( 'No updates are available' );
+				// nexus_diag_log( 'No updates are available' );
 			}
 			break;
 		case 'ajax':
@@ -344,7 +359,11 @@ function nexus_prepare_response() {
 }
 
 function nexus_sw_upgrade() {
-	$ret = array( 'updates' => 0, 'completed' => 1, 'results' => array() );
+	$ret = array(
+		'updates'   => 0,
+		'completed' => 1,
+		'results'   => array(),
+	);
 
 	if ( nexus_is_processing() ) {
 		$ret['completed'] = 0;
@@ -359,7 +378,7 @@ function nexus_sw_upgrade() {
 			if ( empty( $list ) ) {
 				// Upgrade all
 				$to_update = array();
-				$active  = get_option( 'active_plugins' );
+				$active    = get_option( 'active_plugins' );
 
 				if ( ! $plugins = get_site_transient( 'update_plugins' ) ) {
 					wp_update_plugins();
@@ -374,8 +393,7 @@ function nexus_sw_upgrade() {
 
 				if ( $done = cerber_get_set( 'plugins_done' ) ) { // Upgraded in the current bulk operation
 					$to_do = array_diff( $to_update, $done );
-				}
-				else {
+				} else {
 					$done  = array();
 					$to_do = $to_update;
 				}
@@ -389,8 +407,7 @@ function nexus_sw_upgrade() {
 				if ( ! empty( $to_do ) ) {
 					$ret['completed'] = 0; // Something left
 					cerber_update_set( 'plugins_done', $done, 0, true, time() + 300 * count( $to_do ) );
-				}
-				else {
+				} else {
 					cerber_delete_set( 'plugins_done' );
 				}
 			}
@@ -447,11 +464,9 @@ function nexus_net_send_responce( $payload ) {
 	$role = nexus_get_role_data();
 	if ( is_array( $payload ) ) {
 		$p = json_encode( $payload, JSON_UNESCAPED_UNICODE ); // 8.0.5
-	}
-	elseif ( is_scalar( $payload ) ) {
+	} elseif ( is_scalar( $payload ) ) {
 		$p = (string) $payload;
-	}
-	else {
+	} else {
 		$p   = '';
 		$ret = new WP_Error( 'wrong_type', 'Unsupported slave data type' );
 	}
@@ -459,15 +474,18 @@ function nexus_net_send_responce( $payload ) {
 	$processing = microtime( true ) - cerber_request_time();
 
 	$hash     = hash( 'sha512', $role['slave']['nx_echo'] . sha1( $p ) );
-	$response = json_encode( array(
-		'payload'  => $payload,
-		'extra'    => array(
-			'versions' => array( CERBER_VER, cerber_get_wp_version(), PHP_MAJOR_VERSION, PHP_MINOR_VERSION, PHP_RELEASE_VERSION, PHP_OS, lab_lab( 2 ) )
+	$response = json_encode(
+		array(
+			'payload' => $payload,
+			'extra'   => array(
+				'versions' => array( CERBER_VER, cerber_get_wp_version(), PHP_MAJOR_VERSION, PHP_MINOR_VERSION, PHP_RELEASE_VERSION, PHP_OS, lab_lab( 2 ) ),
+			),
+			'echo'    => $hash,
+			'p_time'  => $processing,
+			'scheme'  => 2, // 8.0.5
 		),
-		'echo'     => $hash,
-		'p_time'   => $processing,
-		'scheme' => 2 // 8.0.5
-	), JSON_UNESCAPED_UNICODE );
+		JSON_UNESCAPED_UNICODE
+	);
 
 	if ( JSON_ERROR_NONE != json_last_error() ) {
 		$response = 'Unable to encode payload. JSON error.';
@@ -528,11 +546,16 @@ function nexus_is_granted( $type = null ) {
 }
 
 function nexus_get_numbers() {
-	$numbers = array();
+	$numbers        = array();
 	$active_plugins = get_option( 'active_plugins' );
 
 	// see wp_get_update_data();
-	$updates  = array( 'plugins' => 0, 'themes' => 0, 'wp' => 0, 'translations' => 0 );
+	$updates = array(
+		'plugins'      => 0,
+		'themes'       => 0,
+		'wp'           => 0,
+		'translations' => 0,
+	);
 
 	$pl_updates = get_site_transient( 'update_plugins' );
 	if ( ! $pl_updates || ( $pl_updates->last_checked < ( time() - 7200 ) ) ) {
@@ -545,7 +568,7 @@ function nexus_get_numbers() {
 		$updates['plugins'] = count( array_intersect( $active_plugins, array_keys( $pl_updates->response ) ) );
 	}
 
-	include_once( ABSPATH . 'wp-admin/includes/update.php' );
+	include_once ABSPATH . 'wp-admin/includes/update.php';
 	if ( function_exists( 'get_core_updates' ) ) {
 		$wp = get_core_updates( array( 'dismissed' => false ) );
 		if ( ! empty( $wp ) ) {
@@ -566,14 +589,20 @@ function nexus_get_numbers() {
 
 	$list = array();
 	if ( ! empty( $pl_updates->response ) ) {
-		$list = array_map( function ( $e ) {
-			//$ret = (array) $e;
-			$ret = array_map( function ( $e ) {
-				return ( is_object( $e ) ) ? (array) $e : $e;
-			}, (array) $e );
+		$list = array_map(
+			function ( $e ) {
+				// $ret = (array) $e;
+				$ret = array_map(
+					function ( $e ) {
+						return ( is_object( $e ) ) ? (array) $e : $e;
+					},
+					(array) $e
+				);
 
-			return $ret;
-		}, $pl_updates->response );
+				return $ret;
+			},
+			$pl_updates->response
+		);
 	}
 
 	$numbers['pl_updates'] = $list;
@@ -587,11 +616,16 @@ function nexus_get_numbers() {
 }
 
 // We have to use our own "user id"
-add_filter( 'nonce_user_logged_out', function ( $uid, $action ) {
-	if ( ! nexus_is_valid_request() ) {
-		return $uid;
-	}
+add_filter(
+	'nonce_user_logged_out',
+	function ( $uid, $action ) {
+		if ( ! nexus_is_valid_request() ) {
+			return $uid;
+		}
 
-	return PHP_INT_MAX;
+		return PHP_INT_MAX;
 
-}, 10, 2 );
+	},
+	10,
+	2
+);
